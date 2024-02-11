@@ -6,6 +6,7 @@ import Header from './App-components/static_components/header/Header';
 
 // import pages
 import HomePage from './App-components/pages/home/Home';
+import ProductPage from './App-components/pages/products/Products';
 function App() {
   return (
     <div className="app-container">
@@ -14,6 +15,7 @@ function App() {
       <main className="main-container">
         <Routes>
           <Route exact path='' element={<HomePage />} />
+          <Route path='product/:product' element={<ProductPage />} />
         </Routes>
       </main>
      </Router>

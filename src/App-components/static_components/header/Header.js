@@ -15,6 +15,10 @@ import Drink from '../../../images/menu-icon-4.svg';
 import AlcoholDrink from '../../../images/alkogolni-napoyi-1.svg';
 import Info from '../../../images/menu-icon-5.svg';
 import Checkout from '../../../images/shopping-cart.svg';
+// import actions
+import {
+    ActineButtonModal
+} from './options/Actions';
 export default function Header() {
     return (
         <header className='header-container'>
@@ -45,66 +49,66 @@ export default function Header() {
                             </section>
                             <ul className="hov-sushi">
                                 <li>
-                                    <Link to="/">Сети</Link>
+                                    <Link to="/product/set">Сети</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Філодельфія</Link>
+                                    <Link to="/product/filodelfia">Філодельфія</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Гаряці роли</Link>
+                                    <Link to="/product/hot-rolls">Гаряці роли</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Роли</Link>
+                                    <Link to="/product/rolls">Роли</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Маки</Link>
+                                    <Link to="/product/mac">Маки</Link>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <Link to="/burgers" title='home page'>
+                            <Link to="/product/burgers" title='home page'>
                                 <img src={Burgers} alt="" />
                                 <span>Бургери</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/shawarma" title='home page'>
+                            <Link to="/product/shawarma" title='home page'>
                                 <img src={Shawarma} alt="" />
                                 <span>Кебаб</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/hot-dogs" title='home page'>
+                            <Link to="/product/hot-dogs" title='home page'>
                                 <img src={HotDog} alt="" />
                                 <span>Хот-доги</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/salad" title='home page'>
+                            <Link to="/product/salad" title='home page'>
                                 <img src={Salad} alt="" />
                                 <span>Салати</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/frizers" title='home page'>
+                            <Link to="/product/frizers" title='home page'>
                                 <img src={Frezing} alt="" />
                                 <span>Заморозка</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/deserts" title='home page'>
+                            <Link to="/product/deserts" title='home page'>
                                 <img src={Desert} alt="" />
                                 <span>Десерти</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/drinks" title='home page'>
+                            <Link to="/product/drinks" title='home page'>
                                 <img src={Drink} alt="" />
                                 <span>Напої</span>
                             </Link>
                         </li>
                         <li className='alcohol-drink'>
-                            <Link to="/alcohol-drinks" title='home page'>
+                            <Link to="/product/alcohol-drinks" title='home page'>
                                 <img src={AlcoholDrink} alt="" />
                                 <span>Алкогольні<br /> напої</span>
                             </Link>
@@ -167,6 +171,15 @@ export default function Header() {
                 </div>
                 <div className="actions-users">
                     <p>Увійти</p>
+                </div>
+                <div className="btn-modal-action">
+                    <button className='btn' onClick={ActineButtonModal}>
+                        <div className="line-border">
+                            <div className="line-01"></div>
+                            <div className="line-02"></div>
+                            <div className="line-03"></div>
+                        </div>
+                    </button>
                 </div>
             </div>
         </header>

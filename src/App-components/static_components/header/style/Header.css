@@ -1,3 +1,291 @@
+@media (max-width: 320px) and (min-width: 200px) {
+  .header-container {
+    width: 100%;
+  }
+  .header-container .navigation-container {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .header-container .navigation-container .logo {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .navigation-container .logo a {
+    display: block;
+    width: 70%;
+    height: 55%;
+    background-color: #ffd600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  .header-container .navigation-container .logo a img {
+    width: 90%;
+    height: 80%;
+  }
+  .header-container .navigation-container .all-links {
+    width: 0%;
+    position: absolute;
+    top: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: width 0.3s linear;
+  }
+  .header-container .navigation-container .all-links .list-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: scroll;
+    height: 90%;
+    width: 90%;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    border-radius: 10px;
+  }
+  .header-container .navigation-container .all-links .list-links li {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
+  }
+  .header-container .navigation-container .all-links .list-links li a,
+  .header-container .navigation-container .all-links .list-links li section {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .header-container .navigation-container .all-links .list-links li a img,
+  .header-container .navigation-container .all-links .list-links li section img {
+    width: 35px;
+    height: 35px;
+  }
+  .header-container .navigation-container .all-links .list-links li a span,
+  .header-container .navigation-container .all-links .list-links li section span {
+    color: rgba(0, 0, 0, 0.8274509804);
+    font-size: 14px;
+    padding-left: 10px;
+  }
+  .header-container .navigation-container .all-links .list-links .sushi-section {
+    cursor: pointer;
+  }
+  .header-container .navigation-container .all-links .list-links .sushi-section .hov-sushi {
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    top: 60px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+  .header-container .navigation-container .all-links .list-links .sushi-section .hov-sushi li {
+    width: 100%;
+    height: 50px;
+  }
+  .header-container .navigation-container .all-links .list-links .sushi-section .hov-sushi li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    display: flex;
+    color: rgba(0, 0, 0, 0.8274509804);
+    font-size: 13px;
+    transition: color 0.3s linear;
+  }
+  .header-container .navigation-container .all-links .list-links .sushi-section .hov-sushi li a:hover {
+    color: #ffd600;
+  }
+  .header-container .navigation-container .all-links .list-links .sushi-section:hover .hov-sushi {
+    height: 200px;
+  }
+  .header-container .navigation-container .all-links .list-links .alcohol-drink a img {
+    width: 25px;
+    height: 25px;
+  }
+  .header-container .navigation-container .all-links .list-links .alcohol-drink .hov-alcohol {
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    top: 60px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+  .header-container .navigation-container .all-links .list-links .alcohol-drink .hov-alcohol li {
+    width: 100%;
+    height: 50px;
+  }
+  .header-container .navigation-container .all-links .list-links .alcohol-drink .hov-alcohol li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.8274509804);
+    font-size: 15px;
+    transition: color 0.3s linear;
+  }
+  .header-container .navigation-container .all-links .list-links .alcohol-drink .hov-alcohol li a:hover {
+    color: #ffd600;
+  }
+  .header-container .navigation-container .all-links .list-links .alcohol-drink:hover .hov-alcohol {
+    height: 100px;
+  }
+  .header-container .navigation-container .all-links .list-links .info-section {
+    cursor: pointer;
+  }
+  .header-container .navigation-container .all-links .list-links .info-section .hov-info {
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    top: 60px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+  .header-container .navigation-container .all-links .list-links .info-section .hov-info li {
+    width: 100%;
+    height: 50px;
+  }
+  .header-container .navigation-container .all-links .list-links .info-section .hov-info li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.8274509804);
+    font-size: 13px;
+    padding-left: 10px;
+    transition: color 0.3s linear;
+  }
+  .header-container .navigation-container .all-links .list-links .info-section .hov-info li a:hover {
+    color: #ffd600;
+  }
+  .header-container .navigation-container .all-links .list-links .info-section:hover .hov-info {
+    height: 250px;
+  }
+  .header-container .navigation-container .show-all-links {
+    width: 100%;
+  }
+  .header-container .navigation-container .checkout-contain {
+    width: 20%;
+    height: 100%;
+  }
+  .header-container .navigation-container .checkout-contain .checkout-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .header-container .navigation-container .checkout-contain .checkout-block img {
+    width: 35px;
+    height: 35px;
+  }
+  .header-container .navigation-container .checkout-contain .checkout-block span {
+    font-size: 12px;
+    text-align: center;
+  }
+  .header-container .navigation-container .actions-users {
+    width: 20%;
+    height: 100%;
+  }
+  .header-container .navigation-container .actions-users p {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    cursor: pointer;
+    transition: color 0.3s linear;
+  }
+  .header-container .navigation-container .actions-users p:hover {
+    color: #ffd600;
+  }
+  .header-container .navigation-container .btn-modal-action {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .navigation-container .btn-modal-action .btn {
+    width: 60%;
+    height: 60%;
+    background: none;
+    border: none;
+  }
+  .header-container .navigation-container .btn-modal-action .btn .line-border {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .header-container .navigation-container .btn-modal-action .btn .line-border .line-01,
+  .header-container .navigation-container .btn-modal-action .btn .line-border .line-02,
+  .header-container .navigation-container .btn-modal-action .btn .line-border .line-03 {
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    width: 95%;
+    height: 2px;
+  }
+  .header-container .navigation-container .btn-modal-action .btn-active .line-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .navigation-container .btn-modal-action .btn-active .line-border .line-01 {
+    width: 80%;
+    position: relative;
+    top: 1px;
+    transform: rotate(45deg);
+  }
+  .header-container .navigation-container .btn-modal-action .btn-active .line-border .line-02 {
+    display: none;
+  }
+  .header-container .navigation-container .btn-modal-action .btn-active .line-border .line-03 {
+    width: 80%;
+    position: relative;
+    bottom: 1px;
+    transform: rotate(-45deg);
+  }
+}
 @media (min-width: 1441px) {
   .header-container {
     width: 100%;
@@ -48,7 +336,8 @@
     align-items: center;
     position: relative;
   }
-  .header-container .navigation-container .all-links ul li a, .header-container .navigation-container .all-links ul li section {
+  .header-container .navigation-container .all-links ul li a,
+  .header-container .navigation-container .all-links ul li section {
     display: block;
     text-decoration: none;
     display: flex;
@@ -57,11 +346,13 @@
     align-items: center;
     text-align: center;
   }
-  .header-container .navigation-container .all-links ul li a img, .header-container .navigation-container .all-links ul li section img {
+  .header-container .navigation-container .all-links ul li a img,
+  .header-container .navigation-container .all-links ul li section img {
     width: 35px;
     height: 35px;
   }
-  .header-container .navigation-container .all-links ul li a span, .header-container .navigation-container .all-links ul li section span {
+  .header-container .navigation-container .all-links ul li a span,
+  .header-container .navigation-container .all-links ul li section span {
     color: rgba(0, 0, 0, 0.8274509804);
     font-size: 12px;
   }
@@ -91,9 +382,7 @@
     text-decoration: none;
     border-bottom: 2px solid transparent;
     display: flex;
-    align-items: start;
     color: rgba(0, 0, 0, 0.8274509804);
-    padding-left: 20px;
     font-size: 13px;
     transition: color 0.3s linear;
   }
@@ -169,7 +458,6 @@
     border-bottom: 2px solid transparent;
     display: flex;
     justify-content: center;
-    align-items: start;
     color: rgba(0, 0, 0, 0.8274509804);
     font-size: 13px;
     padding-left: 10px;
