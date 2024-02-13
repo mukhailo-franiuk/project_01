@@ -17,168 +17,144 @@ import Info from '../../../images/menu-icon-5.svg';
 import Checkout from '../../../images/shopping-cart.svg';
 // import actions
 import {
-    ActineButtonModal
+    ActineButtonModal,
+    OpenSushi,
+    closeButtonModal,
+    openAlcohol
 } from './options/Actions';
 export default function Header() {
     return (
         <header className='header-container'>
-            <div className="navigation-container">
+            <div className="list-elements">
                 <div className="logo">
-                    <Link to="/" title='la.ua'>
+                    <Link to="/" onClick={closeButtonModal}>
                         <img src={Logo} alt="" />
                     </Link>
                 </div>
                 <div className="all-links">
-                    <ul className='list-links'>
-                        <li>
-                            <Link to="/discount" title='discount'>
-                                <img src={Discount} alt="" />
-                                <span>Акції</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/" title='home page'>
-                                <img src={Pizza} alt="" />
-                                <span>Піца</span>
-                            </Link>
-                        </li>
-                        <li className='sushi-section'>
-                            <section>
-                                <img src={Sushi} alt="" />
-                                <span>Суші</span>
-                            </section>
-                            <ul className="hov-sushi">
-                                <li>
-                                    <Link to="/product/set">Сети</Link>
-                                </li>
-                                <li>
-                                    <Link to="/product/filodelfia">Філодельфія</Link>
-                                </li>
-                                <li>
-                                    <Link to="/product/hot-rolls">Гаряці роли</Link>
-                                </li>
-                                <li>
-                                    <Link to="/product/rolls">Роли</Link>
-                                </li>
-                                <li>
-                                    <Link to="/product/mac">Маки</Link>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <Link to="/product/burgers" title='home page'>
-                                <img src={Burgers} alt="" />
-                                <span>Бургери</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/product/shawarma" title='home page'>
-                                <img src={Shawarma} alt="" />
-                                <span>Кебаб</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/product/hot-dogs" title='home page'>
-                                <img src={HotDog} alt="" />
-                                <span>Хот-доги</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/product/salad" title='home page'>
-                                <img src={Salad} alt="" />
-                                <span>Салати</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/product/frizers" title='home page'>
-                                <img src={Frezing} alt="" />
-                                <span>Заморозка</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/product/deserts" title='home page'>
-                                <img src={Desert} alt="" />
-                                <span>Десерти</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/product/drinks" title='home page'>
-                                <img src={Drink} alt="" />
-                                <span>Напої</span>
-                            </Link>
-                        </li>
-                        <li className='alcohol-drink'>
-                            <Link to="/product/alcohol-drinks" title='home page'>
-                                <img src={AlcoholDrink} alt="" />
-                                <span>Алкогольні<br /> напої</span>
-                            </Link>
-                            <ul className="hov-alcohol">
-                                <li>
-                                    <Link to="/">Вино</Link>
-                                </li>
-                                <li>
-                                    <Link to="/">Пиво</Link>
-                                </li>
-                                <li>
-                                    <Link to="/">Сидр</Link>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className='info-section'>
-                            <section>
-                                <img src={Info} alt="" />
-                                <span>
-                                    Інформація
-                                </span>
-                            </section>
-                            <ul className="hov-info">
-                                <li>
-                                    <Link to="/">Вакансії</Link>
-                                </li>
-                                <li>
-                                    <Link to="/">Франшиза</Link>
-                                </li>
-                                <li>
-                                    <Link to="/">Доставка</Link>
-                                </li>
-                                <li>
-                                    <Link to="/">Оплата</Link>
-                                </li>
-                                <li>
-                                    <Link to="/">Про нас</Link>
-                                </li>
-                                <li>
-                                    <Link to="/">Новини</Link>
-                                </li>
-                                <li>
-                                    <Link to="/">Оферта</Link>
-                                </li>
-                                <li>
-                                    <Link to="/">Для партнерів</Link>
-                                </li>
-                                <li>
-                                    <Link to="/">Контакти</Link>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <div className="links-list">
+                        <ul>
+                            <li>
+                                <Link to="/discount" title='Акції' onClick={closeButtonModal}>
+                                    <img src={Discount} alt="" />
+                                    <span>Акції</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/" title='Піца' onClick={closeButtonModal}>
+                                    <img src={Pizza} alt="" />
+                                    <span>Піца</span>
+                                </Link>
+                            </li>
+                            <li className='sushi'>
+                                <div className='shushi-block-nav'>
+                                    <div className="btn-block" onClick={OpenSushi}>
+                                        <img src={Sushi} alt="" />
+                                        <span>Суші</span>
+                                        <i className="arrow down"></i>
+                                    </div>
+                                    <div className="list-links-sushi">
+                                        <ul>
+                                            <li className='first-li'>
+                                                <Link to="/product/sets" onClick={closeButtonModal}>Сети</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" onClick={closeButtonModal}>Філодельфія</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" onClick={closeButtonModal}>Гарячі роли</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" onClick={closeButtonModal}>Роли</Link>
+                                            </li>
+                                            <li className='last-li'>
+                                                <Link to="/" onClick={closeButtonModal}>Маки</Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <Link to="/product/burgers" title='Бургери' onClick={closeButtonModal}>
+                                    <img src={Burgers} alt="" />
+                                    <span>Бургери</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/product/shawarma" title='кебаб' onClick={closeButtonModal}>
+                                    <img src={Shawarma} alt="" />
+                                    <span>Кебаб</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/product/hot-dogs" title='хот дог' onClick={closeButtonModal}>
+                                    <img src={HotDog} alt="" />
+                                    <span>Хот Дог</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/product/salad" title='салати' onClick={closeButtonModal}>
+                                    <img src={Salad} alt="" />
+                                    <span>Салати</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/product/freezing" title='заморозка' onClick={closeButtonModal}>
+                                    <img src={Frezing} alt="" />
+                                    <span>Заморозка</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/product/desert" title='десерти' onClick={closeButtonModal}>
+                                    <img src={Desert} alt="" />
+                                    <span>Десерти</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/product/drink" title='напої' onClick={closeButtonModal}>
+                                    <img src={Drink} alt="" />
+                                    <span>Напої</span>
+                                </Link>
+                            </li>
+                            <li className='alcohol'>
+                                <div className='alcohol-block-nav'>
+                                    <div className="btn-block-alcohol" onClick={openAlcohol}>
+                                        <img src={AlcoholDrink} alt="" />
+                                        <span>Алногольні <br/> напої</span>
+                                        <i className="arrow-a down-a"></i>
+                                    </div>
+                                    <div className="list-links-alcohol">
+                                        <ul>
+                                            <li className='first-li'>
+                                                <Link to="/product/sets" onClick={closeButtonModal}>Сети</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" onClick={closeButtonModal}>Філодельфія</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" onClick={closeButtonModal}>Гарячі роли</Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div className="checkout-contain">
+                <div className="checkout">
                     <div className="checkout-block">
                         <img src={Checkout} alt="" />
                         <span>0 грн</span>
                     </div>
                 </div>
-                <div className="actions-users">
-                    <p>Увійти</p>
+                <div className="action-users">
+                    <button className='action-us-ad'>Увійти</button>
                 </div>
-                <div className="btn-modal-action">
-                    <button className='btn' onClick={ActineButtonModal}>
-                        <div className="line-border">
-                            <div className="line-01"></div>
-                            <div className="line-02"></div>
-                            <div className="line-03"></div>
-                        </div>
+                <div className="btn-burger">
+                    <button className='btn-01' onClick={ActineButtonModal}>
+                        <div className="line-01"></div>
+                        <div className="line-02"></div>
+                        <div className="line-03"></div>
                     </button>
                 </div>
             </div>

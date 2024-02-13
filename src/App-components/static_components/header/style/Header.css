@@ -1,512 +1,302 @@
 @media (max-width: 320px) and (min-width: 200px) {
   .header-container {
     width: 100%;
-  }
-  .header-container .navigation-container {
-    width: 100%;
     height: 60px;
-    margin: 0 auto;
-    display: flex;
   }
-  .header-container .navigation-container .logo {
-    width: 40%;
+  .header-container .list-elements {
+    width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
-  .header-container .navigation-container .logo a {
-    display: block;
-    width: 70%;
-    height: 55%;
-    background-color: #ffd600;
+  .header-container .list-elements .logo {
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
   }
-  .header-container .navigation-container .logo a img {
-    width: 90%;
-    height: 80%;
+  .header-container .list-elements .logo a {
+    display: block;
+    width: 80%;
+    height: 70%;
+    background-color: #ffd600;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .header-container .navigation-container .all-links {
-    width: 0%;
+  .header-container .list-elements .logo a img {
+    width: 80%;
+    height: 90%;
+  }
+  .header-container .list-elements .all-links {
     position: absolute;
     top: 60px;
-    height: 100%;
+    left: -100%;
+    width: 100%;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    overflow: hidden;
-    transition: width 0.3s linear;
+    transition: left 0.3s linear;
   }
-  .header-container .navigation-container .all-links .list-links {
+  .header-container .list-elements .all-links .links-list {
+    width: 90%;
+    height: 500px;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    display: block;
+    overflow: scroll;
+    border-radius: 10px;
+  }
+  .header-container .list-elements .all-links .links-list ul {
+    width: 100%;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-container .list-elements .all-links .links-list ul li {
+    width: 90%;
+    height: 60px;
+    border: 2px solid #ffd600;
+    border-radius: 10px;
+    margin: 5px 0;
+  }
+  .header-container .list-elements .all-links .links-list ul li a {
+    display: block;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.4666666667);
+    text-decoration: none;
+  }
+  .header-container .list-elements .all-links .links-list ul li a img {
+    width: 20%;
+    height: 90%;
+  }
+  .header-container .list-elements .all-links .links-list ul li a span {
+    padding-left: 10px;
+    font-weight: 550;
+  }
+  .header-container .list-elements .all-links .links-list .sushi {
+    width: 90%;
+    height: 60px;
+    border: 2px solid #ffd600;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: height 0.3s linear;
+  }
+  .header-container .list-elements .all-links .links-list .sushi .shushi-block-nav {
+    width: 100%;
+  }
+  .header-container .list-elements .all-links .links-list .sushi .shushi-block-nav .btn-block {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .header-container .list-elements .all-links .links-list .sushi .shushi-block-nav .btn-block img {
+    width: 20%;
+    height: 90%;
+  }
+  .header-container .list-elements .all-links .links-list .sushi .shushi-block-nav .btn-block span {
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.4666666667);
+    font-weight: 550;
+  }
+  .header-container .list-elements .all-links .links-list .sushi .shushi-block-nav .btn-block .arrow {
+    border: solid rgba(0, 0, 0, 0.4666666667);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    position: absolute;
+    right: 10px;
+  }
+  .header-container .list-elements .all-links .links-list .sushi .shushi-block-nav .btn-block .down {
+    transform: rotate(45deg);
+  }
+  .header-container .list-elements .all-links .links-list .sushi .shushi-block-nav .btn-block .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  .header-container .list-elements .all-links .links-list .sushi .shushi-block-nav .list-links-sushi {
+    width: 100%;
+    border-radius: 10px;
+    height: 250px;
+    transition: all 0.3s linear;
+  }
+  .header-container .list-elements .all-links .links-list .sushi .shushi-block-nav .list-links-sushi ul {
+    width: 100%;
+    height: 100%;
+    border: none;
+    list-style-type: none;
+  }
+  .header-container .list-elements .all-links .links-list .sushi .shushi-block-nav .list-links-sushi ul li {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
+  }
+  .header-container .list-elements .all-links .links-list .sushi-show-menu {
+    height: 320px;
+  }
+  .header-container .list-elements .all-links .links-list .alcohol {
+    width: 90%;
+    height: 60px;
+    border: 2px solid #ffd600;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: height 0.3s linear;
+  }
+  .header-container .list-elements .all-links .links-list .alcohol .alcohol-block-nav {
+    width: 100%;
+  }
+  .header-container .list-elements .all-links .links-list .alcohol .alcohol-block-nav .btn-block-alcohol {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .header-container .list-elements .all-links .links-list .alcohol .alcohol-block-nav .btn-block-alcohol img {
+    width: 20%;
+    height: 90%;
+  }
+  .header-container .list-elements .all-links .links-list .alcohol .alcohol-block-nav .btn-block-alcohol span {
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.4666666667);
+    font-weight: 550;
+  }
+  .header-container .list-elements .all-links .links-list .alcohol .alcohol-block-nav .btn-block-alcohol .arrow-a {
+    border: solid rgba(0, 0, 0, 0.4666666667);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    position: absolute;
+    right: 10px;
+  }
+  .header-container .list-elements .all-links .links-list .alcohol .alcohol-block-nav .btn-block-alcohol .down-a {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .header-container .list-elements .all-links .links-list .alcohol .alcohol-block-nav .btn-block-alcohol .up-a {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  .header-container .list-elements .all-links .links-list .alcohol .alcohol-block-nav .list-links-alcohol {
+    width: 100%;
+    border-radius: 10px;
+    height: 250px;
+    transition: all 0.3s linear;
+  }
+  .header-container .list-elements .all-links .links-list .alcohol .alcohol-block-nav .list-links-alcohol ul {
+    width: 100%;
+    height: 100%;
+    border: none;
+    list-style-type: none;
+  }
+  .header-container .list-elements .all-links .links-list .alcohol .alcohol-block-nav .list-links-alcohol ul li {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
+  }
+  .header-container .list-elements .all-links .links-list .alcohol-show-menu {
+    height: 320px;
+  }
+  .header-container .list-elements .show-all-links {
+    left: 0;
+  }
+  .header-container .list-elements .checkout {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .list-elements .checkout .checkout-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .list-elements .checkout .checkout-block img {
+    width: 50%;
+    height: 50%;
+  }
+  .header-container .list-elements .checkout .checkout-block span {
+    font-weight: 550;
+    font-size: 13px;
+  }
+  .header-container .list-elements .action-users {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .list-elements .action-users .action-us-ad {
+    width: 90%;
+    height: 50%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8274509804);
+    border: none;
+    background: none;
+  }
+  .header-container .list-elements .action-users .action-us-ad:focus {
+    color: #ffd600;
+  }
+  .header-container .list-elements .btn-burger {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .list-elements .btn-burger .btn-01 {
+    width: 70%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    overflow: scroll;
-    height: 90%;
-    width: 90%;
-    border: 2px solid rgba(0, 0, 0, 0.4666666667);
-    border-radius: 10px;
-  }
-  .header-container .navigation-container .all-links .list-links li {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
-  }
-  .header-container .navigation-container .all-links .list-links li a,
-  .header-container .navigation-container .all-links .list-links li section {
-    width: 100%;
-    height: 100%;
-    display: block;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-  }
-  .header-container .navigation-container .all-links .list-links li a img,
-  .header-container .navigation-container .all-links .list-links li section img {
-    width: 35px;
-    height: 35px;
-  }
-  .header-container .navigation-container .all-links .list-links li a span,
-  .header-container .navigation-container .all-links .list-links li section span {
-    color: rgba(0, 0, 0, 0.8274509804);
-    font-size: 14px;
-    padding-left: 10px;
-  }
-  .header-container .navigation-container .all-links .list-links .sushi-section {
-    cursor: pointer;
-  }
-  .header-container .navigation-container .all-links .list-links .sushi-section .hov-sushi {
-    width: 100%;
-    height: 0px;
-    position: absolute;
-    top: 60px;
-    border-radius: 0 0 10px 10px;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    overflow: hidden;
-    transition: height 0.3s ease;
-  }
-  .header-container .navigation-container .all-links .list-links .sushi-section .hov-sushi li {
-    width: 100%;
-    height: 50px;
-  }
-  .header-container .navigation-container .all-links .list-links .sushi-section .hov-sushi li a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    display: flex;
-    color: rgba(0, 0, 0, 0.8274509804);
-    font-size: 13px;
-    transition: color 0.3s linear;
-  }
-  .header-container .navigation-container .all-links .list-links .sushi-section .hov-sushi li a:hover {
-    color: #ffd600;
-  }
-  .header-container .navigation-container .all-links .list-links .sushi-section:hover .hov-sushi {
-    height: 200px;
-  }
-  .header-container .navigation-container .all-links .list-links .alcohol-drink a img {
-    width: 25px;
-    height: 25px;
-  }
-  .header-container .navigation-container .all-links .list-links .alcohol-drink .hov-alcohol {
-    width: 100%;
-    height: 0px;
-    position: absolute;
-    top: 60px;
-    border-radius: 0 0 10px 10px;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    overflow: hidden;
-    transition: height 0.3s ease;
-  }
-  .header-container .navigation-container .all-links .list-links .alcohol-drink .hov-alcohol li {
-    width: 100%;
-    height: 50px;
-  }
-  .header-container .navigation-container .all-links .list-links .alcohol-drink .hov-alcohol li a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgba(0, 0, 0, 0.8274509804);
-    font-size: 15px;
-    transition: color 0.3s linear;
-  }
-  .header-container .navigation-container .all-links .list-links .alcohol-drink .hov-alcohol li a:hover {
-    color: #ffd600;
-  }
-  .header-container .navigation-container .all-links .list-links .alcohol-drink:hover .hov-alcohol {
-    height: 100px;
-  }
-  .header-container .navigation-container .all-links .list-links .info-section {
-    cursor: pointer;
-  }
-  .header-container .navigation-container .all-links .list-links .info-section .hov-info {
-    width: 100%;
-    height: 0px;
-    position: absolute;
-    top: 60px;
-    border-radius: 0 0 10px 10px;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    overflow: hidden;
-    transition: height 0.3s ease;
-  }
-  .header-container .navigation-container .all-links .list-links .info-section .hov-info li {
-    width: 100%;
-    height: 50px;
-  }
-  .header-container .navigation-container .all-links .list-links .info-section .hov-info li a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    display: flex;
-    justify-content: center;
-    color: rgba(0, 0, 0, 0.8274509804);
-    font-size: 13px;
-    padding-left: 10px;
-    transition: color 0.3s linear;
-  }
-  .header-container .navigation-container .all-links .list-links .info-section .hov-info li a:hover {
-    color: #ffd600;
-  }
-  .header-container .navigation-container .all-links .list-links .info-section:hover .hov-info {
-    height: 250px;
-  }
-  .header-container .navigation-container .show-all-links {
-    width: 100%;
-  }
-  .header-container .navigation-container .checkout-contain {
-    width: 20%;
-    height: 100%;
-  }
-  .header-container .navigation-container .checkout-contain .checkout-block {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  .header-container .navigation-container .checkout-contain .checkout-block img {
-    width: 35px;
-    height: 35px;
-  }
-  .header-container .navigation-container .checkout-contain .checkout-block span {
-    font-size: 12px;
-    text-align: center;
-  }
-  .header-container .navigation-container .actions-users {
-    width: 20%;
-    height: 100%;
-  }
-  .header-container .navigation-container .actions-users p {
-    display: block;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    cursor: pointer;
-    transition: color 0.3s linear;
-  }
-  .header-container .navigation-container .actions-users p:hover {
-    color: #ffd600;
-  }
-  .header-container .navigation-container .btn-modal-action {
-    width: 20%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .header-container .navigation-container .btn-modal-action .btn {
-    width: 60%;
-    height: 60%;
     background: none;
     border: none;
   }
-  .header-container .navigation-container .btn-modal-action .btn .line-border {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .header-container .navigation-container .btn-modal-action .btn .line-border .line-01,
-  .header-container .navigation-container .btn-modal-action .btn .line-border .line-02,
-  .header-container .navigation-container .btn-modal-action .btn .line-border .line-03 {
-    background-color: rgba(0, 0, 0, 0.8274509804);
-    width: 95%;
+  .header-container .list-elements .btn-burger .btn-01 .line-01,
+  .header-container .list-elements .btn-burger .btn-01 .line-02,
+  .header-container .list-elements .btn-burger .btn-01 .line-03 {
+    width: 90%;
     height: 2px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
   }
-  .header-container .navigation-container .btn-modal-action .btn-active .line-border {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .header-container .navigation-container .btn-modal-action .btn-active .line-border .line-01 {
-    width: 80%;
-    position: relative;
-    top: 1px;
+  .header-container .list-elements .btn-burger .btn-anime-action .line-01 {
     transform: rotate(45deg);
-  }
-  .header-container .navigation-container .btn-modal-action .btn-active .line-border .line-02 {
-    display: none;
-  }
-  .header-container .navigation-container .btn-modal-action .btn-active .line-border .line-03 {
-    width: 80%;
     position: relative;
-    bottom: 1px;
-    transform: rotate(-45deg);
-  }
-}
-@media (min-width: 1441px) {
-  .header-container {
-    width: 100%;
-  }
-  .header-container .navigation-container {
+    top: 7px;
     width: 80%;
-    height: 60px;
-    margin: 0 auto;
-    display: flex;
-  }
-  .header-container .navigation-container .logo {
-    width: 5%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .header-container .navigation-container .logo a {
-    display: block;
-    width: 100%;
-    height: 75%;
-    background-color: #ffd600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 3px;
     border-radius: 5px;
   }
-  .header-container .navigation-container .logo a img {
-    width: 90%;
-    height: 80%;
+  .header-container .list-elements .btn-burger .btn-anime-action .line-02 {
+    display: none;
   }
-  .header-container .navigation-container .all-links {
-    width: 85%;
-    height: 100%;
-  }
-  .header-container .navigation-container .all-links ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-  }
-  .header-container .navigation-container .all-links ul li {
-    width: 8%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .header-container .list-elements .btn-burger .btn-anime-action .line-03 {
+    width: 80%;
+    height: 3px;
+    transform: rotate(-45deg);
     position: relative;
-  }
-  .header-container .navigation-container .all-links ul li a,
-  .header-container .navigation-container .all-links ul li section {
-    display: block;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .header-container .navigation-container .all-links ul li a img,
-  .header-container .navigation-container .all-links ul li section img {
-    width: 35px;
-    height: 35px;
-  }
-  .header-container .navigation-container .all-links ul li a span,
-  .header-container .navigation-container .all-links ul li section span {
-    color: rgba(0, 0, 0, 0.8274509804);
-    font-size: 12px;
-  }
-  .header-container .navigation-container .all-links ul .sushi-section {
-    cursor: pointer;
-  }
-  .header-container .navigation-container .all-links ul .sushi-section .hov-sushi {
-    width: 100%;
-    height: 0px;
-    position: absolute;
-    top: 60px;
-    border-radius: 0 0 10px 10px;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    overflow: hidden;
-    transition: height 0.3s ease;
-  }
-  .header-container .navigation-container .all-links ul .sushi-section .hov-sushi li {
-    width: 100%;
-    height: 50px;
-  }
-  .header-container .navigation-container .all-links ul .sushi-section .hov-sushi li a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    display: flex;
-    color: rgba(0, 0, 0, 0.8274509804);
-    font-size: 13px;
-    transition: color 0.3s linear;
-  }
-  .header-container .navigation-container .all-links ul .sushi-section .hov-sushi li a:hover {
-    color: #ffd600;
-  }
-  .header-container .navigation-container .all-links ul .sushi-section:hover .hov-sushi {
-    height: 200px;
-  }
-  .header-container .navigation-container .all-links ul .alcohol-drink a img {
-    width: 25px;
-    height: 25px;
-  }
-  .header-container .navigation-container .all-links ul .alcohol-drink .hov-alcohol {
-    width: 100%;
-    height: 0px;
-    position: absolute;
-    top: 60px;
-    border-radius: 0 0 10px 10px;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    overflow: hidden;
-    transition: height 0.3s ease;
-  }
-  .header-container .navigation-container .all-links ul .alcohol-drink .hov-alcohol li {
-    width: 100%;
-    height: 50px;
-  }
-  .header-container .navigation-container .all-links ul .alcohol-drink .hov-alcohol li a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgba(0, 0, 0, 0.8274509804);
-    font-size: 15px;
-    transition: color 0.3s linear;
-  }
-  .header-container .navigation-container .all-links ul .alcohol-drink .hov-alcohol li a:hover {
-    color: #ffd600;
-  }
-  .header-container .navigation-container .all-links ul .alcohol-drink:hover .hov-alcohol {
-    height: 100px;
-  }
-  .header-container .navigation-container .all-links ul .info-section {
-    cursor: pointer;
-  }
-  .header-container .navigation-container .all-links ul .info-section .hov-info {
-    width: 100%;
-    height: 0px;
-    position: absolute;
-    top: 60px;
-    border-radius: 0 0 10px 10px;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    overflow: hidden;
-    transition: height 0.3s ease;
-  }
-  .header-container .navigation-container .all-links ul .info-section .hov-info li {
-    width: 100%;
-    height: 50px;
-  }
-  .header-container .navigation-container .all-links ul .info-section .hov-info li a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    display: flex;
-    justify-content: center;
-    color: rgba(0, 0, 0, 0.8274509804);
-    font-size: 13px;
-    padding-left: 10px;
-    transition: color 0.3s linear;
-  }
-  .header-container .navigation-container .all-links ul .info-section .hov-info li a:hover {
-    color: #ffd600;
-  }
-  .header-container .navigation-container .all-links ul .info-section:hover .hov-info {
-    height: 250px;
-  }
-  .header-container .navigation-container .checkout-contain {
-    width: 5%;
-    height: 100%;
-  }
-  .header-container .navigation-container .checkout-contain .checkout-block {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  .header-container .navigation-container .checkout-contain .checkout-block img {
-    width: 35px;
-    height: 35px;
-  }
-  .header-container .navigation-container .checkout-contain .checkout-block span {
-    font-size: 12px;
-    text-align: center;
-  }
-  .header-container .navigation-container .actions-users {
-    width: 5%;
-    height: 100%;
-  }
-  .header-container .navigation-container .actions-users p {
-    display: block;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    cursor: pointer;
-    transition: color 0.3s linear;
-  }
-  .header-container .navigation-container .actions-users p:hover {
-    color: #ffd600;
+    bottom: 7px;
+    border-radius: 5px;
   }
 }/*# sourceMappingURL=Header.css.map */
