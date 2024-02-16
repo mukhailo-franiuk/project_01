@@ -20,6 +20,10 @@ export const closeButtonModal = () => {
     setSelect('.arrow-a').classList.remove('up-a');
     setSelect('.alcohol').classList.remove('alcohol-show-menu');
     // ----------------------------------------------------------
+    setSelect('.arrow-i').classList.add('down-i');
+    setSelect('.arrow-i').classList.remove('up-i');
+    setSelect('.info').classList.remove('info-show-menu');
+    // ----------------------------------------------------------
 }
 export const OpenSushi = () => {
     if (setSelect('.arrow').classList.contains('down')) {
@@ -42,5 +46,17 @@ export const openAlcohol = () => {
         setSelect('.arrow-a').classList.add('down-a');
         setSelect('.arrow-a').classList.remove('up-a');
         setSelect('.alcohol').classList.remove('alcohol-show-menu');
+    }
+} 
+
+export const openInfo = () => {
+    if (setSelect('.arrow-i').classList.contains('down-i')) {
+        setSelect('.arrow-i').classList.remove('down-i');
+        setSelect('.arrow-i').classList.add('up-i');
+        setSelect('.info').classList.add('info-show-menu');
+    } else {
+        setSelect('.arrow-i').classList.add('down-i');
+        setSelect('.arrow-i').classList.remove('up-i');
+        setSelect('.info').classList.remove('info-show-menu');
     }
 } 

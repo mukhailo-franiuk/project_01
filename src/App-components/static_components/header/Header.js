@@ -20,7 +20,8 @@ import {
     ActineButtonModal,
     OpenSushi,
     closeButtonModal,
-    openAlcohol
+    openAlcohol,
+    openInfo
 } from './options/Actions';
 export default function Header() {
     return (
@@ -133,6 +134,46 @@ export default function Header() {
                                             </li>
                                             <li>
                                                 <Link to="/" onClick={closeButtonModal}>Гарячі роли</Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className='info'>
+                                <div className='info-block-nav'>
+                                    <div className="btn-block-info" onClick={openInfo}>
+                                        <img src={Info} alt="" />
+                                        <span>Інформація</span>
+                                        <i className="arrow-i down-i"></i>
+                                    </div>
+                                    <div className="list-links-info">
+                                        <ul>
+                                            <li className='first-li'>
+                                                <Link to="/product/sets" onClick={closeButtonModal}>Вакансії</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" onClick={closeButtonModal}>Франшиза</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" onClick={closeButtonModal}>Доставка</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" onClick={closeButtonModal}>Оплата</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" onClick={closeButtonModal}>Про нас</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" onClick={closeButtonModal}>Новини</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" onClick={closeButtonModal}>Оферта</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" onClick={closeButtonModal}>Для партнерів</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" onClick={closeButtonModal}>Контакти</Link>
                                             </li>
                                         </ul>
                                     </div>

@@ -187,6 +187,7 @@
                                 display: flex;
                                 align-items: center;
                                 padding-left: 10px;
+
                                 img {
                                     width: 20%;
                                     height: 90%;
@@ -217,10 +218,11 @@
                                     -webkit-transform: rotate(-135deg);
                                 }
                             }
+
                             .list-links-alcohol {
                                 width: 100%;
                                 border-radius: 10px;
-                                height: 250px;
+                                height: 200px;
                                 transition: all .3s linear;
 
                                 ul {
@@ -243,7 +245,86 @@
                     }
 
                     .alcohol-show-menu {
-                        height: 320px;
+                        height: 250px;
+                    }
+
+                    .info {
+                        width: 90%;
+                        height: 60px;
+                        border: 2px solid $prime-color;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        position: relative;
+                        transition: height .3s linear;
+
+                        .info-block-nav {
+                            width: 100%;
+
+                            .btn-block-info {
+                                width: 100%;
+                                height: 50px;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    color: $dark-light-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow-i {
+                                    border: solid $dark-light-color;
+                                    border-width: 0 3px 3px 0;
+                                    display: inline-block;
+                                    padding: 3px;
+                                    position: absolute;
+                                    right: 10px;
+                                }
+
+                                .down-i {
+                                    transform: rotate(45deg);
+                                    -webkit-transform: rotate(45deg);
+                                }
+
+                                .up-i {
+                                    transform: rotate(-135deg);
+                                    -webkit-transform: rotate(-135deg);
+                                }
+                            }
+
+                            .list-links-info {
+                                width: 100%;
+                                border-radius: 10px;
+                                height: 390px;
+                                transition: all .3s linear;
+
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        padding: 0;
+                                        border: none;
+                                        border-radius: 0;
+                                        border-bottom: 2px solid $dark-light-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .info-show-menu {
+                        height: 400px;
                     }
                 }
             }
@@ -352,3 +433,2175 @@
         }
     }
 }
+// =====================================================
+// ============== max-width - 375px ====================
+@media (max-width:375px) and (min-width:321px) {
+    .header-container {
+        width: 100%;
+        height: 60px;
+
+        .list-elements {
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            .logo {
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    display: block;
+                    width: 80%;
+                    height: 70%;
+                    background-color: $prime-color;
+                    border-radius: 7px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 80%;
+                        height: 90%;
+                    }
+                }
+            }
+
+            .all-links {
+                position: absolute;
+                top: 60px;
+                left: -100%;
+                width: 100%;
+                height: 600px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $white-color;
+                transition: left .3s linear;
+
+                .links-list {
+                    width: 90%;
+                    height: 500px;
+                    border: 2px solid $dark-light-color;
+                    display: block;
+                    overflow: scroll;
+                    border-radius: 10px;
+
+                    ul {
+                        width: 100%;
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        li {
+                            width: 90%;
+                            height: 60px;
+                            border: 2px solid $prime-color;
+                            border-radius: 10px;
+                            margin: 5px 0;
+
+                            a {
+                                display: block;
+                                display: flex;
+                                align-items: center;
+                                width: 100%;
+                                height: 100%;
+                                padding-left: 10px;
+                                color: $dark-light-color;
+                                text-decoration: none;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    font-weight: 550;
+                                }
+                            }
+                        }
+                    }
+
+                    .sushi {
+                        width: 90%;
+                        height: 60px;
+                        border: 2px solid $prime-color;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        position: relative;
+                        transition: height .3s linear;
+
+                        .shushi-block-nav {
+                            width: 100%;
+
+                            .btn-block {
+                                width: 100%;
+                                height: 60px;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    color: $dark-light-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow {
+                                    border: solid $dark-light-color;
+                                    border-width: 0 3px 3px 0;
+                                    display: inline-block;
+                                    padding: 3px;
+                                    position: absolute;
+                                    right: 10px;
+                                }
+
+                                .down {
+                                    transform: rotate(45deg);
+                                }
+
+                                .up {
+                                    transform: rotate(-135deg);
+                                    -webkit-transform: rotate(-135deg);
+                                }
+                            }
+
+                            .list-links-sushi {
+                                width: 100%;
+                                border-radius: 10px;
+                                height: 250px;
+                                transition: all .3s linear;
+
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        padding: 0;
+                                        border: none;
+                                        border-radius: 0;
+                                        border-bottom: 2px solid $dark-light-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .sushi-show-menu {
+                        height: 320px;
+                    }
+
+                    .alcohol {
+                        width: 90%;
+                        height: 60px;
+                        border: 2px solid $prime-color;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        position: relative;
+                        transition: height .3s linear;
+
+                        .alcohol-block-nav {
+                            width: 100%;
+
+                            .btn-block-alcohol {
+                                width: 100%;
+                                height: 50px;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    color: $dark-light-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow-a {
+                                    border: solid $dark-light-color;
+                                    border-width: 0 3px 3px 0;
+                                    display: inline-block;
+                                    padding: 3px;
+                                    position: absolute;
+                                    right: 10px;
+                                }
+
+                                .down-a {
+                                    transform: rotate(45deg);
+                                    -webkit-transform: rotate(45deg);
+                                }
+
+                                .up-a {
+                                    transform: rotate(-135deg);
+                                    -webkit-transform: rotate(-135deg);
+                                }
+                            }
+
+                            .list-links-alcohol {
+                                width: 100%;
+                                border-radius: 10px;
+                                height: 200px;
+                                transition: all .3s linear;
+
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        padding: 0;
+                                        border: none;
+                                        border-radius: 0;
+                                        border-bottom: 2px solid $dark-light-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .alcohol-show-menu {
+                        height: 250px;
+                    }
+
+                    .info {
+                        width: 90%;
+                        height: 60px;
+                        border: 2px solid $prime-color;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        position: relative;
+                        transition: height .3s linear;
+
+                        .info-block-nav {
+                            width: 100%;
+
+                            .btn-block-info {
+                                width: 100%;
+                                height: 50px;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    color: $dark-light-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow-i {
+                                    border: solid $dark-light-color;
+                                    border-width: 0 3px 3px 0;
+                                    display: inline-block;
+                                    padding: 3px;
+                                    position: absolute;
+                                    right: 10px;
+                                }
+
+                                .down-i {
+                                    transform: rotate(45deg);
+                                    -webkit-transform: rotate(45deg);
+                                }
+
+                                .up-i {
+                                    transform: rotate(-135deg);
+                                    -webkit-transform: rotate(-135deg);
+                                }
+                            }
+
+                            .list-links-info {
+                                width: 100%;
+                                border-radius: 10px;
+                                height: 390px;
+                                transition: all .3s linear;
+
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        padding: 0;
+                                        border: none;
+                                        border-radius: 0;
+                                        border-bottom: 2px solid $dark-light-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .info-show-menu {
+                        height: 400px;
+                    }
+                }
+            }
+
+            .show-all-links {
+                left: 0;
+            }
+
+            .checkout {
+                width: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .checkout-block {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 50%;
+                        height: 50%;
+                    }
+
+                    span {
+                        font-weight: 550;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .action-users {
+                width: 20%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .action-us-ad {
+                    width: 90%;
+                    height: 50%;
+                    font-weight: 600;
+                    color: $dark-color;
+                    border: none;
+                    background: none;
+
+                    &:focus {
+                        color: $prime-color;
+                    }
+                }
+            }
+
+            .btn-burger {
+                width: 20%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .btn-01 {
+                    width: 70%;
+                    height: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    background: none;
+                    border: none;
+
+                    .line-01,
+                    .line-02,
+                    .line-03 {
+                        width: 90%;
+                        height: 2px;
+                        background-color: $dark-color;
+                    }
+                }
+
+                .btn-anime-action {
+                    .line-01 {
+                        transform: rotate(45deg);
+                        position: relative;
+                        top: 7px;
+                        width: 80%;
+                        height: 3px;
+                        border-radius: 5px;
+                    }
+
+                    .line-02 {
+                        display: none;
+                    }
+
+                    .line-03 {
+                        width: 80%;
+                        height: 3px;
+                        transform: rotate(-45deg);
+                        position: relative;
+                        bottom: 7px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+// =====================================================
+// ============== max-width - 425px ====================
+@media (max-width:425px) and (min-width:376px) {
+    .header-container {
+        width: 100%;
+        height: 60px;
+
+        .list-elements {
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            .logo {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    display: block;
+                    width: 80%;
+                    height: 70%;
+                    background-color: $prime-color;
+                    border-radius: 7px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 80%;
+                        height: 90%;
+                    }
+                }
+            }
+
+            .all-links {
+                position: absolute;
+                top: 60px;
+                left: -100%;
+                width: 100%;
+                height: 600px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $white-color;
+                transition: left .3s linear;
+
+                .links-list {
+                    width: 85%;
+                    height: 500px;
+                    border: 2px solid $dark-light-color;
+                    display: block;
+                    overflow: scroll;
+                    border-radius: 10px;
+
+                    ul {
+                        width: 100%;
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        li {
+                            width: 90%;
+                            height: 50px;
+                            border: 2px solid $prime-color;
+                            border-radius: 10px;
+                            margin: 5px 0;
+
+                            a {
+                                display: block;
+                                display: flex;
+                                align-items: center;
+                                width: 100%;
+                                height: 100%;
+                                padding-left: 10px;
+                                color: $dark-light-color;
+                                text-decoration: none;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    font-weight: 550;
+                                }
+                            }
+                        }
+                    }
+
+                    .sushi {
+                        width: 90%;
+                        height: 60px;
+                        border: 2px solid $prime-color;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        position: relative;
+                        transition: height .3s linear;
+
+                        .shushi-block-nav {
+                            width: 100%;
+
+                            .btn-block {
+                                width: 100%;
+                                height: 60px;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    color: $dark-light-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow {
+                                    border: solid $dark-light-color;
+                                    border-width: 0 3px 3px 0;
+                                    display: inline-block;
+                                    padding: 3px;
+                                    position: absolute;
+                                    right: 10px;
+                                }
+
+                                .down {
+                                    transform: rotate(45deg);
+                                }
+
+                                .up {
+                                    transform: rotate(-135deg);
+                                    -webkit-transform: rotate(-135deg);
+                                }
+                            }
+
+                            .list-links-sushi {
+                                width: 100%;
+                                border-radius: 10px;
+                                height: 250px;
+                                transition: all .3s linear;
+
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        padding: 0;
+                                        border: none;
+                                        border-radius: 0;
+                                        border-bottom: 2px solid $dark-light-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .sushi-show-menu {
+                        height: 320px;
+                    }
+
+                    .alcohol {
+                        width: 90%;
+                        height: 60px;
+                        border: 2px solid $prime-color;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        position: relative;
+                        transition: height .3s linear;
+
+                        .alcohol-block-nav {
+                            width: 100%;
+
+                            .btn-block-alcohol {
+                                width: 100%;
+                                height: 50px;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    color: $dark-light-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow-a {
+                                    border: solid $dark-light-color;
+                                    border-width: 0 3px 3px 0;
+                                    display: inline-block;
+                                    padding: 3px;
+                                    position: absolute;
+                                    right: 10px;
+                                }
+
+                                .down-a {
+                                    transform: rotate(45deg);
+                                    -webkit-transform: rotate(45deg);
+                                }
+
+                                .up-a {
+                                    transform: rotate(-135deg);
+                                    -webkit-transform: rotate(-135deg);
+                                }
+                            }
+
+                            .list-links-alcohol {
+                                width: 100%;
+                                border-radius: 10px;
+                                height: 200px;
+                                transition: all .3s linear;
+
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        padding: 0;
+                                        border: none;
+                                        border-radius: 0;
+                                        border-bottom: 2px solid $dark-light-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .alcohol-show-menu {
+                        height: 250px;
+                    }
+
+                    .info {
+                        width: 90%;
+                        height: 60px;
+                        border: 2px solid $prime-color;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        position: relative;
+                        transition: height .3s linear;
+
+                        .info-block-nav {
+                            width: 100%;
+
+                            .btn-block-info {
+                                width: 100%;
+                                height: 50px;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    color: $dark-light-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow-i {
+                                    border: solid $dark-light-color;
+                                    border-width: 0 3px 3px 0;
+                                    display: inline-block;
+                                    padding: 3px;
+                                    position: absolute;
+                                    right: 10px;
+                                }
+
+                                .down-i {
+                                    transform: rotate(45deg);
+                                    -webkit-transform: rotate(45deg);
+                                }
+
+                                .up-i {
+                                    transform: rotate(-135deg);
+                                    -webkit-transform: rotate(-135deg);
+                                }
+                            }
+
+                            .list-links-info {
+                                width: 100%;
+                                border-radius: 10px;
+                                height: 390px;
+                                transition: all .3s linear;
+
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        padding: 0;
+                                        border: none;
+                                        border-radius: 0;
+                                        border-bottom: 2px solid $dark-light-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .info-show-menu {
+                        height: 400px;
+                    }
+                }
+            }
+
+            .show-all-links {
+                left: 0;
+            }
+
+            .checkout {
+                width: 15%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .checkout-block {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 50%;
+                        height: 50%;
+                    }
+
+                    span {
+                        font-weight: 550;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .action-users {
+                width: 20%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .action-us-ad {
+                    width: 90%;
+                    height: 50%;
+                    font-weight: 600;
+                    color: $dark-color;
+                    border: none;
+                    background: none;
+
+                    &:focus {
+                        color: $prime-color;
+                    }
+                }
+            }
+
+            .btn-burger {
+                width: 15%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .btn-01 {
+                    width: 70%;
+                    height: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    background: none;
+                    border: none;
+
+                    .line-01,
+                    .line-02,
+                    .line-03 {
+                        width: 90%;
+                        height: 2px;
+                        background-color: $dark-color;
+                    }
+                }
+
+                .btn-anime-action {
+                    .line-01 {
+                        transform: rotate(45deg);
+                        position: relative;
+                        top: 7px;
+                        width: 80%;
+                        height: 3px;
+                        border-radius: 5px;
+                    }
+
+                    .line-02 {
+                        display: none;
+                    }
+
+                    .line-03 {
+                        width: 80%;
+                        height: 3px;
+                        transform: rotate(-45deg);
+                        position: relative;
+                        bottom: 7px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+// =====================================================
+// ============== max-width - 600px ====================
+@media (max-width:600px) and (min-width:426px) {
+    .header-container {
+        width: 100%;
+        height: 70px;
+
+        .list-elements {
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            .logo {
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    display: block;
+                    width: 80%;
+                    height: 70%;
+                    background-color: $prime-color;
+                    border-radius: 7px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 80%;
+                        height: 90%;
+                    }
+                }
+            }
+
+            .all-links {
+                position: absolute;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: 600px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $white-color;
+                transition: left .3s linear;
+
+                .links-list {
+                    width: 85%;
+                    height: 500px;
+                    border: 2px solid $dark-light-color;
+                    display: block;
+                    overflow: scroll;
+                    border-radius: 10px;
+
+                    ul {
+                        width: 100%;
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        li {
+                            width: 90%;
+                            height: 50px;
+                            border: 2px solid $prime-color;
+                            border-radius: 10px;
+                            margin: 5px 0;
+
+                            a {
+                                display: block;
+                                display: flex;
+                                align-items: center;
+                                width: 100%;
+                                height: 100%;
+                                padding-left: 10px;
+                                color: $dark-light-color;
+                                text-decoration: none;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    font-weight: 550;
+                                }
+                            }
+                        }
+                    }
+
+                    .sushi {
+                        width: 90%;
+                        height: 60px;
+                        border: 2px solid $prime-color;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        position: relative;
+                        transition: height .3s linear;
+
+                        .shushi-block-nav {
+                            width: 100%;
+
+                            .btn-block {
+                                width: 100%;
+                                height: 60px;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    color: $dark-light-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow {
+                                    border: solid $dark-light-color;
+                                    border-width: 0 3px 3px 0;
+                                    display: inline-block;
+                                    padding: 3px;
+                                    position: absolute;
+                                    right: 10px;
+                                }
+
+                                .down {
+                                    transform: rotate(45deg);
+                                }
+
+                                .up {
+                                    transform: rotate(-135deg);
+                                    -webkit-transform: rotate(-135deg);
+                                }
+                            }
+
+                            .list-links-sushi {
+                                width: 100%;
+                                border-radius: 10px;
+                                height: 250px;
+                                transition: all .3s linear;
+
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        padding: 0;
+                                        border: none;
+                                        border-radius: 0;
+                                        border-bottom: 2px solid $dark-light-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .sushi-show-menu {
+                        height: 320px;
+                    }
+
+                    .alcohol {
+                        width: 90%;
+                        height: 60px;
+                        border: 2px solid $prime-color;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        position: relative;
+                        transition: height .3s linear;
+
+                        .alcohol-block-nav {
+                            width: 100%;
+
+                            .btn-block-alcohol {
+                                width: 100%;
+                                height: 50px;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    color: $dark-light-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow-a {
+                                    border: solid $dark-light-color;
+                                    border-width: 0 3px 3px 0;
+                                    display: inline-block;
+                                    padding: 3px;
+                                    position: absolute;
+                                    right: 10px;
+                                }
+
+                                .down-a {
+                                    transform: rotate(45deg);
+                                    -webkit-transform: rotate(45deg);
+                                }
+
+                                .up-a {
+                                    transform: rotate(-135deg);
+                                    -webkit-transform: rotate(-135deg);
+                                }
+                            }
+
+                            .list-links-alcohol {
+                                width: 100%;
+                                border-radius: 10px;
+                                height: 200px;
+                                transition: all .3s linear;
+
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        padding: 0;
+                                        border: none;
+                                        border-radius: 0;
+                                        border-bottom: 2px solid $dark-light-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .alcohol-show-menu {
+                        height: 250px;
+                    }
+
+                    .info {
+                        width: 90%;
+                        height: 60px;
+                        border: 2px solid $prime-color;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        position: relative;
+                        transition: height .3s linear;
+
+                        .info-block-nav {
+                            width: 100%;
+
+                            .btn-block-info {
+                                width: 100%;
+                                height: 50px;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    color: $dark-light-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow-i {
+                                    border: solid $dark-light-color;
+                                    border-width: 0 3px 3px 0;
+                                    display: inline-block;
+                                    padding: 3px;
+                                    position: absolute;
+                                    right: 10px;
+                                }
+
+                                .down-i {
+                                    transform: rotate(45deg);
+                                    -webkit-transform: rotate(45deg);
+                                }
+
+                                .up-i {
+                                    transform: rotate(-135deg);
+                                    -webkit-transform: rotate(-135deg);
+                                }
+                            }
+
+                            .list-links-info {
+                                width: 100%;
+                                border-radius: 10px;
+                                height: 390px;
+                                transition: all .3s linear;
+
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        padding: 0;
+                                        border: none;
+                                        border-radius: 0;
+                                        border-bottom: 2px solid $dark-light-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .info-show-menu {
+                        height: 400px;
+                    }
+                }
+            }
+
+            .show-all-links {
+                left: 0;
+            }
+
+            .checkout {
+                width: 15%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .checkout-block {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 50%;
+                        height: 50%;
+                    }
+
+                    span {
+                        font-weight: 550;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .action-users {
+                width: 20%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .action-us-ad {
+                    width: 90%;
+                    height: 50%;
+                    font-weight: 600;
+                    color: $dark-color;
+                    border: none;
+                    background: none;
+
+                    &:focus {
+                        color: $prime-color;
+                    }
+                }
+            }
+
+            .btn-burger {
+                width: 15%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .btn-01 {
+                    width: 70%;
+                    height: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    background: none;
+                    border: none;
+
+                    .line-01,
+                    .line-02,
+                    .line-03 {
+                        width: 90%;
+                        height: 4px;
+                        background-color: $dark-color;
+                        border-radius: 5px;
+                    }
+                }
+
+                .btn-anime-action {
+                    .line-01 {
+                        transform: rotate(45deg);
+                        position: relative;
+                        top: 7px;
+                        width: 80%;
+                        height: 5px;
+                        border-radius: 5px;
+                    }
+
+                    .line-02 {
+                        display: none;
+                    }
+
+                    .line-03 {
+                        width: 80%;
+                        height: 5px;
+                        transform: rotate(-45deg);
+                        position: relative;
+                        bottom: 10px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+// =====================================================
+// ============== max-width - 768px ====================
+@media (max-width:768px) and (min-width:601px) {
+    .header-container {
+        width: 100%;
+        height: 70px;
+
+        .list-elements {
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            .logo {
+                width: 70%;
+                display: flex;
+                align-items: center;
+                padding-left: 10%;
+                a {
+                    display: block;
+                    width: 60%;
+                    height: 70%;
+                    background-color: $prime-color;
+                    border-radius: 7px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 80%;
+                        height: 90%;
+                    }
+                }
+            }
+
+            .all-links {
+                position: absolute;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: 700px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $white-color;
+                transition: left .3s linear;
+
+                .links-list {
+                    width: 85%;
+                    height: 650px;
+                    border: 2px solid $dark-light-color;
+                    display: block;
+                    overflow: scroll;
+                    border-radius: 10px;
+
+                    ul {
+                        width: 100%;
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        li {
+                            width: 90%;
+                            height: 50px;
+                            border: 2px solid $prime-color;
+                            border-radius: 10px;
+                            margin: 5px 0;
+
+                            a {
+                                display: block;
+                                display: flex;
+                                align-items: center;
+                                width: 100%;
+                                height: 100%;
+                                padding-left: 10px;
+                                color: $dark-light-color;
+                                text-decoration: none;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    font-weight: 550;
+                                }
+                            }
+                        }
+                    }
+
+                    .sushi {
+                        width: 90%;
+                        height: 60px;
+                        border: 2px solid $prime-color;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        position: relative;
+                        transition: height .3s linear;
+
+                        .shushi-block-nav {
+                            width: 100%;
+
+                            .btn-block {
+                                width: 100%;
+                                height: 60px;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    color: $dark-light-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow {
+                                    border: solid $dark-light-color;
+                                    border-width: 0 3px 3px 0;
+                                    display: inline-block;
+                                    padding: 3px;
+                                    position: absolute;
+                                    right: 10px;
+                                }
+
+                                .down {
+                                    transform: rotate(45deg);
+                                }
+
+                                .up {
+                                    transform: rotate(-135deg);
+                                    -webkit-transform: rotate(-135deg);
+                                }
+                            }
+
+                            .list-links-sushi {
+                                width: 100%;
+                                border-radius: 10px;
+                                height: 250px;
+                                transition: all .3s linear;
+
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        padding: 0;
+                                        border: none;
+                                        border-radius: 0;
+                                        border-bottom: 2px solid $dark-light-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .sushi-show-menu {
+                        height: 320px;
+                    }
+
+                    .alcohol {
+                        width: 90%;
+                        height: 60px;
+                        border: 2px solid $prime-color;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        position: relative;
+                        transition: height .3s linear;
+
+                        .alcohol-block-nav {
+                            width: 100%;
+
+                            .btn-block-alcohol {
+                                width: 100%;
+                                height: 50px;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    color: $dark-light-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow-a {
+                                    border: solid $dark-light-color;
+                                    border-width: 0 3px 3px 0;
+                                    display: inline-block;
+                                    padding: 3px;
+                                    position: absolute;
+                                    right: 10px;
+                                }
+
+                                .down-a {
+                                    transform: rotate(45deg);
+                                    -webkit-transform: rotate(45deg);
+                                }
+
+                                .up-a {
+                                    transform: rotate(-135deg);
+                                    -webkit-transform: rotate(-135deg);
+                                }
+                            }
+
+                            .list-links-alcohol {
+                                width: 100%;
+                                border-radius: 10px;
+                                height: 200px;
+                                transition: all .3s linear;
+
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        padding: 0;
+                                        border: none;
+                                        border-radius: 0;
+                                        border-bottom: 2px solid $dark-light-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .alcohol-show-menu {
+                        height: 250px;
+                    }
+
+                    .info {
+                        width: 90%;
+                        height: 60px;
+                        border: 2px solid $prime-color;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        position: relative;
+                        transition: height .3s linear;
+
+                        .info-block-nav {
+                            width: 100%;
+
+                            .btn-block-info {
+                                width: 100%;
+                                height: 50px;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    color: $dark-light-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow-i {
+                                    border: solid $dark-light-color;
+                                    border-width: 0 3px 3px 0;
+                                    display: inline-block;
+                                    padding: 3px;
+                                    position: absolute;
+                                    right: 10px;
+                                }
+
+                                .down-i {
+                                    transform: rotate(45deg);
+                                    -webkit-transform: rotate(45deg);
+                                }
+
+                                .up-i {
+                                    transform: rotate(-135deg);
+                                    -webkit-transform: rotate(-135deg);
+                                }
+                            }
+
+                            .list-links-info {
+                                width: 100%;
+                                border-radius: 10px;
+                                height: 390px;
+                                transition: all .3s linear;
+
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        padding: 0;
+                                        border: none;
+                                        border-radius: 0;
+                                        border-bottom: 2px solid $dark-light-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .info-show-menu {
+                        height: 400px;
+                    }
+                }
+            }
+
+            .show-all-links {
+                left: 0;
+            }
+
+            .checkout {
+                width: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .checkout-block {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 50%;
+                        height: 50%;
+                    }
+
+                    span {
+                        font-weight: 550;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .action-users {
+                width: 10%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .action-us-ad {
+                    width: 90%;
+                    height: 50%;
+                    font-weight: 600;
+                    color: $dark-color;
+                    border: none;
+                    background: none;
+
+                    &:focus {
+                        color: $prime-color;
+                    }
+                }
+            }
+
+            .btn-burger {
+                width: 10%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .btn-01 {
+                    width: 70%;
+                    height: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    background: none;
+                    border: none;
+
+                    .line-01,
+                    .line-02,
+                    .line-03 {
+                        width: 90%;
+                        height: 4px;
+                        background-color: $dark-color;
+                        border-radius: 5px;
+                    }
+                }
+
+                .btn-anime-action {
+                    .line-01 {
+                        transform: rotate(45deg);
+                        position: relative;
+                        top: 7px;
+                        width: 80%;
+                        height: 5px;
+                        border-radius: 5px;
+                    }
+
+                    .line-02 {
+                        display: none;
+                    }
+
+                    .line-03 {
+                        width: 80%;
+                        height: 5px;
+                        transform: rotate(-45deg);
+                        position: relative;
+                        bottom: 10px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+// =====================================================
+// ============== max-width - 1024px ====================
+@media (max-width:1024px) and (min-width:769px) {
+    .header-container {
+        width: 100%;
+        height: 70px;
+
+        .list-elements {
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            .logo {
+                width: 70%;
+                display: flex;
+                align-items: center;
+                padding-left: 10%;
+                a {
+                    display: block;
+                    width: 60%;
+                    height: 70%;
+                    background-color: $prime-color;
+                    border-radius: 7px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 80%;
+                        height: 90%;
+                    }
+                }
+            }
+
+            .all-links {
+                position: absolute;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: 700px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $white-color;
+                transition: left .3s linear;
+
+                .links-list {
+                    width: 85%;
+                    height: 650px;
+                    border: 2px solid $dark-light-color;
+                    display: block;
+                    overflow: scroll;
+                    border-radius: 10px;
+
+                    ul {
+                        width: 100%;
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        li {
+                            width: 90%;
+                            height: 50px;
+                            border: 2px solid $prime-color;
+                            border-radius: 10px;
+                            margin: 5px 0;
+
+                            a {
+                                display: block;
+                                display: flex;
+                                align-items: center;
+                                width: 100%;
+                                height: 100%;
+                                padding-left: 10px;
+                                color: $dark-light-color;
+                                text-decoration: none;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    font-weight: 550;
+                                }
+                            }
+                        }
+                    }
+
+                    .sushi {
+                        width: 90%;
+                        height: 60px;
+                        border: 2px solid $prime-color;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        position: relative;
+                        transition: height .3s linear;
+
+                        .shushi-block-nav {
+                            width: 100%;
+
+                            .btn-block {
+                                width: 100%;
+                                height: 60px;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    color: $dark-light-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow {
+                                    border: solid $dark-light-color;
+                                    border-width: 0 3px 3px 0;
+                                    display: inline-block;
+                                    padding: 3px;
+                                    position: absolute;
+                                    right: 10px;
+                                }
+
+                                .down {
+                                    transform: rotate(45deg);
+                                }
+
+                                .up {
+                                    transform: rotate(-135deg);
+                                    -webkit-transform: rotate(-135deg);
+                                }
+                            }
+
+                            .list-links-sushi {
+                                width: 100%;
+                                border-radius: 10px;
+                                height: 250px;
+                                transition: all .3s linear;
+
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        padding: 0;
+                                        border: none;
+                                        border-radius: 0;
+                                        border-bottom: 2px solid $dark-light-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .sushi-show-menu {
+                        height: 320px;
+                    }
+
+                    .alcohol {
+                        width: 90%;
+                        height: 60px;
+                        border: 2px solid $prime-color;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        position: relative;
+                        transition: height .3s linear;
+
+                        .alcohol-block-nav {
+                            width: 100%;
+
+                            .btn-block-alcohol {
+                                width: 100%;
+                                height: 50px;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    color: $dark-light-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow-a {
+                                    border: solid $dark-light-color;
+                                    border-width: 0 3px 3px 0;
+                                    display: inline-block;
+                                    padding: 3px;
+                                    position: absolute;
+                                    right: 10px;
+                                }
+
+                                .down-a {
+                                    transform: rotate(45deg);
+                                    -webkit-transform: rotate(45deg);
+                                }
+
+                                .up-a {
+                                    transform: rotate(-135deg);
+                                    -webkit-transform: rotate(-135deg);
+                                }
+                            }
+
+                            .list-links-alcohol {
+                                width: 100%;
+                                border-radius: 10px;
+                                height: 200px;
+                                transition: all .3s linear;
+
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        padding: 0;
+                                        border: none;
+                                        border-radius: 0;
+                                        border-bottom: 2px solid $dark-light-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .alcohol-show-menu {
+                        height: 250px;
+                    }
+
+                    .info {
+                        width: 90%;
+                        height: 60px;
+                        border: 2px solid $prime-color;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        position: relative;
+                        transition: height .3s linear;
+
+                        .info-block-nav {
+                            width: 100%;
+
+                            .btn-block-info {
+                                width: 100%;
+                                height: 50px;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+
+                                img {
+                                    width: 20%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    padding-left: 10px;
+                                    color: $dark-light-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow-i {
+                                    border: solid $dark-light-color;
+                                    border-width: 0 3px 3px 0;
+                                    display: inline-block;
+                                    padding: 3px;
+                                    position: absolute;
+                                    right: 10px;
+                                }
+
+                                .down-i {
+                                    transform: rotate(45deg);
+                                    -webkit-transform: rotate(45deg);
+                                }
+
+                                .up-i {
+                                    transform: rotate(-135deg);
+                                    -webkit-transform: rotate(-135deg);
+                                }
+                            }
+
+                            .list-links-info {
+                                width: 100%;
+                                border-radius: 10px;
+                                height: 390px;
+                                transition: all .3s linear;
+
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        padding: 0;
+                                        border: none;
+                                        border-radius: 0;
+                                        border-bottom: 2px solid $dark-light-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .info-show-menu {
+                        height: 400px;
+                    }
+                }
+            }
+
+            .show-all-links {
+                left: 0;
+            }
+
+            .checkout {
+                width: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .checkout-block {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 50%;
+                        height: 50%;
+                    }
+
+                    span {
+                        font-weight: 550;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .action-users {
+                width: 10%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .action-us-ad {
+                    width: 90%;
+                    height: 50%;
+                    font-weight: 600;
+                    color: $dark-color;
+                    border: none;
+                    background: none;
+
+                    &:focus {
+                        color: $prime-color;
+                    }
+                }
+            }
+
+            .btn-burger {
+                width: 10%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .btn-01 {
+                    width: 70%;
+                    height: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    background: none;
+                    border: none;
+
+                    .line-01,
+                    .line-02,
+                    .line-03 {
+                        width: 90%;
+                        height: 4px;
+                        background-color: $dark-color;
+                        border-radius: 5px;
+                    }
+                }
+
+                .btn-anime-action {
+                    .line-01 {
+                        transform: rotate(45deg);
+                        position: relative;
+                        top: 7px;
+                        width: 80%;
+                        height: 5px;
+                        border-radius: 5px;
+                    }
+
+                    .line-02 {
+                        display: none;
+                    }
+
+                    .line-03 {
+                        width: 80%;
+                        height: 5px;
+                        transform: rotate(-45deg);
+                        position: relative;
+                        bottom: 10px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+// =====================================================
