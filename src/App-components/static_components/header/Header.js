@@ -21,9 +21,27 @@ import {
     OpenSushi,
     closeButtonModal,
     openAlcohol,
-    openInfo
+    openInfo,
+    showActionsForm,
+    closeActionsForm,
+    showEnterUser,
+    showRegUser,
+    formEnterControls,
+    formRegControls
 } from './options/Actions';
+import { useSelector , useDispatch} from 'react-redux';
+import { getUsers,increment } from '../../../reducers/CheckUser';
+import { useEffect, useState } from 'react';
 export default function Header() {
+    const users = useSelector(getUsers);
+    const dispach = useDispatch();
+    const [allUser,setAllUser] = useState();
+    useEffect(()=>{
+        
+    },[]);
+    function getUs() {
+        dispach(increment(allUser));
+    }
     return (
         <header className='header-container'>
             <div className="list-elements">
@@ -121,7 +139,7 @@ export default function Header() {
                                 <div className='alcohol-block-nav'>
                                     <div className="btn-block-alcohol" onClick={openAlcohol}>
                                         <img src={AlcoholDrink} alt="" />
-                                        <span>Алногольні <br/> напої</span>
+                                        <span>Алногольні <br /> напої</span>
                                         <i className="arrow-a down-a"></i>
                                     </div>
                                     <div className="list-links-alcohol">
@@ -189,7 +207,7 @@ export default function Header() {
                     </div>
                 </div>
                 <div className="action-users">
-                    <button className='action-us-ad'>Увійти</button>
+                    <button className='action-us-ad' onClick={showActionsForm}>Увійти</button>
                 </div>
                 <div className="btn-burger">
                     <button className='btn-01' onClick={ActineButtonModal}>
@@ -197,6 +215,60 @@ export default function Header() {
                         <div className="line-02"></div>
                         <div className="line-03"></div>
                     </button>
+                </div>
+            </div>
+            <div className="enter-users" onClick={getUs}>
+                <div className="canvas-users">
+                    <form className='enter-user' onSubmit={formEnterControls}>
+                        <h2>Вхід в кабінет</h2>
+                        <div className="login">
+                            <span>Логін</span>
+                            <input type="text" name='login-users' />
+                        </div>
+                        <div className="password">
+                            <span>Пароль</span>
+                            <input type="password" name='password-users' />
+                        </div>
+                        <div className="save-inform">
+                            <input type="checkbox" title='Зберегти вас?' />
+                            <span>Запам'ятати вас?</span>
+                        </div>
+                        <button type='submit'>Вхід</button>
+                        <div className="link-reg">
+                            <span>Якщо ви не маєте акаунту в нас ми хотіли би запропонувати пройти простеньку реєстрацію і стати частиною нашої сім'ї! <button onClick={showRegUser}>Реєстрація</button></span>
+                        </div>
+                        <div className="close-form" onClick={closeActionsForm}>
+                            <div className="line-01"></div>
+                            <div className="line-02"></div>
+                        </div>
+                    </form>
+                    <form className="reg-users close-reg-user" onClick={formRegControls}>
+                        <h2>Реєстрація</h2>
+                        <div className="login">
+                            <span>Логін</span>
+                            <input type="text" />
+                        </div>
+                        <div className="password">
+                            <span>Пароль</span>
+                            <input type="password" />
+                        </div>
+                        <div className="repeat-password">
+                            <span>Повторити пароль</span>
+                            <input type="password" />
+                        </div>
+                        <div className="save-inform">
+                            <input type="checkbox" title='Зберегти вас?' />
+                            <span>Зберегти ваші данні?</span>
+                        </div>
+                        <button type='submit'>Реєстрація</button>
+                        <div className="link-reg">
+                            <span>Якщо ви вже зареєстровані к нас тоді ввійдіть під своїми логіном і паролем <button onClick={showEnterUser}>Вхід</button></span>
+                        </div>
+                        <div className="close-form" onClick={closeActionsForm}>
+                            <div className="line-01"></div>
+                            <div className="line-02"></div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </header>

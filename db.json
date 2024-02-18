@@ -1,0 +1,10 @@
+{
+    "users": [
+        {
+            "id": "admin",
+            "name": "Admin",
+            "password": "root",
+            "status" : "prime"
+        }
+    ]
+}

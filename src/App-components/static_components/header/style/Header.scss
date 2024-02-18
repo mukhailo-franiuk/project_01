@@ -2189,7 +2189,7 @@
                 padding-left: 10%;
                 a {
                     display: block;
-                    width: 60%;
+                    width: 40%;
                     height: 70%;
                     background-color: $prime-color;
                     border-radius: 7px;
@@ -2518,7 +2518,7 @@
                     align-items: center;
 
                     img {
-                        width: 50%;
+                        width: 40%;
                         height: 50%;
                     }
 
@@ -2558,7 +2558,7 @@
                 align-items: center;
 
                 .btn-01 {
-                    width: 70%;
+                    width: 60%;
                     height: 70%;
                     display: flex;
                     flex-direction: column;
@@ -2601,6 +2601,931 @@
                     }
                 }
             }
+        }
+    }
+}
+// =====================================================
+// ============== max-width - 1440px ====================
+@media (max-width:1440px) and (min-width:1025px) {
+    .header-container {
+        width: 100%;
+        height: 70px;
+        .list-elements {
+            width: 100%;
+            height: 100%;
+            display: flex;
+         
+            .logo {
+                width: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a {
+                    display: block;
+                    width: 80%;
+                    height: 70%;
+                    background-color: $prime-color;
+                    border-radius: 7px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 80%;
+                        height: 90%;
+                    }
+                }
+            }
+
+            .all-links {
+                width: 80%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $white-color;
+                transition: left .3s linear;
+
+                .links-list {
+                    width: 100%;
+                    height: 100%;
+                    ul {
+                        width: 100%;
+                        height: 100%;
+                        list-style-type: none;
+                        display: flex;
+                        align-items: center;
+
+                        li {
+                            width: 90%;
+                            height: 100%;
+
+                            a {
+                                display: block;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                width: 100%;
+                                height: 100%;
+                                color: $dark-color;
+                                text-decoration: none;
+
+                                img {
+                                    width:40%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    font-size: 14px;
+                                    font-weight: 550;
+                                }
+                            }
+                        }
+                    }
+
+                    .sushi {
+                        height:100%;
+                        position: relative;
+                        transition: all .3s linear;
+                        .shushi-block-nav {
+                            width: 100%;
+                            height: 100%;
+                            cursor: pointer;
+                            .btn-block {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                img {
+                                    width: 40%;
+                                    height: 60%;
+                                }
+
+                                span {
+                                    font-size: 14px;
+                                    color: $dark-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow {
+                                  display: none;
+                                }
+                               
+                            }
+
+                            .list-links-sushi {
+                                display: none;
+                                width: 100%;
+                                overflow: hidden;
+                                height: 150px;
+                                position: absolute;
+                                top: 70px;
+                                background-color: $white-color;
+                                transition: all .3s linear;
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+                                    display: flex;
+                                    flex-direction: column;
+                                    border-radius: 0 0 10px 10px;
+                                    li {
+                                        width: 100%;
+                                        height: 30px;
+                                        border: none;
+                                    }
+                                }
+                            }
+                            &:hover .list-links-sushi {
+                               display: block;
+                               }
+                        }
+                    }
+                    .alcohol {
+                        height: 100%;
+                        position: relative;
+                        transition: height .3s linear;
+                        .alcohol-block-nav {
+                            width: 100%;
+                            height: 100%;
+                            .btn-block-alcohol {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                img {
+                                    width: 40%;
+                                    height: 60%;
+                                }
+
+                                span {
+                                    color: $dark-color;
+                                    font-size: 14px;
+                                    font-weight: 550;
+                                }
+
+                                .arrow-a {
+                                   display: none;
+                                }
+                            }
+
+                            .list-links-alcohol {
+                                display: none;
+                                width: 100%;
+                                overflow: hidden;
+                                height: 90px;
+                                position: absolute;
+                                top: 70px;
+                                background-color: $white-color;
+                                transition: all .3s linear;
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+                                    display: flex;
+                                    flex-direction: column;
+                                    border-radius: 0 0 10px 10px;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        border: none;
+                                    }
+                                }
+                            }
+                            &:hover .list-links-alcohol{
+                                display: block;
+                            }
+                        }
+                    }
+                    .info {
+                        height: 100%;
+                        position: relative;
+                        transition: height .3s linear;
+
+                        .info-block-nav {
+                            width: 100%;
+                            height: 100%;
+                            .btn-block-info {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                img {
+                                    width: 40%;
+                                    height: 60%;
+                                }
+
+                                span {
+                                    font-size: 14px;
+                                    color: $dark-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow-i {
+                                    display: none;
+                                }
+                            }
+
+                            .list-links-info {
+                                display: none;
+                                width: 100%;
+                                overflow: hidden;
+                                height: 270px;
+                                position: absolute;
+                                top: 70px;
+                                background-color: $white-color;
+                                transition: all .3s linear;
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+                                    display: flex;
+                                    flex-direction: column;
+                                    border-radius: 0 0 10px 10px;
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        border: none;
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                            &:hover .list-links-info{
+                               display: block;
+                            }
+                        }
+                    }
+                }
+            }
+            .checkout {
+                width: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .checkout-block {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 40%;
+                        height: 50%;
+                    }
+
+                    span {
+                        font-weight: 550;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .action-users {
+                width: 5%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .action-us-ad {
+                    width: 90%;
+                    height: 50%;
+                    font-weight: 600;
+                    color: $dark-color;
+                    border: none;
+                    background: none;
+
+                    &:focus {
+                        color: $prime-color;
+                    }
+                }
+            }
+
+            .btn-burger {
+               display: none;
+            }
+        }
+    }
+}
+// =====================================================
+// ============== min-width - 1441px ====================
+@media (min-width:1441px) {
+    .header-container {
+        width: 100%;
+        height: 70px;
+        .list-elements {
+            width: 90%;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+
+            .logo {
+                width: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a {
+                    display: block;
+                    width: 80%;
+                    height: 70%;
+                    background-color: $prime-color;
+                    border-radius: 7px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 80%;
+                        height: 90%;
+                    }
+                }
+            }
+
+            .all-links {
+                width: 80%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $white-color;
+                transition: left .3s linear;
+
+                .links-list {
+                    width: 100%;
+                    height: 100%;
+                    ul {
+                        width: 100%;
+                        height: 100%;
+                        list-style-type: none;
+                        display: flex;
+                        align-items: center;
+
+                        li {
+                            width: 90%;
+                            height: 100%;
+
+                            a {
+                                display: block;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                width: 100%;
+                                height: 100%;
+                                color: $dark-color;
+                                text-decoration: none;
+
+                                img {
+                                    width:40%;
+                                    height: 90%;
+                                }
+
+                                span {
+                                    font-size: 14px;
+                                    font-weight: 550;
+                                }
+                            }
+                        }
+                    }
+
+                    .sushi {
+                        height:100%;
+                        position: relative;
+                        transition: all .3s linear;
+                        .shushi-block-nav {
+                            width: 100%;
+                            height: 100%;
+                            .btn-block {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                img {
+                                    width: 40%;
+                                    height: 60%;
+                                }
+
+                                span {
+                                    font-size: 14px;
+                                    color: $dark-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow {
+                                  display: none;
+                                }
+                               
+                            }
+
+                            .list-links-sushi {
+                                display: none;
+                                width: 100%;
+                                overflow: hidden;
+                                height: 150px;
+                                position: absolute;
+                                top: 70px;
+                                background-color: $white-color;
+                                transition: all .3s linear;
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+                                    display: flex;
+                                    flex-direction: column;
+                                    border-radius: 0 0 10px 10px;
+                                    li {
+                                        width: 100%;
+                                        height: 30px;
+                                        border: none;
+                                    }
+                                }
+                            }
+                            &:hover .list-links-sushi {
+                               display: block;
+                               }
+                        }
+                    }
+                    .alcohol {
+                        height: 100%;
+                        position: relative;
+                        transition: height .3s linear;
+                        .alcohol-block-nav {
+                            width: 100%;
+                            height: 100%;
+                            .btn-block-alcohol {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                img {
+                                    width: 40%;
+                                    height: 60%;
+                                }
+
+                                span {
+                                    color: $dark-color;
+                                    font-size: 14px;
+                                    font-weight: 550;
+                                }
+
+                                .arrow-a {
+                                   display: none;
+                                }
+                            }
+
+                            .list-links-alcohol {
+                                display: none;
+                                width: 100%;
+                                overflow: hidden;
+                                height: 90px;
+                                position: absolute;
+                                top: 70px;
+                                background-color: $white-color;
+                                transition: all .3s linear;
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+                                    display: flex;
+                                    flex-direction: column;
+                                    border-radius: 0 0 10px 10px;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        border: none;
+                                    }
+                                }
+                            }
+                            &:hover .list-links-alcohol{
+                                display: block;
+                            }
+                        }
+                    }
+                    .info {
+                        height: 100%;
+                        position: relative;
+                        transition: height .3s linear;
+
+                        .info-block-nav {
+                            width: 100%;
+                            height: 100%;
+                            .btn-block-info {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                img {
+                                    width: 40%;
+                                    height: 60%;
+                                }
+
+                                span {
+                                    font-size: 14px;
+                                    color: $dark-color;
+                                    font-weight: 550;
+                                }
+
+                                .arrow-i {
+                                    display: none;
+                                }
+                            }
+
+                            .list-links-info {
+                                display: none;
+                                width: 100%;
+                                overflow: hidden;
+                                height:270px;
+                                position: absolute;
+                                top: 70px;
+                                background-color: $white-color;
+                                transition: all .3s linear;
+                                ul {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                    list-style-type: none;
+                                    display: flex;
+                                    flex-direction: column;
+                                    border-radius: 0 0 10px 10px;
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        border: none;
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                            &:hover .list-links-info{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+            .checkout {
+                width: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .checkout-block {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 40%;
+                        height: 50%;
+                    }
+
+                    span {
+                        font-weight: 550;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .action-users {
+                width: 5%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .action-us-ad {
+                    width: 90%;
+                    height: 50%;
+                    font-weight: 600;
+                    color: $dark-color;
+                    border: none;
+                    background: none;
+                    cursor: pointer;
+                    transition: all .3s linear;
+                    &:hover {
+                        color: $prime-color;
+                    }
+                }
+            }
+
+            .btn-burger {
+               display: none;
+            }
+        }
+        // forms reg enter users 
+        .enter-users{
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            .canvas-users{
+                background-color: rgba(0, 0, 0 ,.8);
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .enter-user {
+                    width: 30%;
+                    height: 50%;
+                    background-color:$white-color;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    position: relative;
+                    .close-form{
+                        position: absolute;
+                        width: 30px;
+                        height: 30px;
+                        right: 10px;
+                        top: 10px;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all .3s ease;
+                        .line-01{
+                            width: 90%;
+                            height: 2px;
+                            border-radius: 10px;
+                            background-color: $dark-color;
+                            position: absolute;
+                            transform: rotate(45deg);
+                        }
+                        .line-02{
+                            position: absolute;
+                            width: 90%;
+                            height: 2px;
+                            border-radius: 10px;
+                            background-color: $dark-color;
+                            transform: rotate(-45deg);
+                        }
+                        &:hover{
+                            .line-01,.line-02{
+                                background-color: $prime-color;
+                            }
+                        }
+                    }
+                    h2{
+                        font-size: 28px;
+                        font-weight: 400;
+                    }
+                    .login,.password{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        span{
+                            margin: 10px 0;
+                            font-size: 22px;
+                            font-weight: 400;
+                        }
+                        input{
+                            width: 70%;
+                            height: 40px;
+                            font-size: 25px;
+                            padding: 3px 10px;
+                            background: transparent;
+                            border: 2px solid $dark-light-color;
+                            outline:none;
+                            transition: all .3s linear;
+                            &:hover{
+                                border: 2px solid $dark-color;
+                            }
+                        }
+                    }
+                    .save-inform{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        input{
+                            width: 20px;
+                            height: 20px;
+                            margin: 0 10px 0 0;
+                            cursor: pointer;
+                        }
+                        span{
+                            font-weight: 300;
+                            font-size: 14px;
+                        }
+                    }
+                    button{
+                        width: 30%;
+                        padding: 10px 0;
+                        font-size: 18px;
+                        border: 2px solid $prime-color;
+                        background-color: $prime-color;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        transition: all .3s linear;
+                        &:hover{
+                            background-color: $white-color;
+                            border: 2px solid $prime-color;
+                        }
+                    }
+                    .link-reg{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        span{
+                            width: 60%;
+                            margin: 10px 0;
+                            font-size: 14px;
+                            line-height: 16px;
+                            padding: 10px;
+                            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                            button{
+                                background: none;
+                                padding: 0;
+                                border: none;
+                                margin: 0;
+                                font-size: 14px;
+                                color: $blue-light-color;
+                                transition: all .3s linear;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+                .close-enter-user{
+                    display: none;
+                }
+                .reg-users{
+                    display: none;
+                    width: 30%;
+                    height: 60%;
+                    background-color:$white-color;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    position: relative;
+                    .close-form{
+                        position: absolute;
+                        width: 30px;
+                        height: 30px;
+                        right: 10px;
+                        top: 10px;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all .3s ease;
+                        .line-01{
+                            width: 90%;
+                            height: 2px;
+                            border-radius: 10px;
+                            background-color: $dark-color;
+                            position: absolute;
+                            transform: rotate(45deg);
+                        }
+                        .line-02{
+                            position: absolute;
+                            width: 90%;
+                            height: 2px;
+                            border-radius: 10px;
+                            background-color: $dark-color;
+                            transform: rotate(-45deg);
+                        }
+                        &:hover{
+                            .line-01,.line-02{
+                                background-color: $prime-color;
+                            }
+                        }
+                    }
+                    .login,.password,.repeat-password{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        span{
+                            margin: 10px 0;
+                            font-size: 22px;
+                            font-weight: 400;
+                        }
+                        input{
+                            width: 70%;
+                            height: 40px;
+                            font-size: 25px;
+                            padding: 3px 10px;
+                            background: transparent;
+                            border: 2px solid $dark-light-color;
+                            outline:none;
+                            transition: all .3s linear;
+                            &:hover{
+                                border: 2px solid $dark-color;
+                            }
+                        }
+                    }
+                    .save-inform{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        input{
+                            width: 20px;
+                            height: 20px;
+                            margin: 0 10px 0 0;
+                            cursor: pointer;
+                        }
+                        span{
+                            font-weight: 300;
+                            font-size: 14px;
+                        }
+                    }
+                    button{
+                        width: 30%;
+                        padding: 10px 0;
+                        font-size: 18px;
+                        border: 2px solid $prime-color;
+                        background-color: $prime-color;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        transition: all .3s linear;
+                        &:hover{
+                            background-color: $white-color;
+                            border: 2px solid $prime-color;
+                        }
+                    }
+                    .link-reg{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        span{
+                            width: 60%;
+                            margin: 10px 0;
+                            font-size: 14px;
+                            line-height: 16px;
+                            padding: 10px;
+                            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                            button{
+                                width: 20%;
+                                background: none;
+                                padding: 0;
+                                border: none;
+                                margin: 0;
+                                font-size: 17px;
+                                font-weight: 700;
+                                color: $blue-light-color;
+                                transition: all .3s linear;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+                .close-reg-user{
+                    display: none;
+                }
+            }
+        }
+        .show-enter-users{
+            display: block;
         }
     }
 }
