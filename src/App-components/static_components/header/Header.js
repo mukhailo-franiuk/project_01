@@ -29,18 +29,53 @@ import {
     formEnterControls,
     formRegControls
 } from './options/Actions';
-import { useSelector , useDispatch} from 'react-redux';
-import { getUsers,increment } from '../../../reducers/CheckUser';
-import { useEffect, useState } from 'react';
-export default function Header() {
-    const users = useSelector(getUsers);
-    const dispach = useDispatch();
-    const [allUser,setAllUser] = useState();
-    useEffect(()=>{
-        
-    },[]);
-    function getUs() {
-        dispach(increment(allUser));
+import { getDatabase ,ref , get , child } from 'firebase/database';
+import {app} from '../../../options/environment/env';
+import {
+    getingAdmin,
+    getAdmin
+} from '../../../store/CheckUser';
+import { useEffect , useState } from 'react';
+import { useDispatch , useSelector } from 'react-redux';
+
+
+
+export default function Header() {   
+const [userEnter , setUserEnter] = useState('block');  //state show on or off button "Увійти"
+const [showUserName , setShowUserName] = useState('none');  //state show on or off link "user name"
+const db = getDatabase(app);  
+const dispatch = useDispatch(); 
+const showInfoAdmin = useSelector(getAdmin);
+
+window.onload = ()=>{
+    if(window.localStorage.getItem('name') === showInfoAdmin.name){
+        document.querySelector('.action-us-ad').classList.add('hide-us-ad');
+    }else{
+        document.querySelector('.action-us-ad').classList.remove('hide-us-ad');
+    }
+}
+useEffect(()=>{
+    let dbRef = ref(db);
+    get(child(dbRef,'/userAdmin')).then((snapshot)=> {
+        if (snapshot.exists()) {  
+            dispatch(getingAdmin(snapshot.val()));
+          } else {
+            console.log("No data available");
+          }
+    }).catch((error)=> {
+        console.log(error);
+    })
+},[])  
+ const formEnterControls = (event) => {
+    event.preventDefault();
+    let elems = event.target.elements;
+    if(elems.loginUsers.value === showInfoAdmin.login && elems.passwordUsers.value === showInfoAdmin.password){
+        window.localStorage.setItem('name',showInfoAdmin.name);
+        window.location.replace(`/${window.localStorage.getItem('name')}-panel`);
+    }
+}
+ const formRegControls = (event) => {
+    event.preventDefault();
     }
     return (
         <header className='header-container'>
@@ -208,6 +243,7 @@ export default function Header() {
                 </div>
                 <div className="action-users">
                     <button className='action-us-ad' onClick={showActionsForm}>Увійти</button>
+                    <Link className='action-link' to={`${window.localStorage.getItem('name')}-panel`}>{window.localStorage.getItem('name')}</Link>
                 </div>
                 <div className="btn-burger">
                     <button className='btn-01' onClick={ActineButtonModal}>
@@ -217,17 +253,17 @@ export default function Header() {
                     </button>
                 </div>
             </div>
-            <div className="enter-users" onClick={getUs}>
+            <div className="enter-users">
                 <div className="canvas-users">
                     <form className='enter-user' onSubmit={formEnterControls}>
                         <h2>Вхід в кабінет</h2>
                         <div className="login">
                             <span>Логін</span>
-                            <input type="text" name='login-users' />
+                            <input type="text" name='loginUsers' />
                         </div>
                         <div className="password">
                             <span>Пароль</span>
-                            <input type="password" name='password-users' />
+                            <input type="password" name='passwordUsers' />
                         </div>
                         <div className="save-inform">
                             <input type="checkbox" title='Зберегти вас?' />

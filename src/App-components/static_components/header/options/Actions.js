@@ -64,13 +64,6 @@ export const openInfo = () => {
     }
 }
 // -----------------------------------------------------------------
-
-export const formEnterControls = (event) => {
-    event.preventDefault();
-}
-export const formRegControls = (event) => {
-    event.preventDefault();
-}
 export const showActionsForm = () => {
     setSelect('.enter-users').classList.add('show-enter-users');
 }

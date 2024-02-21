@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import checkUsers  from "../reducers/CheckUser";
+import checkUsers  from "./CheckUser";
 
 
 export default configureStore({
