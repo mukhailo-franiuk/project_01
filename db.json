@@ -1,12 +1,10 @@
 {
-    "userAdmin": {
-        "id": "admin",
-        "name": "Admin",
-        "login" : "admin",
-        "password": "root",
-        "status": "prime"
-    },
     "users" : {
-        
-    } 
+        "admin": {
+            "name": "Admin",
+            "login": "admin",
+            "password": "root",
+            "status": "prime"
+        }
+    }
 }

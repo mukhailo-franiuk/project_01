@@ -7,7 +7,8 @@ import Header from './App-components/static_components/header/Header';
 // import pages
 import HomePage from './App-components/pages/home/Home';
 import ProductPage from './App-components/pages/products/Products';
-import Users from './App-components/users/Users'
+import Users from './App-components/users/Users';
+import Admin from './App-components/admin/Admin';
 function App() {
   return (
     <div className="app-container">
@@ -17,7 +18,8 @@ function App() {
         <Routes>
           <Route exact path='' element={<HomePage />} />
           <Route path='product/:product' element={<ProductPage />} />
-          <Route path='/:product' element={<Users />} />
+          <Route path='console/:userName' element={<Users />} />
+          <Route path='console/admin' element={<Admin />} />
         </Routes>
       </main>
      </Router>

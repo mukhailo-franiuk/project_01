@@ -22,61 +22,13 @@ import {
     closeButtonModal,
     openAlcohol,
     openInfo,
-    showActionsForm,
-    closeActionsForm,
-    showEnterUser,
-    showRegUser,
-    formEnterControls,
-    formRegControls
+    showActionsForm
 } from './options/Actions';
-import { getDatabase ,ref , get , child } from 'firebase/database';
-import {app} from '../../../options/environment/env';
-import {
-    getingAdmin,
-    getAdmin
-} from '../../../store/CheckUser';
-import { useEffect , useState } from 'react';
-import { useDispatch , useSelector } from 'react-redux';
-
-
-
+// import registracion form component
+import RegFormComponent from './registracionUserForm/registracionFormComponent';
+// import enter form component
+import EnterFormComponent from './enterUserForm/enterFormComponent';
 export default function Header() {   
-const [userEnter , setUserEnter] = useState('block');  //state show on or off button "Увійти"
-const [showUserName , setShowUserName] = useState('none');  //state show on or off link "user name"
-const db = getDatabase(app);  
-const dispatch = useDispatch(); 
-const showInfoAdmin = useSelector(getAdmin);
-
-window.onload = ()=>{
-    if(window.localStorage.getItem('name') === showInfoAdmin.name){
-        document.querySelector('.action-us-ad').classList.add('hide-us-ad');
-    }else{
-        document.querySelector('.action-us-ad').classList.remove('hide-us-ad');
-    }
-}
-useEffect(()=>{
-    let dbRef = ref(db);
-    get(child(dbRef,'/userAdmin')).then((snapshot)=> {
-        if (snapshot.exists()) {  
-            dispatch(getingAdmin(snapshot.val()));
-          } else {
-            console.log("No data available");
-          }
-    }).catch((error)=> {
-        console.log(error);
-    })
-},[])  
- const formEnterControls = (event) => {
-    event.preventDefault();
-    let elems = event.target.elements;
-    if(elems.loginUsers.value === showInfoAdmin.login && elems.passwordUsers.value === showInfoAdmin.password){
-        window.localStorage.setItem('name',showInfoAdmin.name);
-        window.location.replace(`/${window.localStorage.getItem('name')}-panel`);
-    }
-}
- const formRegControls = (event) => {
-    event.preventDefault();
-    }
     return (
         <header className='header-container'>
             <div className="list-elements">
@@ -242,8 +194,14 @@ useEffect(()=>{
                     </div>
                 </div>
                 <div className="action-users">
+                    <div className="contain">
                     <button className='action-us-ad' onClick={showActionsForm}>Увійти</button>
-                    <Link className='action-link' to={`${window.localStorage.getItem('name')}-panel`}>{window.localStorage.getItem('name')}</Link>
+                    </div>
+                </div>
+                <div className="us-display">
+                    <div className="contain">
+                        <Link to={`console/${window.localStorage.getItem('name')}`}>{window.localStorage.getItem('name')}</Link>
+                    </div>
                 </div>
                 <div className="btn-burger">
                     <button className='btn-01' onClick={ActineButtonModal}>
@@ -255,56 +213,8 @@ useEffect(()=>{
             </div>
             <div className="enter-users">
                 <div className="canvas-users">
-                    <form className='enter-user' onSubmit={formEnterControls}>
-                        <h2>Вхід в кабінет</h2>
-                        <div className="login">
-                            <span>Логін</span>
-                            <input type="text" name='loginUsers' />
-                        </div>
-                        <div className="password">
-                            <span>Пароль</span>
-                            <input type="password" name='passwordUsers' />
-                        </div>
-                        <div className="save-inform">
-                            <input type="checkbox" title='Зберегти вас?' />
-                            <span>Запам'ятати вас?</span>
-                        </div>
-                        <button type='submit'>Вхід</button>
-                        <div className="link-reg">
-                            <span>Якщо ви не маєте акаунту в нас ми хотіли би запропонувати пройти простеньку реєстрацію і стати частиною нашої сім'ї! <button onClick={showRegUser}>Реєстрація</button></span>
-                        </div>
-                        <div className="close-form" onClick={closeActionsForm}>
-                            <div className="line-01"></div>
-                            <div className="line-02"></div>
-                        </div>
-                    </form>
-                    <form className="reg-users close-reg-user" onClick={formRegControls}>
-                        <h2>Реєстрація</h2>
-                        <div className="login">
-                            <span>Логін</span>
-                            <input type="text" />
-                        </div>
-                        <div className="password">
-                            <span>Пароль</span>
-                            <input type="password" />
-                        </div>
-                        <div className="repeat-password">
-                            <span>Повторити пароль</span>
-                            <input type="password" />
-                        </div>
-                        <div className="save-inform">
-                            <input type="checkbox" title='Зберегти вас?' />
-                            <span>Зберегти ваші данні?</span>
-                        </div>
-                        <button type='submit'>Реєстрація</button>
-                        <div className="link-reg">
-                            <span>Якщо ви вже зареєстровані к нас тоді ввійдіть під своїми логіном і паролем <button onClick={showEnterUser}>Вхід</button></span>
-                        </div>
-                        <div className="close-form" onClick={closeActionsForm}>
-                            <div className="line-01"></div>
-                            <div className="line-02"></div>
-                        </div>
-                    </form>
+                    <EnterFormComponent />
+                    <RegFormComponent />
                 </div>
             </div>
         </header>

@@ -1,0 +1,159 @@
+
+@import '../../../../../options/styles/var';
+
+@media (min-width:1441px){
+    .reg-users {
+        display: none;
+        width: 30%;
+        height: 60%;
+        background-color: $white-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+
+        .close-form {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s ease;
+
+            .line-01 {
+                width: 90%;
+                height: 2px;
+                border-radius: 10px;
+                background-color: $dark-color;
+                position: absolute;
+                transform: rotate(45deg);
+            }
+
+            .line-02 {
+                position: absolute;
+                width: 90%;
+                height: 2px;
+                border-radius: 10px;
+                background-color: $dark-color;
+                transform: rotate(-45deg);
+            }
+
+            &:hover {
+
+                .line-01,
+                .line-02 {
+                    background-color: $prime-color;
+                }
+            }
+        }
+        .name,
+        .login,
+        .password,
+        .repeat-password {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                margin: 10px 0;
+                font-size: 22px;
+                font-weight: 400;
+            }
+
+            input {
+                width: 70%;
+                height: 40px;
+                font-size: 25px;
+                padding: 3px 10px;
+                background: transparent;
+                border: 2px solid $dark-light-color;
+                outline: none;
+                transition: all .3s linear;
+
+                &:hover {
+                    border: 2px solid $dark-color;
+                }
+            }
+        }
+
+        .save-inform {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            input {
+                width: 20px;
+                height: 20px;
+                margin: 0 10px 0 0;
+                cursor: pointer;
+            }
+
+            span {
+                font-weight: 300;
+                font-size: 14px;
+            }
+        }
+
+        button {
+            width: 30%;
+            padding: 10px 0;
+            font-size: 18px;
+            border: 2px solid $prime-color;
+            background-color: $prime-color;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all .3s linear;
+
+            &:hover {
+                background-color: $white-color;
+                border: 2px solid $prime-color;
+            }
+        }
+
+        .link-reg {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                width: 60%;
+                margin: 10px 0;
+                font-size: 14px;
+                line-height: 16px;
+                padding: 10px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+                b {
+                    width: 20%;
+                    background: none;
+                    padding: 0;
+                    border: none;
+                    margin: 0;
+                    font-size: 17px;
+                    font-weight: 700;
+                    color: $blue-light-color;
+                    transition: all .3s linear;
+                    cursor: pointer;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .close-reg-user {
+        display: none;
+    }
+}
