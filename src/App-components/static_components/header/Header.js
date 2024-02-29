@@ -28,7 +28,29 @@ import {
 import RegFormComponent from './registracionUserForm/registracionFormComponent';
 // import enter form component
 import EnterFormComponent from './enterUserForm/enterFormComponent';
-export default function Header() {   
+
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import {
+    getingUsers
+} from '../../../store/CheckUser';
+// connect to realtime database
+import { getDatabase , get , ref} from 'firebase/database';
+import { app } from '../../../options/environment/env';
+export default function Header() {
+    const db = getDatabase(app);
+    const dispach = useDispatch();  
+    useEffect(()=>{
+        get(ref(db,'users')).then((snapshot)=>{
+            if(snapshot.exists()){
+                dispach(getingUsers(snapshot.val()));
+            }else{
+                console.log("No data available");
+            }
+        }).catch((error)=>{
+            console.error(error);
+        })
+    },[])
     return (
         <header className='header-container'>
             <div className="list-elements">

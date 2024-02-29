@@ -1,3 +1,1021 @@
+@media (max-width: 320px) and (min-width: 200px) {
+  .reg-users {
+    display: none;
+    width: 90%;
+    min-height: 70%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .reg-users .close-form {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  .reg-users .close-form .line-01 {
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  .reg-users .close-form .line-02 {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    transform: rotate(-45deg);
+  }
+  .reg-users .close-form:hover .line-01,
+  .reg-users .close-form:hover .line-02 {
+    background-color: #ffd600;
+  }
+  .reg-users .name,
+  .reg-users .login,
+  .reg-users .password,
+  .reg-users .repeat-password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .name span,
+  .reg-users .login span,
+  .reg-users .password span,
+  .reg-users .repeat-password span {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .reg-users .name input,
+  .reg-users .login input,
+  .reg-users .password input,
+  .reg-users .repeat-password input {
+    width: 90%;
+    height: 35px;
+    font-size: 20px;
+    padding: 3px 10px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    transition: all 0.3s linear;
+  }
+  .reg-users .name input:hover,
+  .reg-users .login input:hover,
+  .reg-users .password input:hover,
+  .reg-users .repeat-password input:hover {
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .reg-users .save-inform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .save-inform input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+  }
+  .reg-users .save-inform span {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .reg-users button {
+    width: 50%;
+    padding: 10px 0;
+    font-size: 18px;
+    border: 2px solid #ffd600;
+    background-color: #ffd600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .reg-users button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffd600;
+  }
+  .reg-users .link-reg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .link-reg span {
+    width: 80%;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .reg-users .link-reg span b {
+    width: 20%;
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: #08a5ee;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .reg-users .link-reg span b:hover {
+    text-decoration: underline;
+  }
+  .close-reg-user {
+    display: none;
+  }
+}
+@media (max-width: 375px) and (min-width: 321px) {
+  .reg-users {
+    display: none;
+    width: 90%;
+    min-height: 80%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .reg-users .close-form {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  .reg-users .close-form .line-01 {
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  .reg-users .close-form .line-02 {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    transform: rotate(-45deg);
+  }
+  .reg-users .close-form:hover .line-01,
+  .reg-users .close-form:hover .line-02 {
+    background-color: #ffd600;
+  }
+  .reg-users .name,
+  .reg-users .login,
+  .reg-users .password,
+  .reg-users .repeat-password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .name span,
+  .reg-users .login span,
+  .reg-users .password span,
+  .reg-users .repeat-password span {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .reg-users .name input,
+  .reg-users .login input,
+  .reg-users .password input,
+  .reg-users .repeat-password input {
+    width: 90%;
+    height: 35px;
+    font-size: 20px;
+    padding: 3px 10px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    transition: all 0.3s linear;
+  }
+  .reg-users .name input:hover,
+  .reg-users .login input:hover,
+  .reg-users .password input:hover,
+  .reg-users .repeat-password input:hover {
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .reg-users .save-inform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .save-inform input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+  }
+  .reg-users .save-inform span {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .reg-users button {
+    width: 50%;
+    padding: 10px 0;
+    font-size: 18px;
+    border: 2px solid #ffd600;
+    background-color: #ffd600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .reg-users button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffd600;
+  }
+  .reg-users .link-reg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .link-reg span {
+    width: 80%;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .reg-users .link-reg span b {
+    width: 20%;
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: #08a5ee;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .reg-users .link-reg span b:hover {
+    text-decoration: underline;
+  }
+  .close-reg-user {
+    display: none;
+  }
+}
+@media (max-width: 425px) and (min-width: 376px) {
+  .reg-users {
+    display: none;
+    width: 90%;
+    min-height: 80%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .reg-users .close-form {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  .reg-users .close-form .line-01 {
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  .reg-users .close-form .line-02 {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    transform: rotate(-45deg);
+  }
+  .reg-users .close-form:hover .line-01,
+  .reg-users .close-form:hover .line-02 {
+    background-color: #ffd600;
+  }
+  .reg-users .name,
+  .reg-users .login,
+  .reg-users .password,
+  .reg-users .repeat-password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .name span,
+  .reg-users .login span,
+  .reg-users .password span,
+  .reg-users .repeat-password span {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .reg-users .name input,
+  .reg-users .login input,
+  .reg-users .password input,
+  .reg-users .repeat-password input {
+    width: 90%;
+    height: 35px;
+    font-size: 20px;
+    padding: 3px 10px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    transition: all 0.3s linear;
+  }
+  .reg-users .name input:hover,
+  .reg-users .login input:hover,
+  .reg-users .password input:hover,
+  .reg-users .repeat-password input:hover {
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .reg-users .save-inform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .save-inform input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+  }
+  .reg-users .save-inform span {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .reg-users button {
+    width: 50%;
+    padding: 10px 0;
+    font-size: 18px;
+    border: 2px solid #ffd600;
+    background-color: #ffd600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .reg-users button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffd600;
+  }
+  .reg-users .link-reg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .link-reg span {
+    width: 80%;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .reg-users .link-reg span b {
+    width: 20%;
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: #08a5ee;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .reg-users .link-reg span b:hover {
+    text-decoration: underline;
+  }
+  .close-reg-user {
+    display: none;
+  }
+}
+@media (max-width: 600px) and (min-width: 426px) {
+  .reg-users {
+    display: none;
+    width: 80%;
+    min-height: 70%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .reg-users .close-form {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  .reg-users .close-form .line-01 {
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  .reg-users .close-form .line-02 {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    transform: rotate(-45deg);
+  }
+  .reg-users .close-form:hover .line-01,
+  .reg-users .close-form:hover .line-02 {
+    background-color: #ffd600;
+  }
+  .reg-users .name,
+  .reg-users .login,
+  .reg-users .password,
+  .reg-users .repeat-password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .name span,
+  .reg-users .login span,
+  .reg-users .password span,
+  .reg-users .repeat-password span {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .reg-users .name input,
+  .reg-users .login input,
+  .reg-users .password input,
+  .reg-users .repeat-password input {
+    width: 90%;
+    height: 35px;
+    font-size: 20px;
+    padding: 3px 10px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    transition: all 0.3s linear;
+  }
+  .reg-users .name input:hover,
+  .reg-users .login input:hover,
+  .reg-users .password input:hover,
+  .reg-users .repeat-password input:hover {
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .reg-users .save-inform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .save-inform input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+  }
+  .reg-users .save-inform span {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .reg-users button {
+    width: 50%;
+    padding: 10px 0;
+    font-size: 18px;
+    border: 2px solid #ffd600;
+    background-color: #ffd600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .reg-users button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffd600;
+  }
+  .reg-users .link-reg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .link-reg span {
+    width: 80%;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .reg-users .link-reg span b {
+    width: 20%;
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: #08a5ee;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .reg-users .link-reg span b:hover {
+    text-decoration: underline;
+  }
+  .close-reg-user {
+    display: none;
+  }
+}
+@media (max-width: 768px) and (min-width: 601px) {
+  .reg-users {
+    display: none;
+    width: 80%;
+    min-height: 70%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .reg-users .close-form {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  .reg-users .close-form .line-01 {
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  .reg-users .close-form .line-02 {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    transform: rotate(-45deg);
+  }
+  .reg-users .close-form:hover .line-01,
+  .reg-users .close-form:hover .line-02 {
+    background-color: #ffd600;
+  }
+  .reg-users .name,
+  .reg-users .login,
+  .reg-users .password,
+  .reg-users .repeat-password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .name span,
+  .reg-users .login span,
+  .reg-users .password span,
+  .reg-users .repeat-password span {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .reg-users .name input,
+  .reg-users .login input,
+  .reg-users .password input,
+  .reg-users .repeat-password input {
+    width: 80%;
+    height: 35px;
+    font-size: 20px;
+    padding: 3px 10px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    transition: all 0.3s linear;
+  }
+  .reg-users .name input:hover,
+  .reg-users .login input:hover,
+  .reg-users .password input:hover,
+  .reg-users .repeat-password input:hover {
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .reg-users .save-inform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .save-inform input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+  }
+  .reg-users .save-inform span {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .reg-users button {
+    width: 50%;
+    padding: 10px 0;
+    font-size: 18px;
+    border: 2px solid #ffd600;
+    background-color: #ffd600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .reg-users button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffd600;
+  }
+  .reg-users .link-reg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .link-reg span {
+    width: 80%;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .reg-users .link-reg span b {
+    width: 20%;
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: #08a5ee;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .reg-users .link-reg span b:hover {
+    text-decoration: underline;
+  }
+  .close-reg-user {
+    display: none;
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  .reg-users {
+    display: none;
+    width: 70%;
+    min-height: 70%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .reg-users .close-form {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  .reg-users .close-form .line-01 {
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  .reg-users .close-form .line-02 {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    transform: rotate(-45deg);
+  }
+  .reg-users .close-form:hover .line-01,
+  .reg-users .close-form:hover .line-02 {
+    background-color: #ffd600;
+  }
+  .reg-users .name,
+  .reg-users .login,
+  .reg-users .password,
+  .reg-users .repeat-password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .name span,
+  .reg-users .login span,
+  .reg-users .password span,
+  .reg-users .repeat-password span {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .reg-users .name input,
+  .reg-users .login input,
+  .reg-users .password input,
+  .reg-users .repeat-password input {
+    width: 80%;
+    height: 35px;
+    font-size: 20px;
+    padding: 3px 10px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    transition: all 0.3s linear;
+  }
+  .reg-users .name input:hover,
+  .reg-users .login input:hover,
+  .reg-users .password input:hover,
+  .reg-users .repeat-password input:hover {
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .reg-users .save-inform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .save-inform input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+  }
+  .reg-users .save-inform span {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .reg-users button {
+    width: 50%;
+    padding: 10px 0;
+    font-size: 18px;
+    border: 2px solid #ffd600;
+    background-color: #ffd600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .reg-users button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffd600;
+  }
+  .reg-users .link-reg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .link-reg span {
+    width: 80%;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .reg-users .link-reg span b {
+    width: 20%;
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: #08a5ee;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .reg-users .link-reg span b:hover {
+    text-decoration: underline;
+  }
+  .close-reg-user {
+    display: none;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .reg-users {
+    display: none;
+    width: 80%;
+    min-height: 70%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .reg-users .close-form {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  .reg-users .close-form .line-01 {
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  .reg-users .close-form .line-02 {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    transform: rotate(-45deg);
+  }
+  .reg-users .close-form:hover .line-01,
+  .reg-users .close-form:hover .line-02 {
+    background-color: #ffd600;
+  }
+  .reg-users .name,
+  .reg-users .login,
+  .reg-users .password,
+  .reg-users .repeat-password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .name span,
+  .reg-users .login span,
+  .reg-users .password span,
+  .reg-users .repeat-password span {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .reg-users .name input,
+  .reg-users .login input,
+  .reg-users .password input,
+  .reg-users .repeat-password input {
+    width: 70%;
+    height: 35px;
+    font-size: 20px;
+    padding: 3px 10px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    transition: all 0.3s linear;
+  }
+  .reg-users .name input:hover,
+  .reg-users .login input:hover,
+  .reg-users .password input:hover,
+  .reg-users .repeat-password input:hover {
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .reg-users .save-inform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .save-inform input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+  }
+  .reg-users .save-inform span {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .reg-users button {
+    width: 50%;
+    padding: 10px 0;
+    font-size: 18px;
+    border: 2px solid #ffd600;
+    background-color: #ffd600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .reg-users button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffd600;
+  }
+  .reg-users .link-reg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-users .link-reg span {
+    width: 80%;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .reg-users .link-reg span b {
+    width: 20%;
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: #08a5ee;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .reg-users .link-reg span b:hover {
+    text-decoration: underline;
+  }
+  .close-reg-user {
+    display: none;
+  }
+}
 @media (min-width: 1441px) {
   .reg-users {
     display: none;

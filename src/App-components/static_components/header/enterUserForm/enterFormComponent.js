@@ -4,10 +4,20 @@ import {
     closeActionsForm,
     showRegUser
 } from '../options/Actions';
+import { useSelector } from 'react-redux';
+import {
+    getUsers
+} from '../../../../store/CheckUser';
 
+console.log();
 export default function EnterForm() {
+    const listUsers = useSelector(getUsers);
+    function searchUsers(event){
+        event.preventDefault();
+        console.log('btn work');
+    }
     return (
-        <form className='enter-user'>
+        <form className='enter-user' onSubmit={searchUsers}>
             <h2>Вхід в кабінет</h2>
             <div className="login">
                 <span>Логін</span>

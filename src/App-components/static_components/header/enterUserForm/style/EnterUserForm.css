@@ -1,3 +1,972 @@
+@media (max-width: 320px) and (min-width: 200px) {
+  .enter-user {
+    width: 90%;
+    min-height: 70%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .enter-user .close-form {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  .enter-user .close-form .line-01 {
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  .enter-user .close-form .line-02 {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    transform: rotate(-45deg);
+  }
+  .enter-user .close-form:hover .line-01,
+  .enter-user .close-form:hover .line-02 {
+    background-color: #ffd600;
+  }
+  .enter-user h2 {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .enter-user .login,
+  .enter-user .password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .login span,
+  .enter-user .password span {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .enter-user .login input,
+  .enter-user .password input {
+    width: 90%;
+    height: 35px;
+    font-size: 20px;
+    padding: 3px 10px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    transition: all 0.3s linear;
+  }
+  .enter-user .login input:hover,
+  .enter-user .password input:hover {
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .enter-user .save-inform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .save-inform input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+  }
+  .enter-user .save-inform span {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .enter-user button {
+    width: 45%;
+    padding: 10px 0;
+    font-size: 18px;
+    border: 2px solid #ffd600;
+    background-color: #ffd600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .enter-user button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffd600;
+  }
+  .enter-user .link-reg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .link-reg span {
+    width: 80%;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .enter-user .link-reg span b {
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-size: 14px;
+    color: #08a5ee;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .enter-user .link-reg span b:hover {
+    text-decoration: underline;
+  }
+  .close-enter-user {
+    display: none;
+  }
+}
+@media (max-width: 375px) and (min-width: 321px) {
+  .enter-user {
+    width: 90%;
+    min-height: 70%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .enter-user .close-form {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  .enter-user .close-form .line-01 {
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  .enter-user .close-form .line-02 {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    transform: rotate(-45deg);
+  }
+  .enter-user .close-form:hover .line-01,
+  .enter-user .close-form:hover .line-02 {
+    background-color: #ffd600;
+  }
+  .enter-user h2 {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .enter-user .login,
+  .enter-user .password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .login span,
+  .enter-user .password span {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .enter-user .login input,
+  .enter-user .password input {
+    width: 90%;
+    height: 35px;
+    font-size: 20px;
+    padding: 3px 10px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    transition: all 0.3s linear;
+  }
+  .enter-user .login input:hover,
+  .enter-user .password input:hover {
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .enter-user .save-inform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .save-inform input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+  }
+  .enter-user .save-inform span {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .enter-user button {
+    width: 45%;
+    padding: 10px 0;
+    font-size: 18px;
+    border: 2px solid #ffd600;
+    background-color: #ffd600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .enter-user button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffd600;
+  }
+  .enter-user .link-reg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .link-reg span {
+    width: 80%;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .enter-user .link-reg span b {
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-size: 14px;
+    color: #08a5ee;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .enter-user .link-reg span b:hover {
+    text-decoration: underline;
+  }
+  .close-enter-user {
+    display: none;
+  }
+}
+@media (max-width: 425px) and (min-width: 376px) {
+  .enter-user {
+    width: 90%;
+    min-height: 60%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .enter-user .close-form {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  .enter-user .close-form .line-01 {
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  .enter-user .close-form .line-02 {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    transform: rotate(-45deg);
+  }
+  .enter-user .close-form:hover .line-01,
+  .enter-user .close-form:hover .line-02 {
+    background-color: #ffd600;
+  }
+  .enter-user h2 {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .enter-user .login,
+  .enter-user .password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .login span,
+  .enter-user .password span {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .enter-user .login input,
+  .enter-user .password input {
+    width: 90%;
+    height: 35px;
+    font-size: 20px;
+    padding: 3px 10px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    transition: all 0.3s linear;
+  }
+  .enter-user .login input:hover,
+  .enter-user .password input:hover {
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .enter-user .save-inform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .save-inform input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+  }
+  .enter-user .save-inform span {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .enter-user button {
+    width: 45%;
+    padding: 10px 0;
+    font-size: 18px;
+    border: 2px solid #ffd600;
+    background-color: #ffd600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .enter-user button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffd600;
+  }
+  .enter-user .link-reg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .link-reg span {
+    width: 80%;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .enter-user .link-reg span b {
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-size: 14px;
+    color: #08a5ee;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .enter-user .link-reg span b:hover {
+    text-decoration: underline;
+  }
+  .close-enter-user {
+    display: none;
+  }
+}
+@media (max-width: 600px) and (min-width: 426px) {
+  .enter-user {
+    width: 80%;
+    min-height: 50%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .enter-user .close-form {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  .enter-user .close-form .line-01 {
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  .enter-user .close-form .line-02 {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    transform: rotate(-45deg);
+  }
+  .enter-user .close-form:hover .line-01,
+  .enter-user .close-form:hover .line-02 {
+    background-color: #ffd600;
+  }
+  .enter-user h2 {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .enter-user .login,
+  .enter-user .password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .login span,
+  .enter-user .password span {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .enter-user .login input,
+  .enter-user .password input {
+    width: 90%;
+    height: 35px;
+    font-size: 20px;
+    padding: 3px 10px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    transition: all 0.3s linear;
+  }
+  .enter-user .login input:hover,
+  .enter-user .password input:hover {
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .enter-user .save-inform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .save-inform input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+  }
+  .enter-user .save-inform span {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .enter-user button {
+    width: 45%;
+    padding: 10px 0;
+    font-size: 18px;
+    border: 2px solid #ffd600;
+    background-color: #ffd600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .enter-user button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffd600;
+  }
+  .enter-user .link-reg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .link-reg span {
+    width: 80%;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .enter-user .link-reg span b {
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-size: 14px;
+    color: #08a5ee;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .enter-user .link-reg span b:hover {
+    text-decoration: underline;
+  }
+  .close-enter-user {
+    display: none;
+  }
+}
+@media (max-width: 768px) and (min-width: 601px) {
+  .enter-user {
+    width: 80%;
+    min-height: 60%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .enter-user .close-form {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  .enter-user .close-form .line-01 {
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  .enter-user .close-form .line-02 {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    transform: rotate(-45deg);
+  }
+  .enter-user .close-form:hover .line-01,
+  .enter-user .close-form:hover .line-02 {
+    background-color: #ffd600;
+  }
+  .enter-user h2 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .enter-user .login,
+  .enter-user .password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .login span,
+  .enter-user .password span {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .enter-user .login input,
+  .enter-user .password input {
+    width: 80%;
+    height: 35px;
+    font-size: 20px;
+    padding: 3px 10px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    transition: all 0.3s linear;
+  }
+  .enter-user .login input:hover,
+  .enter-user .password input:hover {
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .enter-user .save-inform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .save-inform input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+  }
+  .enter-user .save-inform span {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .enter-user button {
+    width: 45%;
+    padding: 10px 0;
+    font-size: 18px;
+    border: 2px solid #ffd600;
+    background-color: #ffd600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .enter-user button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffd600;
+  }
+  .enter-user .link-reg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .link-reg span {
+    width: 80%;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .enter-user .link-reg span b {
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-size: 14px;
+    color: #08a5ee;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .enter-user .link-reg span b:hover {
+    text-decoration: underline;
+  }
+  .close-enter-user {
+    display: none;
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  .enter-user {
+    width: 60%;
+    min-height: 60%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .enter-user .close-form {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  .enter-user .close-form .line-01 {
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  .enter-user .close-form .line-02 {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    transform: rotate(-45deg);
+  }
+  .enter-user .close-form:hover .line-01,
+  .enter-user .close-form:hover .line-02 {
+    background-color: #ffd600;
+  }
+  .enter-user h2 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .enter-user .login,
+  .enter-user .password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .login span,
+  .enter-user .password span {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .enter-user .login input,
+  .enter-user .password input {
+    width: 80%;
+    height: 35px;
+    font-size: 20px;
+    padding: 3px 10px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    transition: all 0.3s linear;
+  }
+  .enter-user .login input:hover,
+  .enter-user .password input:hover {
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .enter-user .save-inform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .save-inform input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+  }
+  .enter-user .save-inform span {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .enter-user button {
+    width: 45%;
+    padding: 10px 0;
+    font-size: 18px;
+    border: 2px solid #ffd600;
+    background-color: #ffd600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .enter-user button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffd600;
+  }
+  .enter-user .link-reg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .link-reg span {
+    width: 80%;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .enter-user .link-reg span b {
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-size: 14px;
+    color: #08a5ee;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .enter-user .link-reg span b:hover {
+    text-decoration: underline;
+  }
+  .close-enter-user {
+    display: none;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .enter-user {
+    width: 60%;
+    min-height: 60%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .enter-user .close-form {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  .enter-user .close-form .line-01 {
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  .enter-user .close-form .line-02 {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    transform: rotate(-45deg);
+  }
+  .enter-user .close-form:hover .line-01,
+  .enter-user .close-form:hover .line-02 {
+    background-color: #ffd600;
+  }
+  .enter-user h2 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .enter-user .login,
+  .enter-user .password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .login span,
+  .enter-user .password span {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .enter-user .login input,
+  .enter-user .password input {
+    width: 80%;
+    height: 35px;
+    font-size: 20px;
+    padding: 3px 10px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    transition: all 0.3s linear;
+  }
+  .enter-user .login input:hover,
+  .enter-user .password input:hover {
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .enter-user .save-inform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .save-inform input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+  }
+  .enter-user .save-inform span {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .enter-user button {
+    width: 45%;
+    padding: 10px 0;
+    font-size: 18px;
+    border: 2px solid #ffd600;
+    background-color: #ffd600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .enter-user button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffd600;
+  }
+  .enter-user .link-reg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter-user .link-reg span {
+    width: 80%;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .enter-user .link-reg span b {
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-size: 14px;
+    color: #08a5ee;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .enter-user .link-reg span b:hover {
+    text-decoration: underline;
+  }
+  .close-enter-user {
+    display: none;
+  }
+}
 @media (min-width: 1441px) {
   .enter-user {
     width: 30%;

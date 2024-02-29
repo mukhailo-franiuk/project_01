@@ -4,9 +4,14 @@ import {
     showEnterUser,
     closeActionsForm
 } from '../options/Actions';
+import { useSelector } from 'react-redux';
+import {
+    getUsers
+} from '../../../../store/CheckUser';
 export default function RegFormComponent() {
+    const selectUsersList = useSelector(getUsers);
     return (
-        <form className="reg-users close-reg-user">
+        <form className="reg-users close-reg-user" >
             <h2>Реєстрація</h2>
             <div className="name">
                 <span>Ім'я</span>

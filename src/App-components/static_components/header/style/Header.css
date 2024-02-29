@@ -312,15 +312,52 @@
     justify-content: center;
     align-items: center;
   }
-  .header-container .list-elements .action-users .action-us-ad {
+  .header-container .list-elements .action-users .contain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .list-elements .action-users .contain .action-us-ad {
     width: 90%;
     height: 50%;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.8274509804);
     border: none;
     background: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    text-decoration: none;
   }
-  .header-container .list-elements .action-users .action-us-ad:focus {
+  .header-container .list-elements .action-users .contain .action-us-ad:hover {
+    color: #ffd600;
+  }
+  .header-container .list-elements .us-display {
+    width: 5%;
+    height: 100%;
+  }
+  .header-container .list-elements .us-display .contain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .list-elements .us-display .contain a {
+    width: 90%;
+    height: 50%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8274509804);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    text-decoration: none;
+  }
+  .header-container .list-elements .us-display .contain a:hover {
     color: #ffd600;
   }
   .header-container .list-elements .btn-burger {
@@ -365,6 +402,27 @@
     position: relative;
     bottom: 7px;
     border-radius: 5px;
+  }
+  .header-container .enter-users {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .header-container .enter-users .canvas-users {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .show-enter-users {
+    display: block;
   }
 }
 @media (max-width: 375px) and (min-width: 321px) {
@@ -681,15 +739,52 @@
     justify-content: center;
     align-items: center;
   }
-  .header-container .list-elements .action-users .action-us-ad {
+  .header-container .list-elements .action-users .contain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .list-elements .action-users .contain .action-us-ad {
     width: 90%;
     height: 50%;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.8274509804);
     border: none;
     background: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    text-decoration: none;
   }
-  .header-container .list-elements .action-users .action-us-ad:focus {
+  .header-container .list-elements .action-users .contain .action-us-ad:hover {
+    color: #ffd600;
+  }
+  .header-container .list-elements .us-display {
+    width: 5%;
+    height: 100%;
+  }
+  .header-container .list-elements .us-display .contain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .list-elements .us-display .contain a {
+    width: 90%;
+    height: 50%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8274509804);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    text-decoration: none;
+  }
+  .header-container .list-elements .us-display .contain a:hover {
     color: #ffd600;
   }
   .header-container .list-elements .btn-burger {
@@ -734,6 +829,27 @@
     position: relative;
     bottom: 7px;
     border-radius: 5px;
+  }
+  .header-container .enter-users {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .header-container .enter-users .canvas-users {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .show-enter-users {
+    display: block;
   }
 }
 @media (max-width: 425px) and (min-width: 376px) {
@@ -1061,6 +1177,60 @@
   .header-container .list-elements .action-users .action-us-ad:focus {
     color: #ffd600;
   }
+  .header-container .list-elements .us-display {
+    width: 5%;
+    height: 100%;
+  }
+  .header-container .list-elements .us-display .contain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .list-elements .us-display .contain a {
+    width: 90%;
+    height: 50%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8274509804);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    text-decoration: none;
+  }
+  .header-container .list-elements .us-display .contain a:hover {
+    color: #ffd600;
+  }
+  .header-container .list-elements .us-display {
+    width: 5%;
+    height: 100%;
+  }
+  .header-container .list-elements .us-display .contain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .list-elements .us-display .contain a {
+    width: 90%;
+    height: 50%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8274509804);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    text-decoration: none;
+  }
+  .header-container .list-elements .us-display .contain a:hover {
+    color: #ffd600;
+  }
   .header-container .list-elements .btn-burger {
     width: 15%;
     height: 100%;
@@ -1103,6 +1273,27 @@
     position: relative;
     bottom: 7px;
     border-radius: 5px;
+  }
+  .header-container .enter-users {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .header-container .enter-users .canvas-users {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .show-enter-users {
+    display: block;
   }
 }
 @media (max-width: 600px) and (min-width: 426px) {
@@ -1430,6 +1621,33 @@
   .header-container .list-elements .action-users .action-us-ad:focus {
     color: #ffd600;
   }
+  .header-container .list-elements .us-display {
+    width: 5%;
+    height: 100%;
+  }
+  .header-container .list-elements .us-display .contain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .list-elements .us-display .contain a {
+    width: 90%;
+    height: 50%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8274509804);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    text-decoration: none;
+  }
+  .header-container .list-elements .us-display .contain a:hover {
+    color: #ffd600;
+  }
   .header-container .list-elements .btn-burger {
     width: 15%;
     height: 100%;
@@ -1473,6 +1691,27 @@
     position: relative;
     bottom: 10px;
     border-radius: 5px;
+  }
+  .header-container .enter-users {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .header-container .enter-users .canvas-users {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .show-enter-users {
+    display: block;
   }
 }
 @media (max-width: 768px) and (min-width: 601px) {
@@ -1800,6 +2039,33 @@
   .header-container .list-elements .action-users .action-us-ad:focus {
     color: #ffd600;
   }
+  .header-container .list-elements .us-display {
+    width: 5%;
+    height: 100%;
+  }
+  .header-container .list-elements .us-display .contain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .list-elements .us-display .contain a {
+    width: 90%;
+    height: 50%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8274509804);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    text-decoration: none;
+  }
+  .header-container .list-elements .us-display .contain a:hover {
+    color: #ffd600;
+  }
   .header-container .list-elements .btn-burger {
     width: 10%;
     height: 100%;
@@ -1843,6 +2109,27 @@
     position: relative;
     bottom: 10px;
     border-radius: 5px;
+  }
+  .header-container .enter-users {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .header-container .enter-users .canvas-users {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .show-enter-users {
+    display: block;
   }
 }
 @media (max-width: 1024px) and (min-width: 769px) {
@@ -2159,16 +2446,57 @@
     justify-content: center;
     align-items: center;
   }
-  .header-container .list-elements .action-users .action-us-ad {
+  .header-container .list-elements .action-users .contain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .list-elements .action-users .contain .action-us-ad {
     width: 90%;
     height: 50%;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.8274509804);
     border: none;
     background: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    text-decoration: none;
+    font-size: 20px;
   }
-  .header-container .list-elements .action-users .action-us-ad:focus {
+  .header-container .list-elements .action-users .contain .action-us-ad:hover {
     color: #ffd600;
+  }
+  .header-container .list-elements .us-display {
+    width: 5%;
+    height: 100%;
+  }
+  .header-container .list-elements .us-display .contain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .list-elements .us-display .contain a {
+    width: 90%;
+    height: 50%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8274509804);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    text-decoration: none;
+  }
+  .header-container .list-elements .us-display .contain a:hover {
+    color: #ffd600;
+  }
+  .header-container .list-elements .show-enter-users {
+    display: block;
   }
   .header-container .list-elements .btn-burger {
     width: 10%;
@@ -2213,6 +2541,27 @@
     position: relative;
     bottom: 10px;
     border-radius: 5px;
+  }
+  .header-container .enter-users {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .header-container .enter-users .canvas-users {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .show-enter-users {
+    display: block;
   }
 }
 @media (max-width: 1440px) and (min-width: 1025px) {
@@ -2498,6 +2847,33 @@
     background: none;
   }
   .header-container .list-elements .action-users .action-us-ad:focus {
+    color: #ffd600;
+  }
+  .header-container .list-elements .us-display {
+    width: 5%;
+    height: 100%;
+  }
+  .header-container .list-elements .us-display .contain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container .list-elements .us-display .contain a {
+    width: 90%;
+    height: 50%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8274509804);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    text-decoration: none;
+  }
+  .header-container .list-elements .us-display .contain a:hover {
     color: #ffd600;
   }
   .header-container .list-elements .btn-burger {
