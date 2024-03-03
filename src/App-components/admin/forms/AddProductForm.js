@@ -14,7 +14,7 @@ export default function AddProducts() {
                 </div>
                 <div className="name-product">
                     <span>Назва продукції</span>
-                    <input type="text" name="name" />
+                    <input type="text" name="name" id=''/>
                 </div>
                 <div className="patch-product">
                     <span>Посилання</span>

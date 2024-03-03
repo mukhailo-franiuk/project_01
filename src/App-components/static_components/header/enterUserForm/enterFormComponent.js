@@ -9,27 +9,38 @@ import {
     getUsers
 } from '../../../../store/CheckUser';
 
-console.log();
 export default function EnterForm() {
     const listUsers = useSelector(getUsers);
+    let statusUser = false;
     function searchUsers(event){
         event.preventDefault();
-        console.log('btn work');
+        let saveInfo = window.localStorage;
+        Object.keys(listUsers).map(item => { if(event.target.elements.loginUsers.value === item){
+                statusUser = true;
+                if(statusUser === true && event.target.elements.loginUsers.value === listUsers[item]['login'] && event.target.elements.passwordUsers.value === listUsers[item]['password']){
+                        saveInfo.setItem('name',listUsers[item]['name']);
+                        saveInfo.setItem('login',listUsers[item]['login']);
+                        saveInfo.setItem('password',listUsers[item]['password']);
+                        saveInfo.setItem('status',listUsers[item]['status']);
+                        if(saveInfo.getItem('status') === 'prime'){
+                            window.location.href = 'console/admin';
+                        }else{
+                            window.location.href = `console/${saveInfo.getItem('login')}`;
+                        }
+                }
+            }
+    })
     }
     return (
         <form className='enter-user' onSubmit={searchUsers}>
             <h2>Вхід в кабінет</h2>
             <div className="login">
                 <span>Логін</span>
-                <input type="text" name='loginUsers' />
+                <input type="text" name='loginUsers'/>
             </div>
             <div className="password">
                 <span>Пароль</span>
                 <input type="password" name='passwordUsers' />
-            </div>
-            <div className="save-inform">
-                <input type="checkbox" title='Зберегти вас?' />
-                <span>Запам'ятати вас?</span>
             </div>
             <button type='submit' className='enter'>Вхід</button>
             <div className="link-reg">

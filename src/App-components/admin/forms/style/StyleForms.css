@@ -4,6 +4,7 @@
     margin: 5% auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   .add-products-form .top-message {
@@ -22,6 +23,7 @@
     width: 90%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   .add-products-form .add-product .check-category {
@@ -154,6 +156,9 @@
     border-radius: 8px;
     font-weight: 700;
   }
+  .close-products-form {
+    display: none;
+  }
   .add-category {
     width: 80%;
     margin: 5% auto;
@@ -220,11 +225,15 @@
     border-radius: 8px;
     font-weight: 700;
   }
+  .close-category {
+    display: none;
+  }
   .add-discount {
     width: 80%;
     margin: 5% auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   .add-discount .top-message {
@@ -309,6 +318,21 @@
     justify-content: center;
     align-items: center;
   }
+  .add-discount .add-discount-form .load-image .upload-status {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+  }
+  .add-discount .add-discount-form .load-image .upload-status .line-upload {
+    width: 100%;
+    height: 100%;
+  }
+  .add-discount .add-discount-form .load-image .upload-status .line-upload .line {
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    border-radius: 10px;
+  }
   .add-discount .add-discount-form .btn-add-discount {
     width: 30%;
     background-color: #ffd600;
@@ -324,5 +348,8 @@
     background-color: #ffffff;
     border-radius: 8px;
     font-weight: 700;
+  }
+  .close-discount {
+    display: none;
   }
 }/*# sourceMappingURL=StyleForms.css.map */

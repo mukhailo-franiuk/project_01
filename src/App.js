@@ -10,6 +10,15 @@ import ProductPage from './App-components/pages/products/Products';
 import Users from './App-components/users/Users';
 import Admin from './App-components/admin/Admin';
 function App() {
+  window.onload = () => {
+    if(window.localStorage.getItem('status') !== null){
+      document.querySelector('.action-users').style.display = 'none';
+      document.querySelector('.us-display').style.display = 'block';
+    }else{
+      document.querySelector('.action-users').style.display = 'block';
+      document.querySelector('.us-display').style.display = 'none';
+    }
+  }
   return (
     <div className="app-container">
      <Router>

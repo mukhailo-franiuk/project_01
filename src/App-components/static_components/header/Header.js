@@ -222,7 +222,7 @@ export default function Header() {
                 </div>
                 <div className="us-display">
                     <div className="contain">
-                        <Link to={`console/${window.localStorage.getItem('name')}`}>{window.localStorage.getItem('name')}</Link>
+                        <Link to={`console/${window.localStorage.getItem('login')}`}>{window.localStorage.getItem('login')}</Link>
                     </div>
                 </div>
                 <div className="btn-burger">
