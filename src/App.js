@@ -1,5 +1,10 @@
 import './App.css';
 import { BrowserRouter as Router , Routes , Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { getDatabase, ref, child, get } from "firebase/database";
+import { app } from './options/environment/env';
+import { useDispatch } from 'react-redux';
+import { discountsAll } from './store/AllDiscount';
 // static component import
 import Header from './App-components/static_components/header/Header';
 // -----------------------------------------------------
@@ -9,7 +14,10 @@ import HomePage from './App-components/pages/home/Home';
 import ProductPage from './App-components/pages/products/Products';
 import Users from './App-components/users/Users';
 import Admin from './App-components/admin/Admin';
+import Discount from './App-components/pages/discount/Discount';
 function App() {
+  const dbRef = ref(getDatabase(app))
+  const dispatsh = useDispatch();
   window.onload = () => {
     if(window.localStorage.getItem('status') !== null){
       document.querySelector('.action-users').style.display = 'none';
@@ -19,6 +27,17 @@ function App() {
       document.querySelector('.us-display').style.display = 'none';
     }
   }
+  useEffect(()=>{
+    get(child(dbRef, `discounts`)).then((snapshot) => {
+      if (snapshot.exists()) {
+        dispatsh(discountsAll(snapshot.val()));
+      } else {
+        console.log("No data available");
+      }
+    }).catch((error) => {
+      console.error(error);
+    });
+  },[])
   return (
     <div className="app-container">
      <Router>
@@ -29,6 +48,7 @@ function App() {
           <Route path='product/:product' element={<ProductPage />} />
           <Route path='console/:userName' element={<Users />} />
           <Route path='console/admin' element={<Admin />} />
+          <Route path='discount' element={<Discount />} />
         </Routes>
       </main>
      </Router>

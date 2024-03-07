@@ -1,30 +1,26 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getDatabase , ref , set } from 'firebase/database';
-import { app } from '../options/environment/env';
 
 export const AllDiscounts = createSlice({
     name : 'discount',
     initialState : {
-        discounts : {},
-        discountsBack : {},
-        id : 0
+        discounts: {},
+        link : '',
+        count : 1
     },
     reducers : {
-        getObjDiscount : (state , obj) => {
-            state.discounts = obj.payload;
-            console.log(state.discounts.id);
-            const db = getDatabase(app);
-            set(ref(db, 'discounts/' + state.discounts.id), {
-                title : state.discounts.title,
-                description : state.discounts.description,
-                imagePatch : state.discounts.imagePatch
-            });
+        discountsAll : ( state , data ) => {
+            state.discounts = data.payload;
         },
-        getAllDiscounts : (state , data) => {
-
+        links : (state , linkImage) => {
+            state.link = linkImage.payload;
+        },
+        counts : (state , number) => {
+            state.count = number.payload;
         }
     }
 })
-export const { getObjDiscount } = AllDiscounts.actions;
-export const getAllDiscount = state => state.discounts.discount; 
+export const { discountsAll , links ,counts} = AllDiscounts.actions;
+export const getAllDiscounts = state => state.discounts.discounts; 
+export const getLinkImage = state => state.discounts.link;
+export const getCountNumber = state => state.discounts.count;
 export default AllDiscounts.reducer; 

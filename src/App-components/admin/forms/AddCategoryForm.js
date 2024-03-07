@@ -13,7 +13,7 @@ export default function AddCategory(){
                 </div>
                 <div className="patch-category">
                     <span>Посилання</span>
-                    <input type="text" name="patchCategory" id="" />
+                    <input type="text" name="patchCategory" />
                 </div>
                 <button type="submit" className='btn-add-category'>Зберегти</button>
             </form>

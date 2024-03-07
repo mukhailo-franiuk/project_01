@@ -52,18 +52,27 @@
   .add-products-form .add-product .check-category select:hover {
     background-color: #ffd600;
   }
-  .add-products-form .add-product .name-product, .add-products-form .add-product .price, .add-products-form .add-product .weight, .add-products-form .add-product .patch-product {
+  .add-products-form .add-product .name-product,
+  .add-products-form .add-product .price,
+  .add-products-form .add-product .weight,
+  .add-products-form .add-product .patch-product {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px 0;
   }
-  .add-products-form .add-product .name-product span, .add-products-form .add-product .price span, .add-products-form .add-product .weight span, .add-products-form .add-product .patch-product span {
+  .add-products-form .add-product .name-product span,
+  .add-products-form .add-product .price span,
+  .add-products-form .add-product .weight span,
+  .add-products-form .add-product .patch-product span {
     padding: 10px 0;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
-  .add-products-form .add-product .name-product input, .add-products-form .add-product .price input, .add-products-form .add-product .weight input, .add-products-form .add-product .patch-product input {
+  .add-products-form .add-product .name-product input,
+  .add-products-form .add-product .price input,
+  .add-products-form .add-product .weight input,
+  .add-products-form .add-product .patch-product input {
     width: 50%;
     font-size: 18px;
     padding: 5px 0 5px 10px;
@@ -73,7 +82,10 @@
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     transition: all 0.3s linear;
   }
-  .add-products-form .add-product .name-product input:focus, .add-products-form .add-product .price input:focus, .add-products-form .add-product .weight input:focus, .add-products-form .add-product .patch-product input:focus {
+  .add-products-form .add-product .name-product input:focus,
+  .add-products-form .add-product .price input:focus,
+  .add-products-form .add-product .weight input:focus,
+  .add-products-form .add-product .patch-product input:focus {
     background-color: #ffd600;
     border: 2px solid rgba(0, 0, 0, 0.8274509804);
   }
@@ -184,18 +196,21 @@
     flex-direction: column;
     align-items: center;
   }
-  .add-category .add-category-form .name-category, .add-category .add-category-form .patch-category {
+  .add-category .add-category-form .name-category,
+  .add-category .add-category-form .patch-category {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px 0;
   }
-  .add-category .add-category-form .name-category span, .add-category .add-category-form .patch-category span {
+  .add-category .add-category-form .name-category span,
+  .add-category .add-category-form .patch-category span {
     padding: 10px 0;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
-  .add-category .add-category-form .name-category input, .add-category .add-category-form .patch-category input {
+  .add-category .add-category-form .name-category input,
+  .add-category .add-category-form .patch-category input {
     width: 50%;
     font-size: 18px;
     padding: 5px 0 5px 10px;
@@ -205,7 +220,8 @@
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     transition: all 0.3s linear;
   }
-  .add-category .add-category-form .name-category input:focus, .add-category .add-category-form .patch-category input:focus {
+  .add-category .add-category-form .name-category input:focus,
+  .add-category .add-category-form .patch-category input:focus {
     background-color: #ffd600;
     border: 2px solid rgba(0, 0, 0, 0.8274509804);
   }
@@ -254,18 +270,21 @@
     flex-direction: column;
     align-items: center;
   }
-  .add-discount .add-discount-form .prime-text, .add-discount .add-discount-form .patch-discount {
+  .add-discount .add-discount-form .prime-text,
+  .add-discount .add-discount-form .patch-discount {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px 0;
   }
-  .add-discount .add-discount-form .prime-text span, .add-discount .add-discount-form .patch-discount span {
+  .add-discount .add-discount-form .prime-text span,
+  .add-discount .add-discount-form .patch-discount span {
     padding: 10px 0;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
-  .add-discount .add-discount-form .prime-text input, .add-discount .add-discount-form .patch-discount input {
+  .add-discount .add-discount-form .prime-text input,
+  .add-discount .add-discount-form .patch-discount input {
     width: 50%;
     font-size: 18px;
     padding: 5px 0 5px 10px;
@@ -275,7 +294,8 @@
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     transition: all 0.3s linear;
   }
-  .add-discount .add-discount-form .prime-text input:focus, .add-discount .add-discount-form .patch-discount input:focus {
+  .add-discount .add-discount-form .prime-text input:focus,
+  .add-discount .add-discount-form .patch-discount input:focus {
     background-color: #ffd600;
     border: 2px solid rgba(0, 0, 0, 0.8274509804);
   }
@@ -348,6 +368,33 @@
     background-color: #ffffff;
     border-radius: 8px;
     font-weight: 700;
+  }
+  .add-discount .list-discounts {
+    width: 100%;
+  }
+  .add-discount .list-discounts .table {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-discount .list-discounts .table thead tr th {
+    height: 40px;
+    border: 1px solid red;
+  }
+  .add-discount .list-discounts .table tbody tr {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8274509804);
+    transition: all 0.3s linear;
+  }
+  .add-discount .list-discounts .table tbody tr td {
+    border: none;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .add-discount .list-discounts .table tbody tr td img {
+    width: 70px;
+    height: 40px;
+  }
+  .add-discount .list-discounts .table tbody tr:hover {
+    background-color: #ffd600;
   }
   .close-discount {
     display: none;

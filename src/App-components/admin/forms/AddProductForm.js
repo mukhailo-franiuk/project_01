@@ -14,7 +14,7 @@ export default function AddProducts() {
                 </div>
                 <div className="name-product">
                     <span>Назва продукції</span>
-                    <input type="text" name="name" id=''/>
+                    <input type="text" name="name"/>
                 </div>
                 <div className="patch-product">
                     <span>Посилання</span>
@@ -22,37 +22,37 @@ export default function AddProducts() {
                 </div>
                 <div className="price">
                     <span>Ціна</span>
-                    <input type="number" name="price" id="" />
+                    <input type="number" name="price" />
                 </div>
                 <div className="weight">
                     <span>Вага</span>
-                    <input type="number" name="weight" id="" />
+                    <input type="number" name="weight" />
                 </div>
                 <div className="info">
                     <div>
                         <span>Білки</span>
-                        <input type="number" name="protein" id="" />
+                        <input type="number" name="protein" />
                     </div>
                     <div>
                         <span>Вуглеводи</span>
-                        <input type="number" name="carbo" id="" />
+                        <input type="number" name="carbo" />
                     </div>
                     <div>
                         <span>Жири</span>
-                        <input type="number" name="fat" id="" />
+                        <input type="number" name="fat" />
                     </div>
                     <div>
                         <span>Калорійність</span>
-                        <input type="number" name="calories" id="" />
+                        <input type="number" name="calories" />
                     </div>
                 </div>
                 <div className="description">
                     <span>Опис</span>
-                    <textarea name="description" id="" cols="30" rows="10"></textarea>
+                    <textarea name="description" cols="30" rows="10"></textarea>
                 </div>
                 <div className="load-image">
                     <span>Додати картинку</span>
-                    <input type="file" name="image" id="" />
+                    <input type="file" name="image"/>
                 </div>
                 <button type="submit" className='btn-add'>Зберегти</button>
             </form>

@@ -1,61 +1,22 @@
-import { useState } from 'react';
+import { getDatabase, ref, set } from 'firebase/database';
+import { app } from '../../../options/environment/env';
 import './style/StyleForms.css';
-
-import { getStorage, ref, getDownloadURL, uploadBytesResumable } from 'firebase/storage';
-import { useDispatch } from 'react-redux';
-
-import {
-    getObjDiscount
-} from '../../../store/AllDiscount';
-
+import { useSelector } from 'react-redux';
+import UploadFiles from './actions/uploadFiles';
+import { getLinkImage, getAllDiscounts } from '../../../store/AllDiscount';
 export default function AddDiscount() {
-    const [progresBar, setProgresBar] = useState();
-    const [imagePatch, setImagePatch] = useState();
-    const dispatch = useDispatch();
-    let count = 1;
-    const storage = getStorage();
-    function uploadFile(event) {
-        const storageRef = ref(storage, 'images/' + event.target.files[0].name);
-        const uploadTask = uploadBytesResumable(storageRef, event.target.files[0]);
-        uploadTask.on('state_changed',
-            (snapshot) => {
-                const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-                setProgresBar(progress)
-            },
-            (error) => {
-                switch (error.code) {
-                    case 'storage/unauthorized':
-                        // User doesn't have permission to access the object
-                        break;
-                    case 'storage/canceled':
-                        // User canceled the upload
-                        break;
-
-                    // ...
-
-                    case 'storage/unknown':
-                        // Unknown error occurred, inspect error.serverResponse
-                        break;
-                }
-            },
-            () => {
-                // Upload completed successfully, now we can get the download URL
-                getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-                    setImagePatch(downloadURL);
-                });
-            }
-        );
-    }
+    const imageLink = useSelector(getLinkImage);
+    const allDiscounts = useSelector(getAllDiscounts);
+    const db = getDatabase(app);
     function addDiscounts(event) {
         event.preventDefault();
         let targ = event.target.elements;
-        let discount = {
-            id : count,
-            title : targ.primeText.value,
-            description : targ.description.value,
-            imagePatch : imagePatch 
-        }
-        dispatch(getObjDiscount(discount));
+        set(ref(db, 'discounts/' + Math.floor(Math.random() * 10000)), {
+            title: targ.primeText.value,
+            description: targ.description.value,
+            imagePatsh: imageLink
+        });
+        window.location.reload();
     }
     return (
         <div className="add-discount">
@@ -65,44 +26,40 @@ export default function AddDiscount() {
             <form className="add-discount-form" onSubmit={addDiscounts}>
                 <div className="prime-text">
                     <span>Заголовок</span>
-                    <input type="text" name="primeText" id='' />
+                    <input type="text" name="primeText" />
                 </div>
                 <div className="description">
                     <span>Опис</span>
-                    <textarea name="description" id="" cols="30" rows="10"></textarea>
+                    <textarea name="description" cols="30" rows="10"></textarea>
                 </div>
-                <div className="load-image">
-                    <span>Додати картинку</span>
-                    <input type="file" name="files" id="" onChange={uploadFile} />
-                    <div className="upload-status">
-                        <div className="line-upload">
-                            <div className="line" style={{ width: progresBar + '%' }}></div>
-                        </div>
-                    </div>
-                </div>
+                <UploadFiles />
                 <button type="submit" className='btn-add-discount'>Зберегти</button>
             </form>
             <div className="list-discounts">
-                <table>
+                <table className="table">
                     <thead>
                         <tr>
-                            <td>
-                                num
-                            </td>
-                            <td>
-                                name
-                            </td>
-                            <td>
-                                dscrip
-                            </td>
-                            <td>
-                                image
-                            </td>
-                            <td>
-                                nv
-                            </td>
+                            <th >#</th>
+                            <th>title</th>
+                            <th>description</th>
+                            <th>image</th>
+                            <th>navi</th>
                         </tr>
                     </thead>
+                    <tbody>
+                        {Object.keys(allDiscounts).map((item, index) =>
+                            <tr key={item}>
+                                <th>{index+1}</th>
+                                <td>{allDiscounts[item]['title'].slice(0 , 10)}</td>
+                                <td>{allDiscounts[item]['description'].slice(0 , 20)}</td>
+                                <td><img src={allDiscounts[item]['imagePatsh']} alt="" /></td>
+                                <td>
+                                    <button>edit</button>
+                                    <button>delete</button>
+                                </td>
+                            </tr>
+                        )}
+                    </tbody>
                 </table>
             </div>
         </div>
