@@ -41,7 +41,7 @@ export default function UploadFiles() {
     return (
         <div className="load-image">
             <span>Додати картинку</span>
-            <input type="file" name="files" id="" onChange={uploadFile} />
+            <input type="file" name="files" onChange={uploadFile} />
             <div className="upload-status">
                 <div className="line-upload">
                     <div className="line" style={{ width: progressNumber + '%' }}></div>

@@ -1,0 +1,979 @@
+@media (max-width: 320px) and (min-width: 200px) {
+  .footer-component {
+    width: 320px;
+    min-height: 250px;
+    background-color: #ffd600;
+  }
+  .footer-component .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-component .container .block-one {
+    width: 100%;
+  }
+  .footer-component .container .block-one .logo {
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+  }
+  .footer-component .container .block-one .logo a {
+    width: 50%;
+    height: 100%;
+  }
+  .footer-component .container .block-one .logo a img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-component .container .block-one .social {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer-component .container .block-one .social .block {
+    width: 12%;
+    height: 35px;
+    background-color: #ffffff;
+  }
+  .footer-component .container .block-one .pay-icons {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .footer-component .container .block-one .pay-icons .block {
+    width: 20%;
+    height: 40px;
+  }
+  .footer-component .container .block-one .pay-icons .block img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-component .container .block-two {
+    display: none;
+  }
+  .footer-component .container .block-three {
+    width: 100%;
+  }
+  .footer-component .container .block-three .phone-number {
+    display: none;
+  }
+  .footer-component .container .block-three .app-download {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-component .container .block-three .app-download h3 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 15px 0;
+    letter-spacing: 2px;
+  }
+  .footer-component .container .block-three .app-download .links-download {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-component .container .block-three .app-download .links-download a {
+    display: block;
+    width: 40%;
+    height: 50px;
+    margin: 10px;
+  }
+  .footer-component .container .block-three .app-download .links-download a img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 375px) and (min-width: 321px) {
+  .footer-component {
+    width: 100%;
+    min-height: 250px;
+    background-color: #ffd600;
+  }
+  .footer-component .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-component .container .block-one {
+    width: 100%;
+  }
+  .footer-component .container .block-one .logo {
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+  }
+  .footer-component .container .block-one .logo a {
+    width: 50%;
+    height: 100%;
+  }
+  .footer-component .container .block-one .logo a img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-component .container .block-one .social {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer-component .container .block-one .social .block {
+    width: 12%;
+    height: 35px;
+    background-color: #ffffff;
+  }
+  .footer-component .container .block-one .pay-icons {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .footer-component .container .block-one .pay-icons .block {
+    width: 20%;
+    height: 40px;
+  }
+  .footer-component .container .block-one .pay-icons .block img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-component .container .block-two {
+    display: none;
+  }
+  .footer-component .container .block-three {
+    width: 100%;
+  }
+  .footer-component .container .block-three .phone-number {
+    display: none;
+  }
+  .footer-component .container .block-three .app-download {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-component .container .block-three .app-download h3 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 15px 0;
+    letter-spacing: 2px;
+  }
+  .footer-component .container .block-three .app-download .links-download {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-component .container .block-three .app-download .links-download a {
+    display: block;
+    width: 40%;
+    height: 50px;
+    margin: 10px;
+  }
+  .footer-component .container .block-three .app-download .links-download a img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 425px) and (min-width: 376px) {
+  .footer-component {
+    width: 100%;
+    min-height: 250px;
+    background-color: #ffd600;
+  }
+  .footer-component .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-component .container .block-one {
+    width: 100%;
+  }
+  .footer-component .container .block-one .logo {
+    width: 100%;
+    height: 60px;
+    margin: 25px 0;
+  }
+  .footer-component .container .block-one .logo a {
+    width: 50%;
+    height: 100%;
+  }
+  .footer-component .container .block-one .logo a img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-component .container .block-one .social {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer-component .container .block-one .social .block {
+    width: 10%;
+    height: 35px;
+    background-color: #ffffff;
+  }
+  .footer-component .container .block-one .pay-icons {
+    width: 60%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+  }
+  .footer-component .container .block-one .pay-icons .block {
+    width: 25%;
+    height: 40px;
+  }
+  .footer-component .container .block-one .pay-icons .block img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-component .container .block-two {
+    display: none;
+  }
+  .footer-component .container .block-three {
+    width: 100%;
+  }
+  .footer-component .container .block-three .phone-number {
+    display: none;
+  }
+  .footer-component .container .block-three .app-download {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-component .container .block-three .app-download h3 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 15px 0;
+    letter-spacing: 2px;
+  }
+  .footer-component .container .block-three .app-download .links-download {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-component .container .block-three .app-download .links-download a {
+    display: block;
+    width: 40%;
+    height: 50px;
+    margin: 10px;
+  }
+  .footer-component .container .block-three .app-download .links-download a img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 600px) and (min-width: 426px) {
+  .footer-component {
+    width: 100%;
+    min-height: 250px;
+    background-color: #ffd600;
+  }
+  .footer-component .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-component .container .block-one {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .footer-component .container .block-one .logo {
+    width: 100%;
+    height: 70px;
+    margin: 25px 0;
+  }
+  .footer-component .container .block-one .logo a {
+    width: 70%;
+    height: 100%;
+  }
+  .footer-component .container .block-one .logo a img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-component .container .block-one .social {
+    width: 90%;
+    height: 60px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer-component .container .block-one .social .block {
+    width: 10%;
+    height: 45px;
+    background-color: #ffffff;
+  }
+  .footer-component .container .block-one .pay-icons {
+    width: 60%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+  }
+  .footer-component .container .block-one .pay-icons .block {
+    width: 30%;
+    height: 50px;
+  }
+  .footer-component .container .block-one .pay-icons .block img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-component .container .block-two {
+    display: none;
+  }
+  .footer-component .container .block-three {
+    width: 100%;
+  }
+  .footer-component .container .block-three .phone-number {
+    display: none;
+  }
+  .footer-component .container .block-three .app-download {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .footer-component .container .block-three .app-download h3 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 0;
+    letter-spacing: 2px;
+  }
+  .footer-component .container .block-three .app-download .links-download {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-component .container .block-three .app-download .links-download a {
+    display: block;
+    width: 30%;
+    height: 70px;
+    margin: 10px;
+  }
+  .footer-component .container .block-three .app-download .links-download a img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) and (min-width: 601px) {
+  .footer-component {
+    width: 100%;
+    min-height: 250px;
+    background-color: #ffd600;
+  }
+  .footer-component .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-component .container .block-one {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .footer-component .container .block-one .logo {
+    width: 100%;
+    height: 90px;
+    margin: 25px 0;
+  }
+  .footer-component .container .block-one .logo a {
+    width: 70%;
+    height: 100%;
+  }
+  .footer-component .container .block-one .logo a img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-component .container .block-one .social {
+    width: 70%;
+    height: 60px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer-component .container .block-one .social .block {
+    width: 10%;
+    height: 45px;
+    background-color: #ffffff;
+  }
+  .footer-component .container .block-one .pay-icons {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+  }
+  .footer-component .container .block-one .pay-icons .block {
+    width: 30%;
+    height: 60px;
+  }
+  .footer-component .container .block-one .pay-icons .block img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-component .container .block-two {
+    display: none;
+  }
+  .footer-component .container .block-three {
+    width: 100%;
+  }
+  .footer-component .container .block-three .phone-number {
+    display: none;
+  }
+  .footer-component .container .block-three .app-download {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .footer-component .container .block-three .app-download h3 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 0;
+    letter-spacing: 2px;
+  }
+  .footer-component .container .block-three .app-download .links-download {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-component .container .block-three .app-download .links-download a {
+    display: block;
+    width: 30%;
+    height: 70px;
+    margin: 10px;
+  }
+  .footer-component .container .block-three .app-download .links-download a img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  .footer-component {
+    width: 100%;
+    min-height: 250px;
+    background-color: #ffd600;
+  }
+  .footer-component .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-component .container .block-one {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .footer-component .container .block-one .logo {
+    width: 100%;
+    height: 120px;
+    margin: 25px 0;
+  }
+  .footer-component .container .block-one .logo a {
+    width: 70%;
+    height: 100%;
+  }
+  .footer-component .container .block-one .logo a img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-component .container .block-one .social {
+    width: 60%;
+    height: 60px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer-component .container .block-one .social .block {
+    width: 10%;
+    height: 45px;
+    background-color: #ffffff;
+  }
+  .footer-component .container .block-one .pay-icons {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+  }
+  .footer-component .container .block-one .pay-icons .block {
+    width: 30%;
+    height: 70px;
+  }
+  .footer-component .container .block-one .pay-icons .block img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-component .container .block-two {
+    display: none;
+  }
+  .footer-component .container .block-three {
+    width: 100%;
+  }
+  .footer-component .container .block-three .phone-number {
+    display: none;
+  }
+  .footer-component .container .block-three .app-download {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .footer-component .container .block-three .app-download h3 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 0;
+    letter-spacing: 2px;
+  }
+  .footer-component .container .block-three .app-download .links-download {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-component .container .block-three .app-download .links-download a {
+    display: block;
+    width: 30%;
+    height: 100px;
+    margin: 10px;
+  }
+  .footer-component .container .block-three .app-download .links-download a img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 1200px) and (min-width: 1025px) {
+  .footer-component {
+    width: 100%;
+    min-height: 250px;
+    background-color: #ffd600;
+  }
+  .footer-component .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-component .container .block-one {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .footer-component .container .block-one .logo {
+    width: 100%;
+    height: 120px;
+    margin: 25px 0;
+  }
+  .footer-component .container .block-one .logo a {
+    width: 70%;
+    height: 100%;
+  }
+  .footer-component .container .block-one .logo a img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-component .container .block-one .social {
+    width: 60%;
+    height: 60px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer-component .container .block-one .social .block {
+    width: 10%;
+    height: 45px;
+    background-color: #ffffff;
+  }
+  .footer-component .container .block-one .pay-icons {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+  }
+  .footer-component .container .block-one .pay-icons .block {
+    width: 30%;
+    height: 70px;
+  }
+  .footer-component .container .block-one .pay-icons .block img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-component .container .block-two {
+    display: none;
+  }
+  .footer-component .container .block-three {
+    width: 100%;
+  }
+  .footer-component .container .block-three .phone-number {
+    display: none;
+  }
+  .footer-component .container .block-three .app-download {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .footer-component .container .block-three .app-download h3 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 0;
+    letter-spacing: 2px;
+  }
+  .footer-component .container .block-three .app-download .links-download {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-component .container .block-three .app-download .links-download a {
+    display: block;
+    width: 30%;
+    height: 100px;
+    margin: 10px;
+  }
+  .footer-component .container .block-three .app-download .links-download a img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1201px) {
+  .footer-component {
+    width: 100%;
+    min-height: 250px;
+    background-color: #ffd600;
+  }
+  .footer-component .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-component .container .block-one {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .footer-component .container .block-one .logo {
+    width: 100%;
+    height: 100px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+  }
+  .footer-component .container .block-one .logo a {
+    width: 70%;
+    height: 100%;
+  }
+  .footer-component .container .block-one .logo a img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-component .container .block-one .social {
+    width: 70%;
+    height: 60px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer-component .container .block-one .social .block {
+    width: 10%;
+    height: 40px;
+    background-color: #ffffff;
+  }
+  .footer-component .container .block-one .pay-icons {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .footer-component .container .block-one .pay-icons .block {
+    width: 25%;
+    height: 70px;
+    margin: 0 10px;
+  }
+  .footer-component .container .block-one .pay-icons .block img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-component .container .block-two {
+    width: 30%;
+    height: 100%;
+  }
+  .footer-component .container .block-two ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+  }
+  .footer-component .container .block-two ul .title {
+    margin: 20px 0;
+  }
+  .footer-component .container .block-two ul .title h2 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+  }
+  .footer-component .container .block-two ul li {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 16px;
+  }
+  .footer-component .container .block-three {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+  }
+  .footer-component .container .block-three .phone-number {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-component .container .block-three .phone-number b {
+    font-weight: 700;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .footer-component .container .block-three .phone-number span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 400;
+  }
+  .footer-component .container .block-three .app-download {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .footer-component .container .block-three .app-download h3 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 15px 0;
+    letter-spacing: 2px;
+  }
+  .footer-component .container .block-three .app-download .links-download {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-component .container .block-three .app-download .links-download a {
+    display: block;
+    width: 40%;
+    height: 70px;
+    margin: 10px;
+  }
+  .footer-component .container .block-three .app-download .links-download a img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 1441px) {
+  .footer-component {
+    width: 100%;
+    min-height: 250px;
+    background-color: #ffd600;
+  }
+  .footer-component .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-component .container .block-one {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .footer-component .container .block-one .logo {
+    width: 100%;
+    height: 100px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+  }
+  .footer-component .container .block-one .logo a {
+    width: 70%;
+    height: 100%;
+  }
+  .footer-component .container .block-one .logo a img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-component .container .block-one .social {
+    width: 70%;
+    height: 60px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer-component .container .block-one .social .block {
+    width: 10%;
+    height: 45px;
+    background-color: #ffffff;
+  }
+  .footer-component .container .block-one .pay-icons {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .footer-component .container .block-one .pay-icons .block {
+    width: 20%;
+    height: 70px;
+    margin: 0 10px;
+  }
+  .footer-component .container .block-one .pay-icons .block img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-component .container .block-two {
+    width: 30%;
+    height: 100%;
+  }
+  .footer-component .container .block-two ul {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+  }
+  .footer-component .container .block-two ul .title {
+    margin: 15px 0;
+  }
+  .footer-component .container .block-two ul .title h2 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+  }
+  .footer-component .container .block-two ul li {
+    padding: 2px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 16px;
+  }
+  .footer-component .container .block-three {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+  }
+  .footer-component .container .block-three .phone-number {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-component .container .block-three .phone-number b {
+    font-weight: 700;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .footer-component .container .block-three .phone-number span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 400;
+  }
+  .footer-component .container .block-three .app-download {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .footer-component .container .block-three .app-download h3 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 15px 0;
+    letter-spacing: 2px;
+  }
+  .footer-component .container .block-three .app-download .links-download {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .footer-component .container .block-three .app-download .links-download a {
+    display: block;
+    width: 50%;
+    height: 70px;
+    margin: 5px;
+  }
+  .footer-component .container .block-three .app-download .links-download a img {
+    width: 100%;
+    height: 100%;
+  }
+}/*# sourceMappingURL=Footer.css.map */

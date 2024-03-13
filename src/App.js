@@ -5,8 +5,11 @@ import { getDatabase, ref, child, get } from "firebase/database";
 import { app } from './options/environment/env';
 import { useDispatch } from 'react-redux';
 import { discountsAll } from './store/AllDiscount';
+import { category } from './store/AllCategories';
+import { products } from './store/AllProducts';
 // static component import
 import Header from './App-components/static_components/header/Header';
+import Footer from './App-components/static_components/footer/Footer';
 // -----------------------------------------------------
 
 // import pages
@@ -37,6 +40,24 @@ function App() {
     }).catch((error) => {
       console.error(error);
     });
+    get(child(dbRef, `categories`)).then((snapshot) => {
+      if (snapshot.exists()) {
+        dispatsh(category(snapshot.val()));
+      } else {
+        console.log("No data available");
+      }
+    }).catch((error) => {
+      console.error(error);
+    });
+    get(child(dbRef, `products`)).then((snapshot) => {
+      if (snapshot.exists()) {
+        dispatsh(products(snapshot.val()));
+      } else {
+        console.log("No data available");
+      }
+    }).catch((error) => {
+      console.error(error);
+    });
   },[])
   return (
     <div className="app-container">
@@ -45,12 +66,13 @@ function App() {
       <main className="main-container">
         <Routes>
           <Route exact path='' element={<HomePage />} />
-          <Route path='product/:product' element={<ProductPage />} />
+          <Route path='/:productsCategories' element={<ProductPage />} />
           <Route path='console/:userName' element={<Users />} />
           <Route path='console/admin' element={<Admin />} />
           <Route path='discount' element={<Discount />} />
         </Routes>
       </main>
+      <Footer />
      </Router>
     </div>
   );

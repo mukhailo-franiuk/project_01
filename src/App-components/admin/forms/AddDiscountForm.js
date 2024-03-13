@@ -16,7 +16,7 @@ export default function AddDiscount() {
             description: targ.description.value,
             imagePatsh: imageLink
         });
-        window.location.reload();
+       window.location.reload();
     }
     return (
         <div className="add-discount">

@@ -1,32 +1,40 @@
 @import '../../../options/styles/var';
-@media (min-width:1441px){
+
+// max width - 320px
+@media (max-width:320px) and (min-width:200px) {
     .admin-container {
-        width: 80%;
+        width: 95%;
         margin: 0 auto;
         margin-top: 50px;
-        .block-actions{
+
+        .block-actions {
             width: 100%;
             height: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
-            .left-block{
-                width: 20%;
+
+            .left-block {
+                width: 100%;
                 height: 40%;
                 box-shadow: 0 0 5px 2px $dark-color;
                 border-radius: 10px;
-                nav{
+                margin-bottom: 20px;
+                nav {
                     width: 100%;
                     height: 100%;
                     display: flex;
                     flex-direction: column;
-                    h2{
+                    h2 {
                         text-align: center;
                         padding: 10px 0;
                         color: $dark-light-color;
                     }
-                    .navigation{
+
+                    .navigation {
                         width: 100%;
-                        ul{
+
+                        ul {
                             width: 100%;
                             height: 100%;
                             display: flex;
@@ -34,7 +42,8 @@
                             align-items: center;
                             list-style-type: none;
                             margin: 10px 0;
-                            li{
+
+                            li {
                                 width: 90%;
                                 margin: 5px 0;
                                 padding: 10px 0 10px 15px;
@@ -45,20 +54,569 @@
                                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                                 font-weight: 600;
                                 transition: all .3s ease;
-                                &:hover{
+
+                                &:hover {
                                     border-radius: 10px;
-                                   border: 2px solid $prime-color;
-                                   background: transparent;
+                                    border: 2px solid $prime-color;
+                                    background: transparent;
                                 }
                             }
                         }
                     }
                 }
             }
-            .right-block{
+
+            .right-block {
+                width: 100%;
+                box-shadow: 0 0 5px 2px $dark-color;
+                border-radius: 10px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+// ========================================
+
+// max width - 375px
+@media (max-width:375px) and (min-width:321px) {
+    .admin-container {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        .block-actions {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .left-block {
+                width: 100%;
+                height: 40%;
+                box-shadow: 0 0 5px 2px $dark-color;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                nav {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    h2 {
+                        text-align: center;
+                        padding: 10px 0;
+                        color: $dark-light-color;
+                    }
+
+                    .navigation {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        ul {
+                            width: 90%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            list-style-type: none;
+                            margin: 10px 0;
+
+                            li {
+                                width: 90%;
+                                margin: 5px 0;
+                                padding: 10px 0 10px 15px;
+                                border: 2px solid transparent;
+                                background-color: $prime-color;
+                                cursor: pointer;
+                                color: $dark-color;
+                                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                font-weight: 600;
+                                transition: all .3s ease;
+
+                                &:hover {
+                                    border-radius: 10px;
+                                    border: 2px solid $prime-color;
+                                    background: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right-block {
+                width: 100%;
+                box-shadow: 0 0 5px 2px $dark-color;
+                border-radius: 10px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+// ========================================
+
+// max width - 425px
+@media (max-width:425px) and (min-width:376px) {
+    .admin-container {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        .block-actions {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .left-block {
+                width: 100%;
+                height: 40%;
+                box-shadow: 0 0 5px 2px $dark-color;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                nav {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    h2 {
+                        text-align: center;
+                        padding: 10px 0;
+                        color: $dark-light-color;
+                    }
+
+                    .navigation {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        ul {
+                            width: 90%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            list-style-type: none;
+                            margin: 10px 0;
+
+                            li {
+                                width: 90%;
+                                margin: 5px 0;
+                                padding: 10px 0 10px 15px;
+                                border: 2px solid transparent;
+                                background-color: $prime-color;
+                                cursor: pointer;
+                                color: $dark-color;
+                                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                font-weight: 600;
+                                transition: all .3s ease;
+
+                                &:hover {
+                                    border-radius: 10px;
+                                    border: 2px solid $prime-color;
+                                    background: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right-block {
+                width: 100%;
+                box-shadow: 0 0 5px 2px $dark-color;
+                border-radius: 10px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+// ========================================
+
+// max width - 425px
+@media (max-width:600px) and (min-width:426px) {
+    .admin-container {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        .block-actions {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .left-block {
+                width: 100%;
+                height: 40%;
+                box-shadow: 0 0 5px 2px $dark-color;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                nav {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    h2 {
+                        text-align: center;
+                        padding: 10px 0;
+                        color: $dark-light-color;
+                    }
+
+                    .navigation {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        ul {
+                            width: 90%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            list-style-type: none;
+                            margin: 10px 0;
+
+                            li {
+                                width: 90%;
+                                margin: 5px 0;
+                                padding: 10px 0 10px 15px;
+                                border: 2px solid transparent;
+                                background-color: $prime-color;
+                                cursor: pointer;
+                                color: $dark-color;
+                                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                font-weight: 600;
+                                transition: all .3s ease;
+
+                                &:hover {
+                                    border-radius: 10px;
+                                    border: 2px solid $prime-color;
+                                    background: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right-block {
+                width: 100%;
+                box-shadow: 0 0 5px 2px $dark-color;
+                border-radius: 10px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+// ========================================
+
+// max width - 768px
+@media (max-width:768px) and (min-width:601px) {
+    .admin-container {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        .block-actions {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .left-block {
+                width: 38%;
+                height: 40%;
+                box-shadow: 0 0 5px 2px $dark-color;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                nav {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    h2 {
+                        text-align: center;
+                        padding: 10px 0;
+                        color: $dark-light-color;
+                    }
+
+                    .navigation {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        ul {
+                            width: 90%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            list-style-type: none;
+                            margin: 10px 0;
+
+                            li {
+                                width: 90%;
+                                margin: 5px 0;
+                                padding: 10px 0 10px 15px;
+                                border: 2px solid transparent;
+                                background-color: $prime-color;
+                                cursor: pointer;
+                                color: $dark-color;
+                                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                font-weight: 600;
+                                transition: all .3s ease;
+
+                                &:hover {
+                                    border-radius: 10px;
+                                    border: 2px solid $prime-color;
+                                    background: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right-block {
+                width: 58%;
+                box-shadow: 0 0 5px 2px $dark-color;
+                border-radius: 10px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+// ========================================
+
+// max width - 1024px
+@media (max-width:1024px) and (min-width:769px) {
+    .admin-container {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        .block-actions {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .left-block {
+                width: 38%;
+                height: 40%;
+                box-shadow: 0 0 5px 2px $dark-color;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                nav {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    h2 {
+                        text-align: center;
+                        padding: 10px 0;
+                        color: $dark-light-color;
+                    }
+
+                    .navigation {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        ul {
+                            width: 90%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            list-style-type: none;
+                            margin: 10px 0;
+
+                            li {
+                                width: 90%;
+                                margin: 5px 0;
+                                padding: 10px 0 10px 15px;
+                                border: 2px solid transparent;
+                                background-color: $prime-color;
+                                cursor: pointer;
+                                color: $dark-color;
+                                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                font-weight: 600;
+                                transition: all .3s ease;
+
+                                &:hover {
+                                    border-radius: 10px;
+                                    border: 2px solid $prime-color;
+                                    background: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right-block {
+                width: 58%;
+                box-shadow: 0 0 5px 2px $dark-color;
+                border-radius: 10px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+// ========================================
+
+// max width - 1440px
+@media (max-width:1440px) and (min-width:1025px) {
+    .admin-container {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        .block-actions {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .left-block {
+                width: 30%;
+                height: 40%;
+                box-shadow: 0 0 5px 2px $dark-color;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                nav {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    h2 {
+                        text-align: center;
+                        padding: 10px 0;
+                        color: $dark-light-color;
+                    }
+
+                    .navigation {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        ul {
+                            width: 90%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            list-style-type: none;
+                            margin: 10px 0;
+
+                            li {
+                                width: 90%;
+                                margin: 5px 0;
+                                padding: 10px 0 10px 15px;
+                                border: 2px solid transparent;
+                                background-color: $prime-color;
+                                cursor: pointer;
+                                color: $dark-color;
+                                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                font-weight: 600;
+                                transition: all .3s ease;
+
+                                &:hover {
+                                    border-radius: 10px;
+                                    border: 2px solid $prime-color;
+                                    background: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right-block {
+                width: 68%;
+                box-shadow: 0 0 5px 2px $dark-color;
+                border-radius: 10px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+// ========================================
+@media (min-width:1441px) {
+    .admin-container {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        .block-actions {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .left-block {
+                width: 20%;
+                height: 40%;
+                box-shadow: 0 0 5px 2px $dark-color;
+                border-radius: 10px;
+
+                nav {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    h2 {
+                        text-align: center;
+                        padding: 10px 0;
+                        color: $dark-light-color;
+                    }
+
+                    .navigation {
+                        width: 100%;
+
+                        ul {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            list-style-type: none;
+                            margin: 10px 0;
+
+                            li {
+                                width: 90%;
+                                margin: 5px 0;
+                                padding: 10px 0 10px 15px;
+                                border: 2px solid transparent;
+                                background-color: $prime-color;
+                                cursor: pointer;
+                                color: $dark-color;
+                                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                font-weight: 600;
+                                transition: all .3s ease;
+
+                                &:hover {
+                                    border-radius: 10px;
+                                    border: 2px solid $prime-color;
+                                    background: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right-block {
                 width: 75%;
                 box-shadow: 0 0 5px 2px $dark-color;
                 border-radius: 10px;
+                margin-bottom: 30px;
             }
         }
     }

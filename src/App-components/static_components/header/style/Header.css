@@ -334,7 +334,7 @@
     color: #ffd600;
   }
   .header-container .list-elements .us-display {
-    width: 5%;
+    width: 20%;
     height: 100%;
   }
   .header-container .list-elements .us-display .contain {
@@ -349,6 +349,7 @@
     height: 50%;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.8274509804);
+    font-size: 13px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -761,7 +762,7 @@
     color: #ffd600;
   }
   .header-container .list-elements .us-display {
-    width: 5%;
+    width: 20%;
     height: 100%;
   }
   .header-container .list-elements .us-display .contain {
@@ -1178,34 +1179,7 @@
     color: #ffd600;
   }
   .header-container .list-elements .us-display {
-    width: 5%;
-    height: 100%;
-  }
-  .header-container .list-elements .us-display .contain {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .header-container .list-elements .us-display .contain a {
-    width: 90%;
-    height: 50%;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.8274509804);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    cursor: pointer;
-    transition: all 0.3s linear;
-    text-decoration: none;
-  }
-  .header-container .list-elements .us-display .contain a:hover {
-    color: #ffd600;
-  }
-  .header-container .list-elements .us-display {
-    width: 5%;
+    width: 20%;
     height: 100%;
   }
   .header-container .list-elements .us-display .contain {
@@ -1622,7 +1596,7 @@
     color: #ffd600;
   }
   .header-container .list-elements .us-display {
-    width: 5%;
+    width: 20%;
     height: 100%;
   }
   .header-container .list-elements .us-display .contain {
@@ -2040,7 +2014,7 @@
     color: #ffd600;
   }
   .header-container .list-elements .us-display {
-    width: 5%;
+    width: 10%;
     height: 100%;
   }
   .header-container .list-elements .us-display .contain {
@@ -2469,7 +2443,7 @@
     color: #ffd600;
   }
   .header-container .list-elements .us-display {
-    width: 5%;
+    width: 10%;
     height: 100%;
   }
   .header-container .list-elements .us-display .contain {

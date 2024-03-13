@@ -2,8 +2,8 @@ import './style/Admin.css';
 
 // import forms
 import AddProducts from './forms/AddProductForm';
-import AddCategory from './forms/AddCategoryForm';
 import AddDiscount from './forms/AddDiscountForm';
+import AddCategories from './forms/AddCategoriesForm';
 import {
     closeConsole,
     addProducts,
@@ -16,7 +16,7 @@ export default function Admin() {
     useEffect(() => {
         document.querySelector('.add-products-form').classList.remove('close-products-form');
         document.querySelector('.add-discount').classList.add('close-discount');
-        document.querySelector('.add-category').classList.add('close-category');
+        document.querySelector('.add-categories').classList.add('close-categories');
     })
     return (
         <div className="admin-container">
@@ -38,8 +38,8 @@ export default function Admin() {
                 </div>
                 <div className="right-block">
                     <AddProducts />
-                    <AddCategory />
                     <AddDiscount />
+                    <AddCategories />
                 </div>
             </div>
             <div className="modal-window">

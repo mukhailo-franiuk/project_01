@@ -35,22 +35,22 @@ import {
     getingUsers
 } from '../../../store/CheckUser';
 // connect to realtime database
-import { getDatabase , get , ref} from 'firebase/database';
+import { getDatabase, get, ref } from 'firebase/database';
 import { app } from '../../../options/environment/env';
 export default function Header() {
     const db = getDatabase(app);
-    const dispach = useDispatch();  
-    useEffect(()=>{
-        get(ref(db,'users')).then((snapshot)=>{
-            if(snapshot.exists()){
+    const dispach = useDispatch();
+    useEffect(() => {
+        get(ref(db, 'users')).then((snapshot) => {
+            if (snapshot.exists()) {
                 dispach(getingUsers(snapshot.val()));
-            }else{
+            } else {
                 console.log("No data available");
             }
-        }).catch((error)=>{
+        }).catch((error) => {
             console.error(error);
         })
-    },[])
+    }, [])
     return (
         <header className='header-container'>
             <div className="list-elements">
@@ -69,7 +69,7 @@ export default function Header() {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/" title='Піца' onClick={closeButtonModal}>
+                                <Link to="/pizza" title='Піца' onClick={closeButtonModal}>
                                     <img src={Pizza} alt="" />
                                     <span>Піца</span>
                                 </Link>
@@ -84,62 +84,62 @@ export default function Header() {
                                     <div className="list-links-sushi">
                                         <ul>
                                             <li className='first-li'>
-                                                <Link to="/product/sets" onClick={closeButtonModal}>Сети</Link>
+                                                <Link to="/sets" onClick={closeButtonModal}>Сети</Link>
                                             </li>
                                             <li>
-                                                <Link to="/" onClick={closeButtonModal}>Філодельфія</Link>
+                                                <Link to="/filodelfia" onClick={closeButtonModal}>Філодельфія</Link>
                                             </li>
                                             <li>
-                                                <Link to="/" onClick={closeButtonModal}>Гарячі роли</Link>
+                                                <Link to="/hot-rolls" onClick={closeButtonModal}>Гарячі роли</Link>
                                             </li>
                                             <li>
-                                                <Link to="/" onClick={closeButtonModal}>Роли</Link>
+                                                <Link to="/rolls" onClick={closeButtonModal}>Роли</Link>
                                             </li>
                                             <li className='last-li'>
-                                                <Link to="/" onClick={closeButtonModal}>Маки</Link>
+                                                <Link to="/mack" onClick={closeButtonModal}>Маки</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </li>
                             <li>
-                                <Link to="/product/burgers" title='Бургери' onClick={closeButtonModal}>
+                                <Link to="/burgers" title='Бургери' onClick={closeButtonModal}>
                                     <img src={Burgers} alt="" />
                                     <span>Бургери</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/product/shawarma" title='кебаб' onClick={closeButtonModal}>
+                                <Link to="/shawarma" title='кебаб' onClick={closeButtonModal}>
                                     <img src={Shawarma} alt="" />
                                     <span>Кебаб</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/product/hot-dogs" title='хот дог' onClick={closeButtonModal}>
+                                <Link to="/hot-dog" title='хот дог' onClick={closeButtonModal}>
                                     <img src={HotDog} alt="" />
                                     <span>Хот Дог</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/product/salad" title='салати' onClick={closeButtonModal}>
+                                <Link to="/salad" title='салати' onClick={closeButtonModal}>
                                     <img src={Salad} alt="" />
                                     <span>Салати</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/product/freezing" title='заморозка' onClick={closeButtonModal}>
+                                <Link to="/freezing" title='заморозка' onClick={closeButtonModal}>
                                     <img src={Frezing} alt="" />
                                     <span>Заморозка</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/product/desert" title='десерти' onClick={closeButtonModal}>
+                                <Link to="/desert" title='десерти' onClick={closeButtonModal}>
                                     <img src={Desert} alt="" />
                                     <span>Десерти</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/product/drink" title='напої' onClick={closeButtonModal}>
+                                <Link to="/drink" title='напої' onClick={closeButtonModal}>
                                     <img src={Drink} alt="" />
                                     <span>Напої</span>
                                 </Link>
@@ -154,13 +154,13 @@ export default function Header() {
                                     <div className="list-links-alcohol">
                                         <ul>
                                             <li className='first-li'>
-                                                <Link to="/product/sets" onClick={closeButtonModal}>Сети</Link>
+                                                <Link to="/wine" onClick={closeButtonModal}>Вино</Link>
                                             </li>
                                             <li>
-                                                <Link to="/" onClick={closeButtonModal}>Філодельфія</Link>
+                                                <Link to="/beer" onClick={closeButtonModal}>Пиво</Link>
                                             </li>
                                             <li>
-                                                <Link to="/" onClick={closeButtonModal}>Гарячі роли</Link>
+                                                <Link to="/sider" onClick={closeButtonModal}>Сидр</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -179,7 +179,7 @@ export default function Header() {
                                                 <Link to="/product/sets" onClick={closeButtonModal}>Вакансії</Link>
                                             </li>
                                             <li>
-                                                <Link to="/" onClick={closeButtonModal}>Франшиза</Link>
+                                                <Link to="https://business.la.ua/" onClick={closeButtonModal} target='_blanck'>Франшиза</Link>
                                             </li>
                                             <li>
                                                 <Link to="/" onClick={closeButtonModal}>Доставка</Link>
@@ -217,7 +217,7 @@ export default function Header() {
                 </div>
                 <div className="action-users">
                     <div className="contain">
-                    <button className='action-us-ad' onClick={showActionsForm}>Увійти</button>
+                        <button className='action-us-ad' onClick={showActionsForm}>Увійти</button>
                     </div>
                 </div>
                 <div className="us-display">

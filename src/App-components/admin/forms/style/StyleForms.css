@@ -1,3 +1,2834 @@
+@media (max-width: 320px) and (min-width: 200px) {
+  .add-products-form {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-products-form .add-product {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .add-product .check-category {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .check-category span {
+    padding: 10px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .check-category select {
+    width: 100%;
+    min-height: 30px;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    border-radius: 6px;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .check-category select option {
+    background-color: #ffd600;
+    font-size: 18px;
+  }
+  .add-products-form .add-product .check-category select:hover {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .name-product,
+  .add-products-form .add-product .price,
+  .add-products-form .add-product .weight,
+  .add-products-form .add-product .patch-product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-products-form .add-product .name-product span,
+  .add-products-form .add-product .price span,
+  .add-products-form .add-product .weight span,
+  .add-products-form .add-product .patch-product span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .name-product input,
+  .add-products-form .add-product .price input,
+  .add-products-form .add-product .weight input,
+  .add-products-form .add-product .patch-product input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .name-product input:focus,
+  .add-products-form .add-product .price input:focus,
+  .add-products-form .add-product .weight input:focus,
+  .add-products-form .add-product .patch-product input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-products-form .add-product .info {
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+  }
+  .add-products-form .add-product .info div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .info div span {
+    font-size: 10px;
+    padding: 10px 0;
+  }
+  .add-products-form .add-product .info div input {
+    width: 90%;
+    font-size: 27px;
+    padding: 5px;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .info div input:focus {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0 0 0;
+  }
+  .add-products-form .add-product .description span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .description textarea {
+    width: 100%;
+    height: 70px;
+    padding: 5px 0 5px 2%;
+    margin: 5px 0;
+    transition: all 0.3s linear;
+    font-size: 15px;
+  }
+  .add-products-form .add-product .description textarea:focus {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .load-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .load-image span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 10px 0;
+  }
+  .add-products-form .add-product .load-image input {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .add-product .btn-add {
+    width: 70%;
+    background-color: #ffd600;
+    margin: 10px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .add-products-form .add-product .btn-add:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .close-products-form {
+    display: none;
+  }
+  .add-discount {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-discount .add-discount-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .prime-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-discount .add-discount-form .prime-text span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .prime-text input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-discount .add-discount-form .prime-text input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-discount .add-discount-form .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 0 0;
+  }
+  .add-discount .add-discount-form .description span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .description textarea {
+    width: 100%;
+    height: 80px;
+    padding: 5px 0 5px 2%;
+    margin: 5px 0;
+    transition: all 0.3s linear;
+    font-size: 15px;
+  }
+  .add-discount .add-discount-form .description textarea:focus {
+    background-color: #ffd600;
+  }
+  .add-discount .add-discount-form .load-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .load-image span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .load-image input {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .load-image .upload-status {
+    width: 100%;
+    height: 20px;
+    margin: 5px 0;
+  }
+  .add-discount .add-discount-form .load-image .upload-status .line-upload {
+    width: 100%;
+    height: 100%;
+  }
+  .add-discount .add-discount-form .load-image .upload-status .line-upload .line {
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    border-radius: 10px;
+  }
+  .add-discount .add-discount-form .btn-add-discount {
+    width: 70%;
+    background-color: #ffd600;
+    margin: 5px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .add-discount .add-discount-form .btn-add-discount:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .add-discount .list-discounts {
+    width: 100%;
+  }
+  .add-discount .list-discounts .table {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-discount .list-discounts .table thead tr th {
+    height: 40px;
+    border: 1px solid red;
+  }
+  .add-discount .list-discounts .table tbody tr {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8274509804);
+    transition: all 0.3s linear;
+  }
+  .add-discount .list-discounts .table tbody tr td {
+    border: none;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .add-discount .list-discounts .table tbody tr td img {
+    width: 30px;
+    height: 20px;
+  }
+  .add-discount .list-discounts .table tbody tr:hover {
+    background-color: #ffd600;
+  }
+  .close-discount {
+    display: none;
+  }
+  .add-categories {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-categories .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-categories .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-categories .add-categories-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-categories .add-categories-form .prime-text, .add-categories .add-categories-form .patch {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-categories .add-categories-form .prime-text span, .add-categories .add-categories-form .patch span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-categories .add-categories-form .prime-text input, .add-categories .add-categories-form .patch input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-categories .add-categories-form .prime-text input:focus, .add-categories .add-categories-form .patch input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-categories .add-categories-form .btn-add-discount {
+    width: 70%;
+    background-color: #ffd600;
+    margin: 5px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .add-categories .add-categories-form .btn-add-discount:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .close-categories {
+    display: none;
+  }
+}
+@media (max-width: 375px) and (min-width: 321px) {
+  .add-products-form {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-products-form .add-product {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .add-product .check-category {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .check-category span {
+    padding: 10px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .check-category select {
+    width: 100%;
+    min-height: 30px;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    border-radius: 6px;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .check-category select option {
+    background-color: #ffd600;
+    font-size: 18px;
+  }
+  .add-products-form .add-product .check-category select:hover {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .name-product,
+  .add-products-form .add-product .price,
+  .add-products-form .add-product .weight,
+  .add-products-form .add-product .patch-product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-products-form .add-product .name-product span,
+  .add-products-form .add-product .price span,
+  .add-products-form .add-product .weight span,
+  .add-products-form .add-product .patch-product span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .name-product input,
+  .add-products-form .add-product .price input,
+  .add-products-form .add-product .weight input,
+  .add-products-form .add-product .patch-product input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .name-product input:focus,
+  .add-products-form .add-product .price input:focus,
+  .add-products-form .add-product .weight input:focus,
+  .add-products-form .add-product .patch-product input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-products-form .add-product .info {
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+  }
+  .add-products-form .add-product .info div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .info div span {
+    font-size: 10px;
+    padding: 10px 0;
+  }
+  .add-products-form .add-product .info div input {
+    width: 90%;
+    font-size: 27px;
+    padding: 5px;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .info div input:focus {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0 0 0;
+  }
+  .add-products-form .add-product .description span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .description textarea {
+    width: 100%;
+    height: 70px;
+    padding: 5px 0 5px 2%;
+    margin: 5px 0;
+    transition: all 0.3s linear;
+    font-size: 15px;
+  }
+  .add-products-form .add-product .description textarea:focus {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .load-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .load-image span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 10px 0;
+  }
+  .add-products-form .add-product .load-image input {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .add-product .btn-add {
+    width: 70%;
+    background-color: #ffd600;
+    margin: 10px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .add-products-form .add-product .btn-add:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .close-products-form {
+    display: none;
+  }
+  .add-discount {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-discount .add-discount-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .prime-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-discount .add-discount-form .prime-text span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .prime-text input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-discount .add-discount-form .prime-text input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-discount .add-discount-form .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 0 0;
+  }
+  .add-discount .add-discount-form .description span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .description textarea {
+    width: 100%;
+    height: 80px;
+    padding: 5px 0 5px 2%;
+    margin: 5px 0;
+    transition: all 0.3s linear;
+    font-size: 15px;
+  }
+  .add-discount .add-discount-form .description textarea:focus {
+    background-color: #ffd600;
+  }
+  .add-discount .add-discount-form .load-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .load-image span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .load-image input {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .load-image .upload-status {
+    width: 100%;
+    height: 20px;
+    margin: 5px 0;
+  }
+  .add-discount .add-discount-form .load-image .upload-status .line-upload {
+    width: 100%;
+    height: 100%;
+  }
+  .add-discount .add-discount-form .load-image .upload-status .line-upload .line {
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    border-radius: 10px;
+  }
+  .add-discount .add-discount-form .btn-add-discount {
+    width: 70%;
+    background-color: #ffd600;
+    margin: 5px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .add-discount .add-discount-form .btn-add-discount:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .add-discount .list-discounts {
+    width: 100%;
+  }
+  .add-discount .list-discounts .table {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-discount .list-discounts .table thead tr th {
+    height: 40px;
+    border: 1px solid red;
+  }
+  .add-discount .list-discounts .table tbody tr {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8274509804);
+    transition: all 0.3s linear;
+  }
+  .add-discount .list-discounts .table tbody tr td {
+    border: none;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .add-discount .list-discounts .table tbody tr td img {
+    width: 30px;
+    height: 20px;
+  }
+  .add-discount .list-discounts .table tbody tr:hover {
+    background-color: #ffd600;
+  }
+  .close-discount {
+    display: none;
+  }
+  .add-categories {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-categories .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-categories .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-categories .add-categories-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-categories .add-categories-form .prime-text, .add-categories .add-categories-form .patch {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-categories .add-categories-form .prime-text span, .add-categories .add-categories-form .patch span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-categories .add-categories-form .prime-text input, .add-categories .add-categories-form .patch input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-categories .add-categories-form .prime-text input:focus, .add-categories .add-categories-form .patch input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-categories .add-categories-form .btn-add-discount {
+    width: 70%;
+    background-color: #ffd600;
+    margin: 5px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .add-categories .add-categories-form .btn-add-discount:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .close-categories {
+    display: none;
+  }
+}
+@media (max-width: 425px) and (min-width: 376px) {
+  .add-products-form {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-products-form .add-product {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .add-product .check-category {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .check-category span {
+    padding: 10px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .check-category select {
+    width: 100%;
+    min-height: 30px;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    border-radius: 6px;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .check-category select option {
+    background-color: #ffd600;
+    font-size: 18px;
+  }
+  .add-products-form .add-product .check-category select:hover {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .name-product,
+  .add-products-form .add-product .price,
+  .add-products-form .add-product .weight,
+  .add-products-form .add-product .patch-product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-products-form .add-product .name-product span,
+  .add-products-form .add-product .price span,
+  .add-products-form .add-product .weight span,
+  .add-products-form .add-product .patch-product span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .name-product input,
+  .add-products-form .add-product .price input,
+  .add-products-form .add-product .weight input,
+  .add-products-form .add-product .patch-product input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .name-product input:focus,
+  .add-products-form .add-product .price input:focus,
+  .add-products-form .add-product .weight input:focus,
+  .add-products-form .add-product .patch-product input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-products-form .add-product .info {
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+  }
+  .add-products-form .add-product .info div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .info div span {
+    font-size: 10px;
+    padding: 10px 0;
+  }
+  .add-products-form .add-product .info div input {
+    width: 90%;
+    font-size: 27px;
+    padding: 5px;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .info div input:focus {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0 0 0;
+  }
+  .add-products-form .add-product .description span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .description textarea {
+    width: 100%;
+    height: 70px;
+    padding: 5px 0 5px 2%;
+    margin: 5px 0;
+    transition: all 0.3s linear;
+    font-size: 15px;
+  }
+  .add-products-form .add-product .description textarea:focus {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .load-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .load-image span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 10px 0;
+  }
+  .add-products-form .add-product .load-image input {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .add-product .btn-add {
+    width: 70%;
+    background-color: #ffd600;
+    margin: 10px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .add-products-form .add-product .btn-add:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .close-products-form {
+    display: none;
+  }
+  .add-discount {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-discount .add-discount-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .prime-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-discount .add-discount-form .prime-text span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .prime-text input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-discount .add-discount-form .prime-text input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-discount .add-discount-form .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 0 0;
+  }
+  .add-discount .add-discount-form .description span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .description textarea {
+    width: 100%;
+    height: 80px;
+    padding: 5px 0 5px 2%;
+    margin: 5px 0;
+    transition: all 0.3s linear;
+    font-size: 15px;
+  }
+  .add-discount .add-discount-form .description textarea:focus {
+    background-color: #ffd600;
+  }
+  .add-discount .add-discount-form .load-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .load-image span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .load-image input {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .load-image .upload-status {
+    width: 100%;
+    height: 20px;
+    margin: 5px 0;
+  }
+  .add-discount .add-discount-form .load-image .upload-status .line-upload {
+    width: 100%;
+    height: 100%;
+  }
+  .add-discount .add-discount-form .load-image .upload-status .line-upload .line {
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    border-radius: 10px;
+  }
+  .add-discount .add-discount-form .btn-add-discount {
+    width: 70%;
+    background-color: #ffd600;
+    margin: 5px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .add-discount .add-discount-form .btn-add-discount:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .add-discount .list-discounts {
+    width: 100%;
+  }
+  .add-discount .list-discounts .table {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-discount .list-discounts .table thead tr th {
+    height: 40px;
+    border: 1px solid red;
+  }
+  .add-discount .list-discounts .table tbody tr {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8274509804);
+    transition: all 0.3s linear;
+  }
+  .add-discount .list-discounts .table tbody tr td {
+    border: none;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .add-discount .list-discounts .table tbody tr td img {
+    width: 30px;
+    height: 20px;
+  }
+  .add-discount .list-discounts .table tbody tr:hover {
+    background-color: #ffd600;
+  }
+  .close-discount {
+    display: none;
+  }
+  .add-categories {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-categories .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-categories .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-categories .add-categories-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-categories .add-categories-form .prime-text, .add-categories .add-categories-form .patch {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-categories .add-categories-form .prime-text span, .add-categories .add-categories-form .patch span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-categories .add-categories-form .prime-text input, .add-categories .add-categories-form .patch input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-categories .add-categories-form .prime-text input:focus, .add-categories .add-categories-form .patch input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-categories .add-categories-form .btn-add-discount {
+    width: 70%;
+    background-color: #ffd600;
+    margin: 5px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .add-categories .add-categories-form .btn-add-discount:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .close-categories {
+    display: none;
+  }
+}
+@media (max-width: 600px) and (min-width: 426px) {
+  .add-products-form {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-products-form .add-product {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .add-product .check-category {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .check-category span {
+    padding: 10px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .check-category select {
+    width: 100%;
+    min-height: 30px;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    border-radius: 6px;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .check-category select option {
+    background-color: #ffd600;
+    font-size: 18px;
+  }
+  .add-products-form .add-product .check-category select:hover {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .name-product,
+  .add-products-form .add-product .price,
+  .add-products-form .add-product .weight,
+  .add-products-form .add-product .patch-product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-products-form .add-product .name-product span,
+  .add-products-form .add-product .price span,
+  .add-products-form .add-product .weight span,
+  .add-products-form .add-product .patch-product span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .name-product input,
+  .add-products-form .add-product .price input,
+  .add-products-form .add-product .weight input,
+  .add-products-form .add-product .patch-product input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .name-product input:focus,
+  .add-products-form .add-product .price input:focus,
+  .add-products-form .add-product .weight input:focus,
+  .add-products-form .add-product .patch-product input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-products-form .add-product .info {
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+  }
+  .add-products-form .add-product .info div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .info div span {
+    font-size: 10px;
+    padding: 10px 0;
+  }
+  .add-products-form .add-product .info div input {
+    width: 90%;
+    font-size: 27px;
+    padding: 5px;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .info div input:focus {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0 0 0;
+  }
+  .add-products-form .add-product .description span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .description textarea {
+    width: 100%;
+    height: 70px;
+    padding: 5px 0 5px 2%;
+    margin: 5px 0;
+    transition: all 0.3s linear;
+    font-size: 15px;
+  }
+  .add-products-form .add-product .description textarea:focus {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .load-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .load-image span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 10px 0;
+  }
+  .add-products-form .add-product .load-image input {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .add-product .btn-add {
+    width: 70%;
+    background-color: #ffd600;
+    margin: 10px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .add-products-form .add-product .btn-add:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .close-products-form {
+    display: none;
+  }
+  .add-discount {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-discount .add-discount-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .prime-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-discount .add-discount-form .prime-text span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .prime-text input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-discount .add-discount-form .prime-text input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-discount .add-discount-form .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 0 0;
+  }
+  .add-discount .add-discount-form .description span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .description textarea {
+    width: 100%;
+    height: 80px;
+    padding: 5px 0 5px 2%;
+    margin: 5px 0;
+    transition: all 0.3s linear;
+    font-size: 15px;
+  }
+  .add-discount .add-discount-form .description textarea:focus {
+    background-color: #ffd600;
+  }
+  .add-discount .add-discount-form .load-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .load-image span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .load-image input {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .load-image .upload-status {
+    width: 100%;
+    height: 20px;
+    margin: 5px 0;
+  }
+  .add-discount .add-discount-form .load-image .upload-status .line-upload {
+    width: 100%;
+    height: 100%;
+  }
+  .add-discount .add-discount-form .load-image .upload-status .line-upload .line {
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    border-radius: 10px;
+  }
+  .add-discount .add-discount-form .btn-add-discount {
+    width: 70%;
+    background-color: #ffd600;
+    margin: 5px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .add-discount .add-discount-form .btn-add-discount:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .add-discount .list-discounts {
+    width: 100%;
+  }
+  .add-discount .list-discounts .table {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-discount .list-discounts .table thead tr th {
+    height: 40px;
+    border: 1px solid red;
+  }
+  .add-discount .list-discounts .table tbody tr {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8274509804);
+    transition: all 0.3s linear;
+  }
+  .add-discount .list-discounts .table tbody tr td {
+    border: none;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .add-discount .list-discounts .table tbody tr td img {
+    width: 30px;
+    height: 20px;
+  }
+  .add-discount .list-discounts .table tbody tr:hover {
+    background-color: #ffd600;
+  }
+  .close-discount {
+    display: none;
+  }
+  .add-categories {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-categories .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-categories .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-categories .add-categories-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-categories .add-categories-form .prime-text, .add-categories .add-categories-form .patch {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-categories .add-categories-form .prime-text span, .add-categories .add-categories-form .patch span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-categories .add-categories-form .prime-text input, .add-categories .add-categories-form .patch input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-categories .add-categories-form .prime-text input:focus, .add-categories .add-categories-form .patch input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-categories .add-categories-form .btn-add-discount {
+    width: 70%;
+    background-color: #ffd600;
+    margin: 5px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .add-categories .add-categories-form .btn-add-discount:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .close-categories {
+    display: none;
+  }
+}
+@media (max-width: 768px) and (min-width: 601px) {
+  .add-products-form {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-products-form .add-product {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .add-product .check-category {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .check-category span {
+    padding: 10px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .check-category select {
+    width: 100%;
+    min-height: 30px;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    border-radius: 6px;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .check-category select option {
+    background-color: #ffd600;
+    font-size: 18px;
+  }
+  .add-products-form .add-product .check-category select:hover {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .name-product,
+  .add-products-form .add-product .price,
+  .add-products-form .add-product .weight,
+  .add-products-form .add-product .patch-product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-products-form .add-product .name-product span,
+  .add-products-form .add-product .price span,
+  .add-products-form .add-product .weight span,
+  .add-products-form .add-product .patch-product span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .name-product input,
+  .add-products-form .add-product .price input,
+  .add-products-form .add-product .weight input,
+  .add-products-form .add-product .patch-product input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .name-product input:focus,
+  .add-products-form .add-product .price input:focus,
+  .add-products-form .add-product .weight input:focus,
+  .add-products-form .add-product .patch-product input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-products-form .add-product .info {
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+  }
+  .add-products-form .add-product .info div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .info div span {
+    font-size: 10px;
+    padding: 10px 0;
+  }
+  .add-products-form .add-product .info div input {
+    width: 90%;
+    font-size: 27px;
+    padding: 5px;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .info div input:focus {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0 0 0;
+  }
+  .add-products-form .add-product .description span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .description textarea {
+    width: 100%;
+    height: 70px;
+    padding: 5px 0 5px 2%;
+    margin: 5px 0;
+    transition: all 0.3s linear;
+    font-size: 15px;
+  }
+  .add-products-form .add-product .description textarea:focus {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .load-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .load-image span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 10px 0;
+  }
+  .add-products-form .add-product .load-image input {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .add-product .btn-add {
+    width: 70%;
+    background-color: #ffd600;
+    margin: 10px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .add-products-form .add-product .btn-add:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .close-products-form {
+    display: none;
+  }
+  .add-discount {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-discount .add-discount-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .prime-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-discount .add-discount-form .prime-text span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .prime-text input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-discount .add-discount-form .prime-text input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-discount .add-discount-form .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 0 0;
+  }
+  .add-discount .add-discount-form .description span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .description textarea {
+    width: 100%;
+    height: 80px;
+    padding: 5px 0 5px 2%;
+    margin: 5px 0;
+    transition: all 0.3s linear;
+    font-size: 15px;
+  }
+  .add-discount .add-discount-form .description textarea:focus {
+    background-color: #ffd600;
+  }
+  .add-discount .add-discount-form .load-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .load-image span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .load-image input {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .load-image .upload-status {
+    width: 100%;
+    height: 20px;
+    margin: 5px 0;
+  }
+  .add-discount .add-discount-form .load-image .upload-status .line-upload {
+    width: 100%;
+    height: 100%;
+  }
+  .add-discount .add-discount-form .load-image .upload-status .line-upload .line {
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    border-radius: 10px;
+  }
+  .add-discount .add-discount-form .btn-add-discount {
+    width: 70%;
+    background-color: #ffd600;
+    margin: 5px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .add-discount .add-discount-form .btn-add-discount:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .add-discount .list-discounts {
+    width: 100%;
+  }
+  .add-discount .list-discounts .table {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-discount .list-discounts .table thead tr th {
+    height: 40px;
+    border: 1px solid red;
+  }
+  .add-discount .list-discounts .table tbody tr {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8274509804);
+    transition: all 0.3s linear;
+  }
+  .add-discount .list-discounts .table tbody tr td {
+    border: none;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .add-discount .list-discounts .table tbody tr td img {
+    width: 30px;
+    height: 20px;
+  }
+  .add-discount .list-discounts .table tbody tr:hover {
+    background-color: #ffd600;
+  }
+  .close-discount {
+    display: none;
+  }
+  .add-categories {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-categories .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-categories .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-categories .add-categories-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-categories .add-categories-form .prime-text, .add-categories .add-categories-form .patch {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-categories .add-categories-form .prime-text span, .add-categories .add-categories-form .patch span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-categories .add-categories-form .prime-text input, .add-categories .add-categories-form .patch input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-categories .add-categories-form .prime-text input:focus, .add-categories .add-categories-form .patch input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-categories .add-categories-form .btn-add-discount {
+    width: 70%;
+    background-color: #ffd600;
+    margin: 5px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .add-categories .add-categories-form .btn-add-discount:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .close-categories {
+    display: none;
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  .add-products-form {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-products-form .add-product {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .add-product .check-category {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .check-category span {
+    padding: 10px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .check-category select {
+    width: 100%;
+    min-height: 30px;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    border-radius: 6px;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .check-category select option {
+    background-color: #ffd600;
+    font-size: 18px;
+  }
+  .add-products-form .add-product .check-category select:hover {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .name-product,
+  .add-products-form .add-product .price,
+  .add-products-form .add-product .weight,
+  .add-products-form .add-product .patch-product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-products-form .add-product .name-product span,
+  .add-products-form .add-product .price span,
+  .add-products-form .add-product .weight span,
+  .add-products-form .add-product .patch-product span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .name-product input,
+  .add-products-form .add-product .price input,
+  .add-products-form .add-product .weight input,
+  .add-products-form .add-product .patch-product input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .name-product input:focus,
+  .add-products-form .add-product .price input:focus,
+  .add-products-form .add-product .weight input:focus,
+  .add-products-form .add-product .patch-product input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-products-form .add-product .info {
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+  }
+  .add-products-form .add-product .info div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .info div span {
+    font-size: 10px;
+    padding: 10px 0;
+  }
+  .add-products-form .add-product .info div input {
+    width: 90%;
+    font-size: 27px;
+    padding: 5px;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .info div input:focus {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0 0 0;
+  }
+  .add-products-form .add-product .description span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .description textarea {
+    width: 100%;
+    padding: 5px 0 5px 2%;
+    margin: 5px 0;
+    transition: all 0.3s linear;
+    font-size: 15px;
+  }
+  .add-products-form .add-product .description textarea:focus {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .load-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .load-image span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 10px 0;
+  }
+  .add-products-form .add-product .load-image input {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .add-product .btn-add {
+    width: 50%;
+    background-color: #ffd600;
+    margin: 15px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .add-products-form .add-product .btn-add:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .close-products-form {
+    display: none;
+  }
+  .add-discount {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-discount .add-discount-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .prime-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-discount .add-discount-form .prime-text span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .prime-text input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-discount .add-discount-form .prime-text input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-discount .add-discount-form .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 0 0;
+  }
+  .add-discount .add-discount-form .description span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .description textarea {
+    width: 100%;
+    padding: 5px 0 5px 2%;
+    margin: 5px 0;
+    transition: all 0.3s linear;
+    font-size: 15px;
+  }
+  .add-discount .add-discount-form .description textarea:focus {
+    background-color: #ffd600;
+  }
+  .add-discount .add-discount-form .load-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .load-image span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .load-image input {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .load-image .upload-status {
+    width: 100%;
+    height: 20px;
+    margin: 5px 0;
+  }
+  .add-discount .add-discount-form .load-image .upload-status .line-upload {
+    width: 100%;
+    height: 100%;
+  }
+  .add-discount .add-discount-form .load-image .upload-status .line-upload .line {
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    border-radius: 10px;
+  }
+  .add-discount .add-discount-form .btn-add-discount {
+    width: 60%;
+    background-color: #ffd600;
+    margin: 15px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .add-discount .add-discount-form .btn-add-discount:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .add-discount .list-discounts {
+    width: 100%;
+  }
+  .add-discount .list-discounts .table {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-discount .list-discounts .table thead tr th {
+    height: 40px;
+    border: 1px solid red;
+  }
+  .add-discount .list-discounts .table tbody tr {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8274509804);
+    transition: all 0.3s linear;
+  }
+  .add-discount .list-discounts .table tbody tr td {
+    border: none;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .add-discount .list-discounts .table tbody tr td img {
+    width: 30px;
+    height: 20px;
+  }
+  .add-discount .list-discounts .table tbody tr:hover {
+    background-color: #ffd600;
+  }
+  .close-discount {
+    display: none;
+  }
+  .add-categories {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-categories .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-categories .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-categories .add-categories-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-categories .add-categories-form .prime-text, .add-categories .add-categories-form .patch {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-categories .add-categories-form .prime-text span, .add-categories .add-categories-form .patch span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-categories .add-categories-form .prime-text input, .add-categories .add-categories-form .patch input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-categories .add-categories-form .prime-text input:focus, .add-categories .add-categories-form .patch input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-categories .add-categories-form .btn-add-discount {
+    width: 70%;
+    background-color: #ffd600;
+    margin: 5px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .add-categories .add-categories-form .btn-add-discount:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .close-categories {
+    display: none;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .add-products-form {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-products-form .add-product {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .add-product .check-category {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .check-category span {
+    padding: 10px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 16px;
+  }
+  .add-products-form .add-product .check-category select {
+    width: 80%;
+    min-height: 30px;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    outline: none;
+    border-radius: 6px;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .check-category select option {
+    background-color: #ffd600;
+    font-size: 18px;
+  }
+  .add-products-form .add-product .check-category select:hover {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .name-product,
+  .add-products-form .add-product .price,
+  .add-products-form .add-product .weight,
+  .add-products-form .add-product .patch-product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-products-form .add-product .name-product span,
+  .add-products-form .add-product .price span,
+  .add-products-form .add-product .weight span,
+  .add-products-form .add-product .patch-product span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 16px;
+  }
+  .add-products-form .add-product .name-product input,
+  .add-products-form .add-product .price input,
+  .add-products-form .add-product .weight input,
+  .add-products-form .add-product .patch-product input {
+    width: 80%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .name-product input:focus,
+  .add-products-form .add-product .price input:focus,
+  .add-products-form .add-product .weight input:focus,
+  .add-products-form .add-product .patch-product input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-products-form .add-product .info {
+    margin: 5px 0;
+    width: 82%;
+    display: flex;
+  }
+  .add-products-form .add-product .info div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .info div span {
+    font-size: 13px;
+    padding: 10px 0;
+  }
+  .add-products-form .add-product .info div input {
+    width: 90%;
+    font-size: 27px;
+    padding: 5px;
+    transition: all 0.3s linear;
+  }
+  .add-products-form .add-product .info div input:focus {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .description {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0 0 0;
+  }
+  .add-products-form .add-product .description span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-products-form .add-product .description textarea {
+    width: 100%;
+    padding: 5px 0 5px 2%;
+    margin: 5px 0;
+    transition: all 0.3s linear;
+    font-size: 15px;
+  }
+  .add-products-form .add-product .description textarea:focus {
+    background-color: #ffd600;
+  }
+  .add-products-form .add-product .load-image {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-products-form .add-product .load-image span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 10px 0;
+  }
+  .add-products-form .add-product .load-image input {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-products-form .add-product .btn-add {
+    width: 50%;
+    background-color: #ffd600;
+    margin: 15px 0;
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .add-products-form .add-product .btn-add:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .close-products-form {
+    display: none;
+  }
+  .add-discount {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-discount .add-discount-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .prime-text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-discount .add-discount-form .prime-text span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .prime-text input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-discount .add-discount-form .prime-text input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-discount .add-discount-form .description {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 0 0;
+  }
+  .add-discount .add-discount-form .description span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .description textarea {
+    width: 100%;
+    padding: 5px 0 5px 2%;
+    margin: 5px 0;
+    transition: all 0.3s linear;
+    font-size: 15px;
+  }
+  .add-discount .add-discount-form .description textarea:focus {
+    background-color: #ffd600;
+  }
+  .add-discount .add-discount-form .load-image {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .load-image span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .add-discount .add-discount-form .load-image input {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-discount .add-discount-form .load-image .upload-status {
+    width: 100%;
+    height: 20px;
+    margin: 5px 0;
+  }
+  .add-discount .add-discount-form .load-image .upload-status .line-upload {
+    width: 100%;
+    height: 100%;
+  }
+  .add-discount .add-discount-form .load-image .upload-status .line-upload .line {
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    border-radius: 10px;
+  }
+  .add-discount .add-discount-form .btn-add-discount {
+    width: 50%;
+    background-color: #ffd600;
+    margin: 15px 0;
+    padding: 10px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .add-discount .add-discount-form .btn-add-discount:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .add-discount .list-discounts {
+    width: 100%;
+  }
+  .add-discount .list-discounts .table {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-discount .list-discounts .table thead tr th {
+    height: 40px;
+    border: 1px solid red;
+  }
+  .add-discount .list-discounts .table tbody tr {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8274509804);
+    transition: all 0.3s linear;
+  }
+  .add-discount .list-discounts .table tbody tr td {
+    border: none;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .add-discount .list-discounts .table tbody tr td img {
+    width: 30px;
+    height: 20px;
+  }
+  .add-discount .list-discounts .table tbody tr:hover {
+    background-color: #ffd600;
+  }
+  .close-discount {
+    display: none;
+  }
+  .add-categories {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-categories .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-categories .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-categories .add-categories-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-categories .add-categories-form .prime-text, .add-categories .add-categories-form .patch {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .add-categories .add-categories-form .prime-text span, .add-categories .add-categories-form .patch span {
+    padding: 5px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .add-categories .add-categories-form .prime-text input, .add-categories .add-categories-form .patch input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-categories .add-categories-form .prime-text input:focus, .add-categories .add-categories-form .patch input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-categories .add-categories-form .btn-add-discount {
+    width: 50%;
+    background-color: #ffd600;
+    margin: 15px 0;
+    padding: 10px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .add-categories .add-categories-form .btn-add-discount:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .close-categories {
+    display: none;
+  }
+}
 @media (min-width: 1441px) {
   .add-products-form {
     width: 80%;
@@ -152,6 +2983,21 @@
     justify-content: center;
     align-items: center;
   }
+  .add-products-form .add-product .load-image .upload-status {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+  }
+  .add-products-form .add-product .load-image .upload-status .line-upload {
+    width: 100%;
+    height: 100%;
+  }
+  .add-products-form .add-product .load-image .upload-status .line-upload .line {
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    border-radius: 10px;
+  }
   .add-products-form .add-product .btn-add {
     width: 30%;
     background-color: #ffd600;
@@ -169,79 +3015,6 @@
     font-weight: 700;
   }
   .close-products-form {
-    display: none;
-  }
-  .add-category {
-    width: 80%;
-    margin: 5% auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .add-category .top-message {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .add-category .top-message h2 {
-    padding: 10px 0 20px 0;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 35px;
-    color: rgba(0, 0, 0, 0.4666666667);
-  }
-  .add-category .add-category-form {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .add-category .add-category-form .name-category,
-  .add-category .add-category-form .patch-category {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 0;
-  }
-  .add-category .add-category-form .name-category span,
-  .add-category .add-category-form .patch-category span {
-    padding: 10px 0;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-  .add-category .add-category-form .name-category input,
-  .add-category .add-category-form .patch-category input {
-    width: 50%;
-    font-size: 18px;
-    padding: 5px 0 5px 10px;
-    border-radius: 5px;
-    outline: none;
-    border: 2px solid rgba(0, 0, 0, 0.4666666667);
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    transition: all 0.3s linear;
-  }
-  .add-category .add-category-form .name-category input:focus,
-  .add-category .add-category-form .patch-category input:focus {
-    background-color: #ffd600;
-    border: 2px solid rgba(0, 0, 0, 0.8274509804);
-  }
-  .add-category .add-category-form .btn-add-category {
-    width: 30%;
-    background-color: #ffd600;
-    margin: 20px 0;
-    padding: 10px 0;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    border: 2px solid #ffd600;
-    transition: all 0.3s linear;
-    cursor: pointer;
-  }
-  .add-category .add-category-form .btn-add-category:hover {
-    background-color: #ffffff;
-    border-radius: 8px;
-    font-weight: 700;
-  }
-  .close-category {
     display: none;
   }
   .add-discount {
@@ -397,6 +3170,109 @@
     background-color: #ffd600;
   }
   .close-discount {
+    display: none;
+  }
+  .add-categories {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-categories .top-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-categories .top-message h2 {
+    padding: 10px 0 20px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .add-categories .add-categories-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-categories .add-categories-form .prime-text, .add-categories .add-categories-form .patch {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .add-categories .add-categories-form .prime-text span, .add-categories .add-categories-form .patch span {
+    padding: 10px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .add-categories .add-categories-form .prime-text input, .add-categories .add-categories-form .patch input {
+    width: 50%;
+    font-size: 18px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.4666666667);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s linear;
+  }
+  .add-categories .add-categories-form .prime-text input:focus, .add-categories .add-categories-form .patch input:focus {
+    background-color: #ffd600;
+    border: 2px solid rgba(0, 0, 0, 0.8274509804);
+  }
+  .add-categories .add-categories-form .load-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-categories .add-categories-form .load-image span {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 10px 0;
+  }
+  .add-categories .add-categories-form .load-image input {
+    width: 50%;
+    height: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4666666667);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-categories .add-categories-form .load-image .upload-status {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+  }
+  .add-categories .add-categories-form .load-image .upload-status .line-upload {
+    width: 100%;
+    height: 100%;
+  }
+  .add-categories .add-categories-form .load-image .upload-status .line-upload .line {
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    border-radius: 10px;
+  }
+  .add-categories .add-categories-form .btn-add-discount {
+    width: 30%;
+    background-color: #ffd600;
+    margin: 20px 0;
+    padding: 10px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffd600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .add-categories .add-categories-form .btn-add-discount:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .close-categories {
     display: none;
   }
 }/*# sourceMappingURL=StyleForms.css.map */
