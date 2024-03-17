@@ -84,7 +84,7 @@ export default function Header() {
                                     <div className="list-links-sushi">
                                         <ul>
                                             <li className='first-li'>
-                                                <Link to="/sets" onClick={closeButtonModal}>Сети</Link>
+                                                <Link to="/sety" onClick={closeButtonModal}>Сети</Link>
                                             </li>
                                             <li>
                                                 <Link to="/filodelfia" onClick={closeButtonModal}>Філодельфія</Link>
@@ -103,7 +103,7 @@ export default function Header() {
                                 </div>
                             </li>
                             <li>
-                                <Link to="/burgers" title='Бургери' onClick={closeButtonModal}>
+                                <Link to="/burger" title='Бургери' onClick={closeButtonModal}>
                                     <img src={Burgers} alt="" />
                                     <span>Бургери</span>
                                 </Link>

@@ -1,22 +1,29 @@
-import './style/InfoProduct.css';
+
 import { useEffect } from "react";
-import { getDatabase, ref, child, get } from "firebase/database";
-import { app } from '../../../options/environment/env';
-import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import { useSelector , useDispatch} from "react-redux";
 import {
-    oneElem,
-    getOneElement
+    getOneElement,
+    oneElem
 } from '../../../store/LinksSlice';
-export default function InfoProducts() {
+import { getDatabase , ref ,get , child } from "firebase/database";
+import { app } from "../../../options/environment/env";
+export default function PizzaInfo(){
     const dbRef = ref(getDatabase(app));
-    const dispatch = useDispatch();
     const elems = useSelector(getOneElement);
+    console.log(elems);
+    const dispatch = useDispatch();
     const params = useParams();
+    console.log(params);
     useEffect(() => {
         get(child(dbRef, 'products')).then((snapshot) => {
             if (snapshot.exists()) {
                 dispatch(oneElem(snapshot.val()));
+                Object.keys(snapshot.val()).map(item => 
+                    (params.oneElement === snapshot.val()[item]['patch']) ?
+                    document.title = `ᐅᐅПіца ${snapshot.val()[item]['name']}`
+                    :undefined
+                )
             } else {
                 console.log("No data available");
             }
@@ -24,19 +31,14 @@ export default function InfoProducts() {
             console.error(error);
         });
     }, []);
-    Object.keys(elems).map(item => {
-        if (params.nameProducts === elems[item]['patch']) {
-            document.title = `${elems[item]['name']}`;
-        }
-    });
-    function back() {
+    function backHistory() {
         return window.history.go(-1);
     }
-    return (
-        <div className="big-card">
-            <span onClick={back}>Назад до списку продуктів</span>
+    return(
+        <div className="big-card-pizza">
+            <span onClick={backHistory}>Повернутися назад</span>
             {Object.keys(elems).map(item =>
-                (params.nameProducts === elems[item]['patch']) ?
+                (params.oneElement === elems[item]['patch']) ?
                     <div className="one-card-product" key={item}>
                         <img src={elems[item]['imagePatch']} alt="" />
                         <div className="navigation">
@@ -83,5 +85,5 @@ export default function InfoProducts() {
             )
             }
         </div>
-    );
+    )
 }

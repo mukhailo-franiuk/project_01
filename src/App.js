@@ -14,12 +14,15 @@ import Footer from './App-components/static_components/footer/Footer';
 
 // import pages
 import HomePage from './App-components/pages/home/Home';
-import ProductPage from './App-components/pages/products/Products';
 import Users from './App-components/users/Users';
 import Admin from './App-components/admin/Admin';
 import Discount from './App-components/pages/discount/Discount';
 import InfoDiscount from './App-components/pages/discount-info/InfoDiscount';
 import InfoProducts from './App-components/pages/product-info/InfoProduct';
+import PizzaPage from './App-components/pages/pizza/Pizza';
+import PizzaInfo from './App-components/pages/pizza/PizzaInfo';
+import BurgerPage from './App-components/pages/burger/BurgerList';
+import BurgerInfo from './App-components/pages/burger/BurgerInfo';
 function App() {
   const dbRef = ref(getDatabase(app))
   const dispatch = useDispatch();
@@ -69,12 +72,14 @@ function App() {
       <main className="main-container">
         <Routes>
           <Route exact path='' element={<HomePage />} />
-          <Route path='/:productsCategories' element={<ProductPage />} />
           <Route path='console/:userName' element={<Users />} />
           <Route path='console/admin' element={<Admin />} />
           <Route path='discount' element={<Discount />} />
           <Route path='discount/:element' element={<InfoDiscount />} />
-          <Route path='products/:nameProducts' element={<InfoProducts />} />
+          <Route path='pizza' element={<PizzaPage />} />
+          <Route path='pizza/:oneElement' element={<PizzaInfo />} />
+          <Route path='burger' element={<BurgerPage />} />
+          <Route path='burger/:oneElement' element={<BurgerInfo />} />
         </Routes>
       </main>
       <Footer />
