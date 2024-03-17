@@ -3043,7 +3043,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .add-discount .add-discount-form .prime-text,
+  .add-discount .add-discount-form .prime-text, .add-discount .add-discount-form .patch-text,
   .add-discount .add-discount-form .patch-discount {
     width: 100%;
     display: flex;
@@ -3051,12 +3051,12 @@
     align-items: center;
     margin: 10px 0;
   }
-  .add-discount .add-discount-form .prime-text span,
+  .add-discount .add-discount-form .prime-text span, .add-discount .add-discount-form .patch-text span,
   .add-discount .add-discount-form .patch-discount span {
     padding: 10px 0;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
-  .add-discount .add-discount-form .prime-text input,
+  .add-discount .add-discount-form .prime-text input, .add-discount .add-discount-form .patch-text input,
   .add-discount .add-discount-form .patch-discount input {
     width: 50%;
     font-size: 18px;
@@ -3067,7 +3067,7 @@
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     transition: all 0.3s linear;
   }
-  .add-discount .add-discount-form .prime-text input:focus,
+  .add-discount .add-discount-form .prime-text input:focus, .add-discount .add-discount-form .patch-text input:focus,
   .add-discount .add-discount-form .patch-discount input:focus {
     background-color: #ffd600;
     border: 2px solid rgba(0, 0, 0, 0.8274509804);

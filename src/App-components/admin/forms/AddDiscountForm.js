@@ -13,8 +13,9 @@ export default function AddDiscount() {
         let targ = event.target.elements;
         set(ref(db, 'discounts/' + Math.floor(Math.random() * 10000)), {
             title: targ.primeText.value,
+            patch :targ.patch.value,
             description: targ.description.value,
-            imagePatsh: imageLink
+            imagePatch: imageLink
         });
        window.location.reload();
     }
@@ -27,6 +28,10 @@ export default function AddDiscount() {
                 <div className="prime-text">
                     <span>Заголовок</span>
                     <input type="text" name="primeText" />
+                </div>
+                <div className="patch-text">
+                    <span>Посилання</span>
+                    <input type="text" name="patch" />
                 </div>
                 <div className="description">
                     <span>Опис</span>
@@ -52,7 +57,7 @@ export default function AddDiscount() {
                                 <th>{index+1}</th>
                                 <td>{allDiscounts[item]['title'].slice(0 , 10)}</td>
                                 <td>{allDiscounts[item]['description'].slice(0 , 20)}</td>
-                                <td><img src={allDiscounts[item]['imagePatsh']} alt="" /></td>
+                                <td><img src={allDiscounts[item]['imagePatch']} alt="" /></td>
                                 <td>
                                     <button>edit</button>
                                     <button>delete</button>

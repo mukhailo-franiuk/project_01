@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router , Routes , Route } from 'react-router-dom';
+import { BrowserRouter as Router , Routes , Route} from 'react-router-dom';
 import { useEffect } from 'react';
 import { getDatabase, ref, child, get } from "firebase/database";
 import { app } from './options/environment/env';
@@ -18,9 +18,12 @@ import ProductPage from './App-components/pages/products/Products';
 import Users from './App-components/users/Users';
 import Admin from './App-components/admin/Admin';
 import Discount from './App-components/pages/discount/Discount';
+import InfoDiscount from './App-components/pages/discount-info/InfoDiscount';
+import InfoProducts from './App-components/pages/product-info/InfoProduct';
 function App() {
   const dbRef = ref(getDatabase(app))
-  const dispatsh = useDispatch();
+  const dispatch = useDispatch();
+
   window.onload = () => {
     if(window.localStorage.getItem('status') !== null){
       document.querySelector('.action-users').style.display = 'none';
@@ -33,7 +36,7 @@ function App() {
   useEffect(()=>{
     get(child(dbRef, `discounts`)).then((snapshot) => {
       if (snapshot.exists()) {
-        dispatsh(discountsAll(snapshot.val()));
+        dispatch(discountsAll(snapshot.val()));
       } else {
         console.log("No data available");
       }
@@ -42,7 +45,7 @@ function App() {
     });
     get(child(dbRef, `categories`)).then((snapshot) => {
       if (snapshot.exists()) {
-        dispatsh(category(snapshot.val()));
+        dispatch(category(snapshot.val()));
       } else {
         console.log("No data available");
       }
@@ -51,7 +54,7 @@ function App() {
     });
     get(child(dbRef, `products`)).then((snapshot) => {
       if (snapshot.exists()) {
-        dispatsh(products(snapshot.val()));
+        dispatch(products(snapshot.val()));
       } else {
         console.log("No data available");
       }
@@ -70,6 +73,8 @@ function App() {
           <Route path='console/:userName' element={<Users />} />
           <Route path='console/admin' element={<Admin />} />
           <Route path='discount' element={<Discount />} />
+          <Route path='discount/:element' element={<InfoDiscount />} />
+          <Route path='products/:nameProducts' element={<InfoProducts />} />
         </Routes>
       </main>
       <Footer />
